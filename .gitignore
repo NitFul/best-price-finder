@@ -1,0 +1,8 @@
+# Secrets - never commit
+.env
+.streamlit/secrets.toml
+
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/

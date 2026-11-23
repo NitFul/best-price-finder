@@ -1,0 +1,12 @@
+{
+  "_note": "MADE-UP DEMO DATA for trying the app without an API key. Prices are not real.",
+  "shopping": [
+    {"title": "adidas F50 Pro FG Soccer Cleats", "source": "Dick's Sporting Goods", "link": "https://www.dickssportinggoods.com", "price": "$220.00", "delivery": "Free delivery"},
+    {"title": "adidas F50 Pro Firm Ground Cleats FG", "source": "Amazon.com", "link": "https://www.amazon.com", "price": "$205.00", "delivery": "Free delivery"},
+    {"title": "Adidas F50 Pro FG Soccer Cleats - Men's", "source": "Soccer.com", "link": "https://www.soccer.com", "price": "$219.99", "delivery": "$7.99 delivery"},
+    {"title": "adidas F50 Pro FG Soccer Cleats", "source": "adidas US", "link": "https://www.adidas.com", "price": "$220.00", "delivery": "Free delivery"},
+    {"title": "adidas F50 League FG Soccer Cleats", "source": "Walmart", "link": "https://www.walmart.com", "price": "$90.00", "delivery": "Free delivery"},
+    {"title": "adidas F50 Pro FG Soccer Cleats Used Size 9", "source": "eBay", "link": "https://www.ebay.com", "price": "$110.00", "delivery": "$12.00 delivery"},
+    {"title": "adidas F50 Pro FG Soccer Cleats", "source": "Kohl's", "link": "https://www.kohls.com", "price": "$214.99"}
+  ]
+}

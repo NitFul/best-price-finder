@@ -1,0 +1,60 @@
+# Best Price Finder
+
+Type an item name and get store options ranked by **effective price**
+(price + shipping − Rakuten cash back).
+
+## Setup (one time)
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python -m pip install -r requirements.txt
+copy .env.example .env
+```
+
+Open `.env` and paste your free key from https://serper.dev after `SERPER_API_KEY=`.
+
+## Run
+
+```powershell
+.\.venv\Scripts\streamlit run app.py
+```
+
+Your browser opens at http://localhost:8501. Without a key, the app runs in
+**demo mode** with made-up prices.
+
+## Cashback rates
+
+Rakuten has no free API, so rates live in `cashback_rates.csv`. Edit them in
+the app's **Cashback rates** tab, or in the file directly. Rates change often,
+so update them before a big purchase.
+
+## Free limits
+
+Each new search uses 1 Serper credit (about 2,500 free). The same search
+within an hour is cached and doesn't use a credit.
+
+## Tests
+
+```powershell
+.\.venv\Scripts\python -m pip install -r requirements-dev.txt
+.\.venv\Scripts\python -m pytest -q
+```
+
+## Public website (Streamlit Community Cloud, free)
+
+1. Sign in at https://share.streamlit.io with GitHub.
+2. **Create app**, then pick this repo, branch `main`, file `app.py`.
+3. Under **Advanced settings**, choose Python 3.12 and paste into **Secrets**:
+   ```toml
+   SERPER_API_KEY = "your-key"
+   DAILY_SEARCH_LIMIT = "60"
+   SESSION_SEARCH_LIMIT = "10"
+   ```
+   Don't set `ALLOW_RATE_EDITING` there, so visitors can't change rates.
+4. **Deploy.**
+
+To update cashback rates on the public site: edit them locally, then commit
+and push `cashback_rates.csv`. The site redeploys automatically.
+
+**Secrets:** the real key lives only in `.env` (ignored by Git) and in the
+Streamlit Secrets box. Never put it in a committed file.
