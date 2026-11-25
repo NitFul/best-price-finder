@@ -1,7 +1,7 @@
 """Cashback rates, kept in an editable CSV file (cashback_rates.csv).
 
-Rakuten has no free public API and blocks automated page reads, so rates
-are entered by hand. They change often; update them before a big purchase.
+Rates can be refreshed automatically from Google search results (see
+rakuten.py) or entered by hand. They change often; refresh before a big purchase.
 """
 
 import csv
@@ -10,7 +10,7 @@ from pathlib import Path
 from urllib.parse import quote_plus
 
 RATES_FILE = Path(__file__).resolve().parent.parent / "cashback_rates.csv"
-FIELDS = ["store", "aliases", "rakuten_percent", "notes"]
+FIELDS = ["store", "aliases", "rakuten_percent", "notes", "last_checked", "source"]
 
 
 def normalize(name: str) -> str:
@@ -38,19 +38,20 @@ def save_rows(rows: list[dict], path: Path = RATES_FILE) -> None:
 
 class CashbackTable:
     def __init__(self, rows: list[dict]):
-        self._by_name: dict[str, tuple[str, float | None]] = {}
+        self._by_name: dict[str, dict] = {}
         for row in rows:
             store = row["store"]
             try:
                 pct = float(row["rakuten_percent"].rstrip("%")) if row["rakuten_percent"] else None
             except ValueError:
                 pct = None
-            names = [store] + [a for a in row["aliases"].split("|") if a.strip()]
+            info = {**row, "percent": pct}
+            names = [store] + [a for a in row.get("aliases", "").split("|") if a.strip()]
             for name in names:
-                self._by_name[normalize(name)] = (store, pct)
+                self._by_name[normalize(name)] = info
 
-    def lookup(self, store_name: str) -> tuple[str | None, float | None]:
-        """Return (known store name, Rakuten %) or (None, None) if not in the table."""
+    def info(self, store_name: str) -> dict | None:
+        """The table row for a store (with a parsed 'percent'), or None if not listed."""
         key = normalize(store_name)
         if key in self._by_name:
             return self._by_name[key]
@@ -58,7 +59,12 @@ class CashbackTable:
         for name, value in self._by_name.items():
             if len(name) >= 4 and (name in key or key in name):
                 return value
-        return None, None
+        return None
+
+    def lookup(self, store_name: str) -> tuple[str | None, float | None]:
+        """Return (known store name, Rakuten %) or (None, None) if not in the table."""
+        row = self.info(store_name)
+        return (row["store"], row["percent"]) if row else (None, None)
 
 
 def rakuten_check_url(store_name: str) -> str:

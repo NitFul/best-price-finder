@@ -5,6 +5,7 @@ import streamlit as st
 from pricefinder.cashback import CashbackTable, load_rows, rakuten_check_url, save_rows
 from pricefinder.config import get_bool, get_int, get_setting
 from pricefinder.limits import DailyLimiter
+from pricefinder.rakuten import update_row
 from pricefinder.ranking import build_options
 from pricefinder.search import (
     SearchError,
@@ -150,11 +151,21 @@ with tab_search:
                 with left:
                     st.markdown(f"**Option {i}: {L.store}**")
                     st.write(L.title)
+                    rate_info = table.info(L.store)
+                    checked = (
+                        f" (checked {rate_info['last_checked']})"
+                        if rate_info and rate_info.get("last_checked") else ""
+                    )
                     if o.cashback_percent:
+                        up_to = "up to " if (rate_info.get("notes") or "").lower().startswith("up to") else ""
                         st.success(
-                            f"Activate Rakuten first: {o.cashback_percent:g}% cash back "
-                            f"(about ${o.cashback_amount:,.2f})"
+                            f"Activate Rakuten first: {up_to}{o.cashback_percent:g}% cash back "
+                            f"({up_to}about ${o.cashback_amount:,.2f}){checked}"
                         )
+                    elif rate_info and rate_info["percent"] == 0:
+                        st.caption(f"Rakuten: no cash back at this store right now{checked}.")
+                    elif rate_info and rate_info.get("notes"):
+                        st.caption(f"Rakuten: {rate_info['notes']}{checked}.")
                     else:
                         st.markdown(
                             f"No Rakuten rate saved for this store. "
@@ -210,30 +221,73 @@ with tab_rates:
         "aliases": st.column_config.TextColumn("Aliases"),
         "rakuten_percent": st.column_config.TextColumn("Rakuten %", help="e.g. 9 or 2.5"),
         "notes": st.column_config.TextColumn("Notes"),
+        "last_checked": st.column_config.TextColumn("Last checked"),
+        "source": st.column_config.LinkColumn("Source", display_text="Rakuten page"),
     }
     if ALLOW_RATE_EDITING:
+        rows = load_rows()
+
+        # --- Automatic update from Rakuten (via Google search results) ---
+        st.subheader("Update from Rakuten")
         st.write(
-            "Rakuten doesn't offer a free API, so enter rates here. Rates change often, "
-            "so check them before buying. **Aliases** are other names a store shows up as "
-            "in search results, separated by `|`."
+            "Finds each store's current Rakuten cash back rate from Google search results "
+            "for Rakuten's store pages. **Each store uses 1 search credit.**"
+        )
+        all_stores = [r["store"] for r in rows]
+        selected = st.multiselect("Stores to update", all_stores, default=all_stores)
+        if st.button(
+            f"Update {len(selected)} store(s) from Rakuten", type="primary",
+            disabled=not (API_KEY and selected),
+        ):
+            progress = st.progress(0.0, text="Checking Rakuten rates...")
+            report = []
+            for n, row in enumerate(r for r in rows if r["store"] in selected):
+                try:
+                    result = update_row(row, API_KEY)
+                except SearchError as e:
+                    result = f"error: {e}"
+                report.append({"store": row["store"], "result": result})
+                progress.progress((n + 1) / len(selected), text=f"Checked {row['store']}")
+            save_rows(rows)
+            st.session_state["rate_report"] = report
+            # New key so the table below reloads the saved values.
+            st.session_state["rates_version"] = st.session_state.get("rates_version", 0) + 1
+            st.rerun()
+        if report := st.session_state.get("rate_report"):
+            with st.expander(f"Last update: {len(report)} store(s) checked", expanded=True):
+                st.dataframe(report, width="stretch", hide_index=True)
+            st.caption(
+                "To update the public website, commit and push cashback_rates.csv to GitHub."
+            )
+
+        # --- Manual editing ---
+        st.subheader("Edit rates")
+        st.write(
+            "Fix or add rates by hand. **Aliases** are other names a store shows up as "
+            "in search results, separated by `|`. Leave Rakuten % empty if unknown, "
+            "or enter 0 for no cash back."
         )
         edited = st.data_editor(
-            load_rows(), num_rows="dynamic", width="stretch",
-            column_config=columns, key="rates_editor",
+            rows, num_rows="dynamic", width="stretch", column_config=columns,
+            key=f"rates_editor_{st.session_state.get('rates_version', 0)}",
         )
         if st.button("Save rates"):
             save_rows(edited)
             st.success("Saved to cashback_rates.csv.")
     else:
         st.write(
-            "Cash back rates used for ranking. They're updated by hand and may be out "
-            "of date, so confirm the current rate on Rakuten before you buy."
+            "Rakuten cash back rates used for ranking, with the date each was last "
+            "checked. Rates change often, so confirm on Rakuten before you buy."
         )
-        st.dataframe(load_rows(), width="stretch", column_config=columns, hide_index=True)
+        st.dataframe(
+            load_rows(), width="stretch", hide_index=True,
+            column_config=columns,
+            column_order=["store", "rakuten_percent", "notes", "last_checked", "source"],
+        )
 
 st.divider()
 st.caption(
-    "Prices come from Google Shopping results and may have changed. Cash back rates are "
-    "entered by hand and may be out of date. This site isn't affiliated with Rakuten or "
-    "any store. Always check the final price at checkout."
+    "Prices come from Google Shopping results and may have changed. Cash back rates come "
+    "from Rakuten's pages as shown in Google search results and may be out of date. This "
+    "site isn't affiliated with Rakuten or any store. Always check the final price at checkout."
 )

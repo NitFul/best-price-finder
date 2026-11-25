@@ -1,21 +1,21 @@
-store,aliases,rakuten_percent,notes
-Dick's Sporting Goods,dicks|dickssportinggoods|dick's,,
-Amazon,amazon.com|amazon,,
-Walmart,walmart.com,,
-Target,target.com,,
-Nike,nike.com,,
-Adidas,adidas.com|adidas us,,
-Soccer.com,soccer.com,,
-Academy Sports + Outdoors,academy|academy sports,,
-Kohl's,kohls,,
-Macy's,macys,,
-Best Buy,bestbuy|best buy,,
-eBay,ebay.com|ebay,,
-Foot Locker,footlocker,,
-JD Sports,jdsports|jd sports us,,
-Zappos,zappos.com,,
-Nordstrom,nordstrom.com,,
-Nordstrom Rack,nordstromrack,,
-Finish Line,finishline,,
-Scheels,scheels.com,,
-WorldSoccerShop,worldsoccershop|world soccer shop,,
+store,aliases,rakuten_percent,notes,last_checked,source
+Dick's Sporting Goods,dicks|dickssportinggoods|dick's,2,,2026-11-24,https://www.rakuten.com/shop/dickssportinggoods
+Amazon,amazon.com|amazon,,"$5 cash back offer, not a % rate",2026-11-24,https://www.rakuten.com/shop/amazon
+Walmart,walmart.com,0,No cash back right now,2026-11-24,https://www.rakuten.com/shop/walmart
+Target,target.com,1,,2026-11-24,https://www.rakuten.com/shop/target
+Nike,nike.com,4,,2026-11-24,https://www.rakuten.com/store/nike
+Adidas,adidas.com|adidas us,8,Up to this rate (varies by category),2026-11-24,https://www.rakuten.com/shop/adidas
+Soccer.com,soccer.com,2,,2026-11-24,https://www.rakuten.com/shop/soccer
+Academy Sports + Outdoors,academy|academy sports,2,,2026-11-24,https://www.rakuten.com/shop/academysportsoutdoors
+Kohl's,kohls,2,,2026-11-24,https://www.rakuten.com/shop/kohls
+Macy's,macys,10,,2026-11-24,https://www.rakuten.com/shop/macys
+Best Buy,bestbuy|best buy,8,Up to this rate (varies by category),2026-11-24,https://www.rakuten.com/shop/bestbuy
+eBay,ebay.com|ebay,1,,2026-11-24,https://www.rakuten.com/shop/ebay
+Foot Locker,footlocker,6,,2026-11-24,https://www.rakuten.com/store/footlocker
+JD Sports,jdsports|jd sports us,9,,2026-11-24,https://www.rakuten.com/shop/jdsports
+Zappos,zappos.com,2,,2026-11-24,https://www.rakuten.com/shop/zappos
+Nordstrom,nordstrom.com,0,No cash back right now,2026-11-24,https://www.rakuten.com/shop/nordstrom
+Nordstrom Rack,nordstromrack,2,,2026-11-24,https://www.rakuten.com/shop/nordstromrack
+Finish Line,finishline,9,,2026-11-24,https://www.rakuten.com/shop/finishline
+Scheels,scheels.com,3,,2026-11-24,https://www.rakuten.com/shop/scheels
+WorldSoccerShop,worldsoccershop|world soccer shop,2,,2026-11-24,https://www.rakuten.com/shop/worldsoccershop

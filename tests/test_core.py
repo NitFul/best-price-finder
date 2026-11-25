@@ -136,3 +136,35 @@ def test_iphone_results_are_real_full_price_phones():
     assert "max" not in titles                      # different model
     assert all(o.listing.price > 500 for o in ranked.options)
     assert ranked.hidden["monthly payment plans"] > 0
+
+
+# ---- Rakuten rates from real Google search results (saved from Serper) ----
+from pricefinder.rakuten import pick_rate
+
+RAKUTEN = json.loads((Path(__file__).parent / "data" / "rakuten_search.json").read_text())
+
+
+def _rate(store, *aliases):
+    return pick_rate([store, *aliases], RAKUTEN[store]["organic"])
+
+
+def test_rakuten_percent_rate_from_store_page():
+    r = _rate("Dick's Sporting Goods", "dicks")
+    assert r.percent == 2.0
+    assert r.source == "https://www.rakuten.com/shop/dickssportinggoods"
+
+
+def test_rakuten_title_beats_snippet_and_ignores_referral_pages():
+    # Nike: /shop title has no %, its snippet says 6%; /store title says 4%.
+    # Titles are trusted first; the refer-a-friend page is ignored.
+    assert _rate("Nike").percent == 4.0
+
+
+def test_rakuten_no_cashback_and_flat_offer():
+    assert _rate("Walmart").percent == 0.0
+    amazon = _rate("Amazon")
+    assert amazon.percent is None and "$5" in amazon.note
+
+
+def test_rakuten_ignores_other_stores_pages():
+    assert pick_rate(["Target"], RAKUTEN["Nike"]["organic"]) is None

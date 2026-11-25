@@ -24,9 +24,15 @@ Your browser opens at http://localhost:8501. Without a key, the app runs in
 
 ## Cashback rates
 
-Rakuten has no free API, so rates live in `cashback_rates.csv`. Edit them in
-the app's **Cashback rates** tab, or in the file directly. Rates change often,
-so update them before a big purchase.
+Rates live in `cashback_rates.csv`. To refresh them from Rakuten (read from
+Google search results for Rakuten's store pages, 1 search credit per store):
+
+- In the app: **Cashback rates** tab, then **Update from Rakuten**, or
+- From the terminal: `.\.venv\Scripts\python update_rates.py` (or list store names
+  to update only those).
+
+You can also fix rates by hand on the same tab. Then commit and push
+`cashback_rates.csv` to update the public site.
 
 ## Free limits
 

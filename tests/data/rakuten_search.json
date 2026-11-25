@@ -1,0 +1,210 @@
+{
+ "Dick's Sporting Goods": {
+  "searchParameters": {
+   "q": "site:rakuten.com Dick's Sporting Goods cash back",
+   "gl": "us",
+   "type": "search",
+   "num": 5,
+   "engine": "google"
+  },
+  "organic": [
+   {
+    "title": "Dick's Sporting Goods Coupons, Promo Codes & 2% Cash Back",
+    "link": "https://www.rakuten.com/shop/dickssportinggoods",
+    "displayedLink": "https://www.rakuten.com \u203a shop \u203a dickssportinggoods",
+    "snippet": "earn 2% Cash Back at Rakuten. Enrollment will earn $20.00 Cash Back. Back Members get a $25 reward on day one + free shipping.",
+    "date": "Nov 4, 2026",
+    "rating": 4.8,
+    "ratingCount": 243,
+    "position": 1
+   },
+   {
+    "title": "Dick's Sporting Goods 2% Cash Back + Coupons",
+    "link": "https://www.rakuten.com/store/dickssportinggoods",
+    "displayedLink": "https://www.rakuten.com \u203a store \u203a dickssportinggoods",
+    "snippet": "Dick's Sporting Goods 2% Cash Back. New members enjoy a $10 bonus!Terms. It's completely free!",
+    "position": 2
+   },
+   {
+    "title": "Dick's Sporting Goods \u2013 Deals, Coupons & Cashback",
+    "link": "https://www.rakuten.com/mktg/dickssportinggoods",
+    "displayedLink": "https://www.rakuten.com \u203a mktg \u203a dickssportinggoods",
+    "snippet": "Cash Back adds up as you shop. Make 3 purchases of $25 or more within your first 30 days to qualify for a $50 bonus. Save with Rakuten ...",
+    "position": 3
+   },
+   {
+    "title": "DICK'S Sporting Goods Pitch Counter Best Deals & Sales - November 2026",
+    "link": "https://www.rakuten.com/products/dick-s-sporting-goods-pitch/00889751256856_upc",
+    "displayedLink": "https://www.rakuten.com \u203a products \u203a dick-s-sporting-goods-pitch \u203a 00889751256856_upc",
+    "snippet": "Pitch Counter for $9.99 + Up to 2% Cash Back on Dick's Sporting Goods. Sign up today for an additional $10 bonus. You can earn Cash Back on DICK'S Sporting ...",
+    "position": 4
+   },
+   {
+    "title": "Dick's Sporting Goods Labor Day 2026 Sales & Deals",
+    "link": "https://www.rakuten.com/labor-day-sale/store/dickssportinggoods",
+    "displayedLink": "https://www.rakuten.com \u203a labor-day-sale \u203a store \u203a dickssportinggoods",
+    "snippet": "Dick's Sporting Goods - Rakuten coupons and Cash Back. Members get a $25 reward on day one + free shipping. 2% Cash Back. See Details. Dick's Sporting Goods ...",
+    "position": 5
+   }
+  ],
+  "credits": 1
+ },
+ "Amazon": {
+  "searchParameters": {
+   "q": "site:rakuten.com Amazon cash back",
+   "gl": "us",
+   "type": "search",
+   "num": 5,
+   "engine": "google"
+  },
+  "organic": [
+   {
+    "title": "Amazon Coupons, Promo Codes & $5 Cash Back - November 2026",
+    "link": "https://www.rakuten.com/shop/amazon",
+    "displayedLink": "https://www.rakuten.com \u203a shop \u203a amazon",
+    "snippet": "Earn $5 Cash Back on each of your first 3 eligible Amazon orders through the Rakuten browser extension, Rakuten App or Samsung Wallet Perks. Purchases must be ...",
+    "rating": 4.5,
+    "ratingCount": 2200,
+    "position": 1
+   },
+   {
+    "title": "Limited Time Amazon $5 Cash Back Offer",
+    "link": "https://www.rakuten.com/mktg/amazonpromo",
+    "displayedLink": "https://www.rakuten.com \u203a mktg \u203a amazonpromo",
+    "snippet": "Earn $5 Cash Back on each of your first 3 eligible Amazon orders of $25 or more through the Rakuten browser extension or the Rakuten app.",
+    "position": 2
+   },
+   {
+    "title": "$5 Cash Back Terms at Amazon",
+    "link": "https://www.rakuten.com/help/article/-5-cash-back-terms-at-amazon-52641873362579",
+    "displayedLink": "https://www.rakuten.com \u203a help \u203a article \u203a -5-cash-back-terms-at-amazo...",
+    "snippet": "Earn $5 Cash Back on each of your first 3 eligible Amazon orders through the Rakuten browser extension, the Rakuten App, or Samsung Wallet Perks.",
+    "position": 3
+   },
+   {
+    "title": "Rakuten: Coupons, Promo Codes & Cash Back - Black Friday Deals",
+    "link": "https://www.rakuten.com/",
+    "displayedLink": "https://www.rakuten.com",
+    "snippet": "Cash out instantly with gift cards from 50+ top brands, including Amazon, earn 5% Cash Back at 22,000+ restaurants nationwide",
+    "position": 4
+   },
+   {
+    "title": "Amazon Coupons, Promo Codes + Deals",
+    "link": "https://www.rakuten.com/mktg/amazon",
+    "displayedLink": "https://www.rakuten.com \u203a mktg \u203a amazon",
+    "snippet": "Cash Back adds up as you shop. Make 3 purchases of $25 or more within your first 30 days to qualify for a $50 bonus. Save with Rakuten coupons and Cash ...",
+    "position": 5
+   }
+  ],
+  "credits": 1
+ },
+ "Walmart": {
+  "searchParameters": {
+   "q": "site:rakuten.com Walmart cash back",
+   "gl": "us",
+   "type": "search",
+   "num": 5,
+   "engine": "google"
+  },
+  "organic": [
+   {
+    "title": "Walmart \u2013 Deals, Coupons & Cashback",
+    "link": "https://www.rakuten.com/mktg/walmart",
+    "displayedLink": "https://www.rakuten.com \u203a mktg \u203a walmart",
+    "snippet": "Cash Back adds up as you shop. Make 3 purchases of $25 or more within your first 30 days to qualify for a $50 bonus. Save with Rakuten ...",
+    "position": 1
+   },
+   {
+    "title": "Walmart Coupons, Promo Codes & No Cash Back - November 2026",
+    "link": "https://www.rakuten.com/shop/walmart",
+    "displayedLink": "https://www.rakuten.com \u203a shop \u203a walmart",
+    "snippet": "It's completely free! Eligible Cash Back is added to your Rakuten account and paid out every three months via check, PayPal, Amex Membership ...",
+    "date": "Nov 2, 2026",
+    "rating": 4.6,
+    "ratingCount": 2300,
+    "position": 2
+   },
+   {
+    "title": "Walmart Cash Back Offer: Earn $15 With Rakuten",
+    "link": "https://www.rakuten.com/blog/rakuten-walmart-cash-back-offer/",
+    "displayedLink": "https://www.rakuten.com \u203a blog \u203a rakuten-walmart-cash-back-o...",
+    "snippet": "Earn $5 Cash Back on each of your first three eligible Walmart orders, for up to $15 total. Each order needs to be $25 or more. needs to hit $25",
+    "date": "Nov 16, 2026",
+    "position": 3
+   },
+   {
+    "title": "How to Save Money at Walmart: Deals, Coupons, Walmart+ and Cash Back",
+    "link": "https://www.rakuten.com/blog/walmart-shopping-tips/",
+    "displayedLink": "https://www.rakuten.com \u203a blog \u203a walmart-shopping-tips",
+    "snippet": "To earn $5 Rakuten Cash Back on your Walmart shopping, use the Rakuten app or browser extension before you shop. Search for Walmart, and then ...",
+    "date": "Nov 12, 2026",
+    "position": 4
+   },
+   {
+    "title": "$5 Cash Back Terms at Walmart",
+    "link": "https://www.rakuten.com/help/article/5-Cash-Back-Terms-at-Walmart-57161183307155",
+    "displayedLink": "https://www.rakuten.com \u203a help \u203a article \u203a 5-Cash-Back-Terms-at-Walmar...",
+    "snippet": "Earn $5 Cash Back on each of your next 3 eligible Walmart orders of $25 or more. Purchases must be made through the Rakuten browser extension, the Rakuten App, ...",
+    "position": 5
+   }
+  ],
+  "credits": 1
+ },
+ "Nike": {
+  "searchParameters": {
+   "q": "site:rakuten.com Nike cash back",
+   "gl": "us",
+   "type": "search",
+   "num": 5,
+   "engine": "google"
+  },
+  "organic": [
+   {
+    "title": "Nike Coupons, Promo Codes & Cash Back",
+    "link": "https://www.rakuten.com/shop/nike",
+    "displayedLink": "https://www.rakuten.com \u203a shop \u203a nike",
+    "snippet": "Find the latest Nike promo codes, coupons & deals for November 2026 - plus earn 6% Cash Back at Rakuten. Join now for a free $10 Welcome ...",
+    "date": "7 days ago",
+    "sitelinks": [
+     {
+      "title": "Edit shopping preferences",
+      "link": "https://www.google.com/preferences/shopping?asearch=arc&hl=en&sa=X&ved=2ahUKEwi3k_utoKKYAxUxqpUCHfKTHPMQrrILegQIQBAF&ictx=1"
+     }
+    ],
+    "rating": 4.7,
+    "ratingCount": 583,
+    "position": 1
+   },
+   {
+    "title": "Nike Fall Sales & Deals with 4% Cash Back",
+    "link": "https://www.rakuten.com/store/nike",
+    "displayedLink": "https://www.rakuten.com \u203a store \u203a nike",
+    "snippet": "Find Nike Fall deals \u2013 plus save at Nike with online rebates and Cash Back when you shop at Rakuten! Get $10 Bonus offer!",
+    "position": 2
+   },
+   {
+    "title": "Earn Extra Rewards on Every Nike Purchase Through Rakuten",
+    "link": "https://www.rakuten.com/blog/earn-extra-rewards-on-every-nike-purchase-through-rakuten/",
+    "displayedLink": "https://www.rakuten.com \u203a blog \u203a earn-extra-rewards-on-every...",
+    "snippet": "Rakuten has you covered. With a free Rakuten membership, you can score Nike coupons and earn Cash Back on all your Nike purchases. With over ...",
+    "date": "Mar 12, 2026",
+    "position": 3
+   },
+   {
+    "title": "Get 4% Cash Back at Nike - Refer A Friend",
+    "link": "https://www.rakuten.com/store/nike?ref_id=ONLYGO134",
+    "displayedLink": "https://www.rakuten.com \u203a store \u203a nike",
+    "snippet": "Your friend invites you to get 4% Cash Back at Nike today! Plus get a $50 bonus when you spend $50 at any store.Terms apply.",
+    "position": 4
+   },
+   {
+    "title": "Get Cash Back at Top Stores for Sneakers",
+    "link": "https://www.rakuten.com/mktg/sneakers",
+    "displayedLink": "https://www.rakuten.com \u203a mktg \u203a sneakers",
+    "snippet": "3% Cash Back. Save with Exclusive Sneakers Coupons. Nike - Rakuten coupons and Cash Back. Black Friday - Get an extra 25% off select styles. 6% Cash Backwas 2%.",
+    "position": 5
+   }
+  ],
+  "credits": 1
+ }
+}
