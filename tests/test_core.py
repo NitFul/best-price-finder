@@ -193,3 +193,25 @@ def test_new_store_row_flat_offer_is_zero_percent(monkeypatch):
                         lambda *a, **k: rakuten.RakutenRate(None, "$5 cash back offer, not a % rate", "u"))
     row = rakuten.new_store_row("Amazon", "key")
     assert row["rakuten_percent"] == "0" and "$5" in row["notes"]
+
+
+# ---- Plurals, gender words, "with" features: real "northface" results ----
+NORTHFACE = json.loads((Path(__file__).parent / "data" / "northface_borealis.json").read_text())
+NF_Q = "northface mens backpacks borealis"
+
+
+def test_plural_gender_and_with_features():
+    assert match_score(NF_Q, "The North Face Borealis Backpack") == 1.0
+    assert match_score(NF_Q, "The North Face Unisex Borealis Laptop Backpack") == 1.0
+    assert match_score(NF_Q, "Borealis Backpack with Laptop Sleeve, The North Face") == 1.0
+    assert match_score(NF_Q, "The North Face Women's Borealis Backpack") == 0.0
+    assert match_score(NF_Q, "The North Face Borealis Mini Backpack") == 0.0
+    assert match_score("iphone 18 pro", "iPhone 18 Pro Leather Case") == 0.0
+
+
+def test_northface_search_returns_many_stores():
+    ranked = build_options(NF_Q, parse_results(NORTHFACE), CashbackTable([]))
+    stores = {o.listing.store for o in ranked.options}
+    assert len(ranked.options) >= 10
+    assert "The North Face" in stores
+    assert not any("mini" in o.listing.title.lower() for o in ranked.options)
