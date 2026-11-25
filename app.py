@@ -5,7 +5,7 @@ import streamlit as st
 from pricefinder.cashback import CashbackTable, load_rows, rakuten_check_url, save_rows
 from pricefinder.config import get_bool, get_int, get_setting
 from pricefinder.limits import DailyLimiter
-from pricefinder.rakuten import update_row
+from pricefinder.rakuten import new_store_row, update_row
 from pricefinder.ranking import build_options
 from pricefinder.search import (
     SearchError,
@@ -46,6 +46,47 @@ def cached_product_link(title: str, store: str):
     if not daily_limiter().try_use():
         raise SearchError("The site reached today's search limit. Please try again tomorrow.")
     return find_product_link(title, store, API_KEY)
+
+
+@st.cache_data(ttl=86400, show_spinner=False, max_entries=1000)
+def cached_new_store_rate(store: str) -> dict:
+    # Rakuten rate for a store not in cashback_rates.csv. Cached for a day.
+    if not daily_limiter().try_use():
+        raise SearchError("The site reached today's search limit.")
+    return new_store_row(store, API_KEY)
+
+
+TOP_N_STORES = 3
+
+
+def rates_table() -> CashbackTable:
+    """Saved rates plus any looked up this visit (public site doesn't save them)."""
+    extra = list(st.session_state.get("extra_rates", {}).values())
+    return CashbackTable(load_rows() + extra)
+
+
+def add_missing_store_rates(stores: list[str]) -> bool:
+    """Look up Rakuten rates for stores not in the table. Returns True if any were added."""
+    table = rates_table()
+    missing = [s for s in dict.fromkeys(stores) if table.info(s) is None]
+    if not missing:
+        return False
+    new_rows = []
+    with st.spinner(f"Checking Rakuten for {', '.join(missing)}..."):
+        for store in missing:
+            try:
+                new_rows.append(cached_new_store_rate(store))
+            except SearchError:
+                pass  # leave it as "not checked"; shown on the rates tab
+    if not new_rows:
+        return False
+    if ALLOW_RATE_EDITING:
+        save_rows(load_rows() + new_rows)  # your PC: keep them in the CSV
+    else:
+        extra = st.session_state.setdefault("extra_rates", {})
+        for row in new_rows:
+            extra[row["store"]] = row
+    return True
 
 
 def use_session_search() -> bool:
@@ -122,11 +163,25 @@ with tab_search:
         if results["demo"]:
             st.info("Demo mode: these listings and prices are made up.")
 
-        table = CashbackTable(load_rows())
-        ranked = build_options(
-            q, listings, table, min_match, best_per_store, hide_carrier, hide_suspicious
-        )
+        def rank():
+            t = rates_table()
+            return t, build_options(
+                q, listings, t, min_match, best_per_store, hide_carrier, hide_suspicious
+            )
+
+        table, ranked = rank()
+        # Make sure the top stores have a Rakuten rate (even if it's 0), then
+        # re-rank in case a new rate changes the order.
+        if not results["demo"] and API_KEY:
+            top = [o.listing.store for o in ranked.options[:TOP_N_STORES]]
+            if add_missing_store_rates(top):
+                table, ranked = rank()
         options = ranked.options
+        st.session_state["top_stores"] = {
+            "query": q,
+            "demo": results["demo"],
+            "rows": [(o.listing.store, table.info(o.listing.store)) for o in options[:TOP_N_STORES]],
+        }
         hidden_note = ", ".join(f"{n} {reason}" for reason, n in ranked.hidden.items())
 
         if not options:
@@ -163,7 +218,8 @@ with tab_search:
                             f"({up_to}about ${o.cashback_amount:,.2f}){checked}"
                         )
                     elif rate_info and rate_info["percent"] == 0:
-                        st.caption(f"Rakuten: no cash back at this store right now{checked}.")
+                        why = rate_info.get("notes") or "no cash back at this store right now"
+                        st.caption(f"Rakuten: 0% – {why}{checked}.")
                     elif rate_info and rate_info.get("notes"):
                         st.caption(f"Rakuten: {rate_info['notes']}{checked}.")
                     else:
@@ -224,11 +280,43 @@ with tab_rates:
         "last_checked": st.column_config.TextColumn("Last checked"),
         "source": st.column_config.LinkColumn("Source", display_text="Rakuten page"),
     }
+    # --- Top stores from the latest search, always shown, even at 0% ---
+    top = st.session_state.get("top_stores")
+    if top and top["rows"]:
+        st.subheader(f"Top {len(top['rows'])} stores for “{top['query']}”")
+        top_rows = []
+        for rank_no, (store, info) in enumerate(top["rows"], 1):
+            if info:
+                pct, notes = info["percent"], info.get("notes") or ""
+                listed_as = info["store"] if info["store"] != store else ""
+                top_rows.append({
+                    "rank": rank_no,
+                    "store": store,
+                    "rakuten_percent": f"{pct or 0:g}%",
+                    "notes": (f"Listed as {listed_as}. " if listed_as else "") + notes,
+                    "last_checked": info.get("last_checked") or "",
+                    "source": info.get("source") or "",
+                })
+            else:
+                top_rows.append({
+                    "rank": rank_no, "store": store, "rakuten_percent": "0%",
+                    "notes": "Not checked (demo mode)" if top["demo"] else "Couldn't check Rakuten",
+                    "last_checked": "", "source": "",
+                })
+        st.dataframe(
+            top_rows, width="stretch", hide_index=True,
+            column_config={**columns, "rank": st.column_config.NumberColumn("#", width="small"),
+                           "rakuten_percent": st.column_config.TextColumn("Rakuten %")},
+        )
+    else:
+        st.caption("Search for an item to see the Rakuten rates of its top 3 stores here.")
+
+    st.subheader("All saved rates")
     if ALLOW_RATE_EDITING:
         rows = load_rows()
 
         # --- Automatic update from Rakuten (via Google search results) ---
-        st.subheader("Update from Rakuten")
+        st.markdown("**Update from Rakuten**")
         st.write(
             "Finds each store's current Rakuten cash back rate from Google search results "
             "for Rakuten's store pages. **Each store uses 1 search credit.**"
@@ -261,7 +349,7 @@ with tab_rates:
             )
 
         # --- Manual editing ---
-        st.subheader("Edit rates")
+        st.markdown("**Edit rates**")
         st.write(
             "Fix or add rates by hand. **Aliases** are other names a store shows up as "
             "in search results, separated by `|`. Leave Rakuten % empty if unknown, "

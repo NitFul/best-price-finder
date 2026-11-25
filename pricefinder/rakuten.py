@@ -89,17 +89,34 @@ def lookup_rakuten_rate(store: str, aliases: list[str], api_key: str) -> Rakuten
     return pick_rate([store, *aliases], resp.json().get("organic", []))
 
 
+def clean_store_name(store: str) -> str:
+    """'eBay - some_seller' -> 'eBay', 'Pro:Direct Sport US' -> 'Pro:Direct Sport'."""
+    name = store.split(" - ")[0].strip()
+    return re.sub(r"\s+(us|usa|uk|store|official store|online)$", "", name, flags=re.I) or store
+
+
 def update_row(row: dict, api_key: str) -> str:
-    """Refresh one CSV row in place. Returns a short summary of what happened."""
+    """Refresh one CSV row in place. Returns a short summary of what happened.
+
+    Every checked store gets a number: 0 when Rakuten has no % rate for it.
+    """
     aliases = [a for a in row.get("aliases", "").split("|") if a.strip()]
-    rate = lookup_rakuten_rate(row["store"], aliases, api_key)
+    rate = lookup_rakuten_rate(clean_store_name(row["store"]), [row["store"], *aliases], api_key)
     row["last_checked"] = date.today().isoformat()
     if rate is None:
-        row["rakuten_percent"] = ""
-        row["notes"] = "Not found on Rakuten"
+        row["rakuten_percent"] = "0"
+        row["notes"] = "Not on Rakuten"
         row["source"] = ""
-        return "not found"
-    row["rakuten_percent"] = "" if rate.percent is None else f"{rate.percent:g}"
+        return "0% (not on Rakuten)"
+    row["rakuten_percent"] = f"{rate.percent or 0:g}"
     row["notes"] = rate.note
     row["source"] = rate.source
-    return f"{rate.percent:g}%" if rate.percent is not None else rate.note
+    return f"{rate.percent or 0:g}%" + (f" ({rate.note})" if rate.note else "")
+
+
+def new_store_row(store: str, api_key: str) -> dict:
+    """Look up a store that isn't in the table yet and return its new row."""
+    row = {"store": store, "aliases": "", "rakuten_percent": "", "notes": "",
+           "last_checked": "", "source": ""}
+    update_row(row, api_key)
+    return row

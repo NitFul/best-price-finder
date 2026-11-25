@@ -168,3 +168,28 @@ def test_rakuten_no_cashback_and_flat_offer():
 
 def test_rakuten_ignores_other_stores_pages():
     assert pick_rate(["Target"], RAKUTEN["Nike"]["organic"]) is None
+
+
+def test_clean_store_name():
+    from pricefinder.rakuten import clean_store_name
+    assert clean_store_name("eBay - official_shoebacca") == "eBay"
+    assert clean_store_name("Pro:Direct Sport US") == "Pro:Direct Sport"
+    assert clean_store_name("Nike") == "Nike"
+
+
+def test_new_store_row_gets_zero_when_not_on_rakuten(monkeypatch):
+    from pricefinder import rakuten
+    monkeypatch.setattr(rakuten, "lookup_rakuten_rate", lambda *a, **k: None)
+    row = rakuten.new_store_row("Goalinn.com", "key")
+    assert row["store"] == "Goalinn.com"
+    assert row["rakuten_percent"] == "0"
+    assert row["notes"] == "Not on Rakuten"
+    assert row["last_checked"]
+
+
+def test_new_store_row_flat_offer_is_zero_percent(monkeypatch):
+    from pricefinder import rakuten
+    monkeypatch.setattr(rakuten, "lookup_rakuten_rate",
+                        lambda *a, **k: rakuten.RakutenRate(None, "$5 cash back offer, not a % rate", "u"))
+    row = rakuten.new_store_row("Amazon", "key")
+    assert row["rakuten_percent"] == "0" and "$5" in row["notes"]

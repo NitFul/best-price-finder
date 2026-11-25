@@ -13,7 +13,9 @@ from .models import Listing, Option
 CARRIERS = re.compile(
     r"\b(verizon|at&t|att|t-mobile|tmobile|sprint|visible|mint mobile|cricket|"
     r"boost mobile|metro by t-mobile|metropcs|xfinity|spectrum mobile|us cellular|"
-    r"straight talk|tracfone|total wireless|google fi)\b",
+    r"straight talk|tracfone|total wireless|google fi|h2o wireless|ultra mobile|"
+    r"red pocket|consumer cellular|lycamobile|tello|us mobile|simple mobile|"
+    r"page plus|net10|walmart family mobile|good2go|reach mobile)\b",
     re.I,
 )
 
