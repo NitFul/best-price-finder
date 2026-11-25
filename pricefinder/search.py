@@ -37,6 +37,9 @@ def parse_shipping(delivery: str | None) -> float | None:
     return parse_money(delivery)
 
 
+MONTHLY_PRICE = re.compile(r"/\s*mo\b|/\s*month|per\s+month|monthly", re.I)
+
+
 def parse_results(data: dict) -> list[Listing]:
     listings = []
     for item in data.get("shopping", []):
@@ -48,6 +51,7 @@ def parse_results(data: dict) -> list[Listing]:
                 title=item["title"],
                 store=item.get("source") or "Unknown store",
                 price=price,
+                monthly=bool(MONTHLY_PRICE.search(item.get("price") or "")),
                 link=item.get("link") or "",
                 shipping=parse_shipping(item.get("delivery")),
                 image_url=item.get("imageUrl"),

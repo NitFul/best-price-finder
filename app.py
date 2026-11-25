@@ -75,6 +75,14 @@ with st.sidebar:
         help="1.0 = every search word must appear in the listing title.",
     )
     best_per_store = st.checkbox("Show only the best offer per store", value=True)
+    hide_carrier = st.checkbox(
+        "Hide carrier-locked / plan deals", value=True,
+        help="Hides listings from or locked to Verizon, AT&T, T-Mobile, etc.",
+    )
+    hide_suspicious = st.checkbox(
+        "Hide suspiciously cheap prices", value=True,
+        help="Hides listings far below the typical price (often accessories or fake offers).",
+    )
 
 st.title("🏷️ Best Price Finder")
 tab_search, tab_rates = st.tabs(["Search", "Cashback rates"])
@@ -114,17 +122,23 @@ with tab_search:
             st.info("Demo mode: these listings and prices are made up.")
 
         table = CashbackTable(load_rows())
-        options = build_options(q, listings, table, min_match, best_per_store)
+        ranked = build_options(
+            q, listings, table, min_match, best_per_store, hide_carrier, hide_suspicious
+        )
+        options = ranked.options
+        hidden_note = ", ".join(f"{n} {reason}" for reason, n in ranked.hidden.items())
 
         if not options:
             st.warning(
-                f"Found {len(listings)} listings, but none matched closely enough. "
-                "Try lowering the match setting in the sidebar."
+                f"Found {len(listings)} listings, but none passed the filters"
+                + (f" (hidden: {hidden_note})" if hidden_note else "")
+                + ". Try changing the settings in the sidebar."
             )
         else:
             st.caption(
                 f"Results for **{q}**: {len(options)} options from {len(listings)} listings, "
                 "cheapest first after cashback."
+                + (f"  \nHidden: {hidden_note}." if hidden_note else "")
             )
 
         direct_links = st.session_state.setdefault("direct_links", {})

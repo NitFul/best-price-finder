@@ -8,6 +8,7 @@ from pricefinder.search import (
     demo_results,
     parse_money,
     parse_shipping,
+    parse_results,
     pick_product_link,
     store_matches_url,
 )
@@ -51,7 +52,7 @@ def test_ranking_applies_cashback_and_shipping():
         Listing(Q, "Amazon.com", 205.0, "y", shipping=0),
         Listing(Q, "Shop C", 199.0, "z", shipping=10),
     ]
-    opts = build_options(Q, listings, table)
+    opts = build_options(Q, listings, table).options
     assert [o.listing.store for o in opts] == ["Dick's Sporting Goods", "Amazon.com", "Shop C"]
     assert opts[0].effective_price == 200.2  # 220 - 9%
     assert opts[2].effective_price == 209.0  # 199 + 10 shipping
@@ -96,7 +97,42 @@ def test_daily_limiter():
 
 
 def test_demo_data_filters_wrong_items():
-    opts = build_options(Q, demo_results(), CashbackTable([]))
+    opts = build_options(Q, demo_results(), CashbackTable([])).options
     stores = {o.listing.store for o in opts}
     assert "eBay" not in stores      # used listing filtered out
     assert "Walmart" not in stores   # different model (League) filtered out
+
+
+# ---- Electronics: real "iphone 18 pro" results saved from Serper ----
+import json
+from pathlib import Path
+
+IPHONE = json.loads((Path(__file__).parent / "data" / "iphone_18_pro.json").read_text())
+
+
+def test_accessories_and_other_models_rejected():
+    q = "iphone 18 pro"
+    assert match_score(q, "Apple iPhone 18 Pro 256GB Silver") == 1.0
+    assert match_score(q, "Clear Case for iPhone 18 Pro with MagSafe") == 0.0
+    assert match_score(q, "Spigen Ultra Hybrid iPhone 18 Pro Cover") == 0.0
+    assert match_score(q, "Screen Protector for Apple iPhone 18 Pro") == 0.0
+    assert match_score(q, "Apple iPhone 18 Pro Max") == 0.0
+    assert match_score("iphone 18 pro max", "Apple iPhone 18 Pro Max") == 1.0
+
+
+def test_monthly_price_detected():
+    listings = parse_results(IPHONE)
+    verizon = [l for l in listings if l.store == "Verizon"]
+    assert verizon and all(l.monthly for l in verizon)
+
+
+def test_iphone_results_are_real_full_price_phones():
+    ranked = build_options("iphone 18 pro", parse_results(IPHONE), CashbackTable([]))
+    stores = {o.listing.store for o in ranked.options}
+    titles = " ".join(o.listing.title.lower() for o in ranked.options)
+    assert ranked.options, "expected some results"
+    assert "Verizon" not in stores                  # monthly plan
+    assert "elettrodomestici.shop" not in stores    # $12 bait price + carrier-locked
+    assert "max" not in titles                      # different model
+    assert all(o.listing.price > 500 for o in ranked.options)
+    assert ranked.hidden["monthly payment plans"] > 0
