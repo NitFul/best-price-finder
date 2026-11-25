@@ -6,7 +6,13 @@ from pricefinder.cashback import CashbackTable, load_rows, rakuten_check_url, sa
 from pricefinder.config import get_bool, get_int, get_setting
 from pricefinder.limits import DailyLimiter
 from pricefinder.ranking import build_options
-from pricefinder.search import SearchError, demo_results, search_shopping
+from pricefinder.search import (
+    SearchError,
+    demo_results,
+    find_product_link,
+    google_search_url,
+    search_shopping,
+)
 
 st.set_page_config(page_title="Best Price Finder", page_icon="🏷️", layout="centered")
 
@@ -31,6 +37,27 @@ def cached_search(query: str):
     if not daily_limiter().try_use():
         raise SearchError("The site reached today's search limit. Please try again tomorrow.")
     return search_shopping(query, API_KEY)
+
+
+@st.cache_data(ttl=86400, show_spinner=False, max_entries=1000)
+def cached_product_link(title: str, store: str):
+    # Product pages rarely move, so cache for a day.
+    if not daily_limiter().try_use():
+        raise SearchError("The site reached today's search limit. Please try again tomorrow.")
+    return find_product_link(title, store, API_KEY)
+
+
+def use_session_search() -> bool:
+    """Count one search for this visitor. Shows an error if over the limit."""
+    used = st.session_state.get("searches_used", 0)
+    if used >= SESSION_SEARCH_LIMIT:
+        st.error(
+            f"You've reached the limit of {SESSION_SEARCH_LIMIT} searches per visit. "
+            "Please come back later."
+        )
+        return False
+    st.session_state["searches_used"] = used + 1
+    return True
 
 
 # ---------- Sidebar ----------
@@ -62,28 +89,28 @@ with tab_search:
 
     if submitted and query.strip():
         q = " ".join(query.split())[:MAX_QUERY_LENGTH]
-        used = st.session_state.get("searches_used", 0)
         try:
             if demo:
                 listings = demo_results()
             elif not API_KEY:
                 st.error("Search isn't set up yet. Turn on demo mode to try the app.")
                 st.stop()
-            elif used >= SESSION_SEARCH_LIMIT:
-                st.error(
-                    f"You've reached the limit of {SESSION_SEARCH_LIMIT} searches per visit. "
-                    "Please come back later."
-                )
+            elif not use_session_search():
                 st.stop()
             else:
                 with st.spinner("Searching stores..."):
                     listings = cached_search(q)
-                st.session_state["searches_used"] = used + 1
         except SearchError as e:
             st.error(str(e))
             st.stop()
+        # Keep results so they stay on screen when a button below is clicked.
+        st.session_state["results"] = {"query": q, "listings": listings, "demo": demo}
+        st.session_state["direct_links"] = {}
 
-        if demo:
+    results = st.session_state.get("results")
+    if results:
+        q, listings = results["query"], results["listings"]
+        if results["demo"]:
             st.info("Demo mode: these listings and prices are made up.")
 
         table = CashbackTable(load_rows())
@@ -95,10 +122,15 @@ with tab_search:
                 "Try lowering the match setting in the sidebar."
             )
         else:
-            st.caption(f"{len(options)} options from {len(listings)} listings, cheapest first after cashback.")
+            st.caption(
+                f"Results for **{q}**: {len(options)} options from {len(listings)} listings, "
+                "cheapest first after cashback."
+            )
 
+        direct_links = st.session_state.setdefault("direct_links", {})
         for i, o in enumerate(options, 1):
             L = o.listing
+            link_key = f"{L.store}|{L.title}"
             with st.container(border=True):
                 left, right = st.columns([3, 1])
                 with left:
@@ -114,8 +146,38 @@ with tab_search:
                             f"No Rakuten rate saved for this store. "
                             f"[Check Rakuten]({rakuten_check_url(L.store)})"
                         )
-                    if L.link:
-                        st.link_button("Go to store", L.link)
+
+                    # Links to where the price came from.
+                    b1, b2 = st.columns(2)
+                    if results["demo"]:
+                        b1.link_button("Go to store", L.link)
+                    else:
+                        b1.link_button(f"Find on {L.store}", google_search_url(L.title, L.store))
+                        if L.link:
+                            b2.link_button("Price source (Google Shopping)", L.link)
+
+                    if not results["demo"]:
+                        if link_key in direct_links:
+                            found = direct_links[link_key]
+                            if found is None:
+                                st.caption("Couldn't find this product on the store's own site.")
+                            elif found.is_product_page:
+                                st.link_button(f"✅ Product page on {L.store}", found.url, type="primary")
+                            else:
+                                st.link_button(f"Store page (closest match) on {L.store}", found.url)
+                                st.caption("Couldn't find the exact product page, only a related page.")
+                        elif st.button(
+                            "Get direct product link", key=f"direct_{i}",
+                            help="Finds the product page on the store's site. Uses 1 search.",
+                        ):
+                            if use_session_search():
+                                try:
+                                    with st.spinner("Finding product page..."):
+                                        direct_links[link_key] = cached_product_link(L.title, L.store)
+                                except SearchError as e:
+                                    st.error(str(e))
+                                else:
+                                    st.rerun()
                 with right:
                     st.metric("Effective price", f"${o.effective_price:,.2f}")
                     ship = (

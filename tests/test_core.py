@@ -3,7 +3,14 @@ from pricefinder.limits import DailyLimiter
 from pricefinder.match import match_score
 from pricefinder.models import Listing
 from pricefinder.ranking import build_options
-from pricefinder.search import demo_results, parse_money, parse_shipping
+from pricefinder.search import (
+    clean_url,
+    demo_results,
+    parse_money,
+    parse_shipping,
+    pick_product_link,
+    store_matches_url,
+)
 
 Q = "adidas F50 Pro FG Soccer Cleats"
 
@@ -48,6 +55,37 @@ def test_ranking_applies_cashback_and_shipping():
     assert [o.listing.store for o in opts] == ["Dick's Sporting Goods", "Amazon.com", "Shop C"]
     assert opts[0].effective_price == 200.2  # 220 - 9%
     assert opts[2].effective_price == 209.0  # 199 + 10 shipping
+
+
+def test_store_matches_url():
+    assert store_matches_url("DICK'S Sporting Goods", "https://www.dickssportinggoods.com/p/x")
+    assert store_matches_url("Pro:Direct Sport US", "https://www.prodirectsport.us/collections/x")
+    assert store_matches_url("Amazon.com - Seller", "https://www.amazon.com/dp/B0")
+    assert not store_matches_url("DICK'S Sporting Goods", "https://www.instacart.com/products/1")
+
+
+def test_pick_product_link_prefers_exact_product_page():
+    organic = [
+        {"link": "https://www.dickssportinggoods.com/f/adidas-f50-soccer-cleats?srsltid=abc"},
+        {"link": "https://www.dickssportinggoods.com/p/adidas-f50-elite-fg-soccer-cleats-25x/25x"},
+        {"link": "https://www.dickssportinggoods.com/p/adidas-f50-pro-fg-soccer-cleats-25y/25y?srsltid=abc"},
+        {"link": "https://www.instacart.com/products/120430249"},
+    ]
+    found = pick_product_link(Q, "DICK'S Sporting Goods", organic)
+    assert found.is_product_page
+    assert found.url == "https://www.dickssportinggoods.com/p/adidas-f50-pro-fg-soccer-cleats-25y/25y"
+
+
+def test_clean_url_strips_tracking():
+    assert clean_url("https://www.ebay.com/itm/188?_trkparms=x&_trksid=y&itmmeta=z") == "https://www.ebay.com/itm/188"
+    assert clean_url("https://shop.com/p/1?color=red&utm_source=g") == "https://shop.com/p/1?color=red"
+
+
+def test_pick_product_link_category_only_and_none():
+    organic = [{"link": "https://www.prodirectsport.us/collections/adidas-f50-soccer-cleats"}]
+    found = pick_product_link(Q, "Pro:Direct Sport US", organic)
+    assert found and not found.is_product_page
+    assert pick_product_link(Q, "Some Shop", organic) is None
 
 
 def test_daily_limiter():
