@@ -1,0 +1,3632 @@
+{
+ "search_metadata": {
+  "id": "6b08c3cd36807084f3773a5c",
+  "status": "Success",
+  "json_endpoint": "https://serpapi.com/searches/uSoOEx01G0MSMnaDbIqBXESvGbuGOuyV80GTCvvU7Zg/6b08c3cd36807084f3773a5c.json",
+  "markdown_endpoint": "https://serpapi.com/searches/uSoOEx01G0MSMnaDbIqBXESvGbuGOuyV80GTCvvU7Zg/6b08c3cd36807084f3773a5c.md",
+  "created_at": "2026-11-26 23:42:05 UTC",
+  "processed_at": "2026-11-26 23:42:05 UTC",
+  "amazon_url": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats",
+  "raw_html_file": "https://serpapi.com/searches/uSoOEx01G0MSMnaDbIqBXESvGbuGOuyV80GTCvvU7Zg/6b08c3cd36807084f3773a5c.html",
+  "total_time_taken": 0.86
+ },
+ "search_parameters": {
+  "engine": "amazon",
+  "k": "adidas F50 Pro FG Soccer Cleats",
+  "amazon_domain": "amazon.com",
+  "device": "desktop"
+ },
+ "search_information": {
+  "total_results": 242,
+  "query_displayed": "adidas F50 Pro FG Soccer Cleats",
+  "store": "gateway",
+  "page": 1
+ },
+ "organic_results": [
+  {
+   "position": 1,
+   "asin": "B0F5SSP2SR",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0F5SSP2SR",
+      "title": "Black",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0F5SSP2SR/ref=cs_sr_dp_loc_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-1"
+     },
+     {
+      "position": 2,
+      "asin": "B0D31W2SDR",
+      "title": "White/Black/Solar Yellow",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0D31W2SDR/ref=cs_sr_dp_loc_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-1"
+     },
+     {
+      "position": 3,
+      "asin": "B0DK41FW6R",
+      "title": "Beam Orange/Lucid Blue/White",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0DK41FW6R/ref=cs_sr_dp_loc_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-1"
+     },
+     {
+      "position": 4,
+      "asin": "B0CN2T91XC",
+      "title": "Black/Iron Metallic/Gold Metallic",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0CN2T91XC/ref=cs_sr_dp_loc_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-1"
+     },
+     {
+      "position": 5,
+      "asin": "B0DJTSKN8L",
+      "title": "Black/Iron Metallic/Lucid Lemon",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0DJTSKN8L/ref=cs_sr_dp_loc_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-1"
+     },
+     {
+      "position": 6,
+      "asin": "B0D31XGCLZ",
+      "title": "Blue Fusion/Lucid Lemon/Lucid Pink",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0D31XGCLZ/ref=cs_sr_dp_loc_6?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-1"
+     }
+    ],
+    "more_variants": "+9",
+    "more_variants_link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0F5SSP2SR/ref=cs_sr_dp_loc_n?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-1"
+   },
+   "brand": "adidas",
+   "title": "Unisex-Adult F50 Pro Firm Ground",
+   "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0F5SSP2SR/ref=sr_1_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-1",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0F5SSP2SR/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0F5SSP2SR&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/51ZFDGr-WaL._AC_UL320_.jpg",
+   "rating": 4.5,
+   "reviews": 72,
+   "price": "$102.91",
+   "extracted_price": 102.91,
+   "old_price": "$124.90",
+   "extracted_old_price": 124.9,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$102.91",
+     "extracted_primary_price": 102.91,
+     "old_primary_price": "$124.90",
+     "extracted_old_primary_price": 124.9
+    }
+   ]
+  },
+  {
+   "position": 2,
+   "asin": "B0FXH6K4R1",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0FXH6K4R1",
+      "title": "Pink",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXH6K4R1/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-2"
+     },
+     {
+      "position": 2,
+      "asin": "B0FXHF6279",
+      "title": "Black/Black/Lucid Ray Blue",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHF6279/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-2"
+     },
+     {
+      "position": 3,
+      "asin": "B0FXHFLGH5",
+      "title": "Pulse Mint/Black/Solar Lemon",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHFLGH5/ref=is_sr_dp_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-2"
+     },
+     {
+      "position": 4,
+      "asin": "B0FXH88BDQ",
+      "title": "Solar Turbo/Black/Gold Metallic",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXH88BDQ/ref=is_sr_dp_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-2"
+     },
+     {
+      "position": 5,
+      "asin": "B0FXHH4G38",
+      "title": "White/Solar Purple/Solar Turbo",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHH4G38/ref=is_sr_dp_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-2"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Mens F50 Hyperfast Pro Firm Ground Sneakers Shoes - Pink",
+   "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXH6K4R1/ref=sr_1_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-2",
+   "link_clean": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXH6K4R1/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FXH6K4R1&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61J6gV-jrtL._AC_UL320_.jpg",
+   "rating": 4.8,
+   "reviews": 6,
+   "price": "$139.95",
+   "extracted_price": 139.95,
+   "old_price": "$160.00",
+   "extracted_old_price": 160.0,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$139.95",
+     "extracted_primary_price": 139.95,
+     "old_primary_price": "$160.00",
+     "extracted_old_primary_price": 160.0
+    }
+   ]
+  },
+  {
+   "position": 3,
+   "asin": "B0F5SGJ9T7",
+   "badges": [
+    "Overall Pick"
+   ],
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0F5SGJ9T7",
+      "title": "Yellow",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0F5SGJ9T7/ref=cs_sr_dp_loc_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-3"
+     },
+     {
+      "position": 2,
+      "asin": "B0D31W2SDR",
+      "title": "White/Black/Solar Yellow",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0D31W2SDR/ref=cs_sr_dp_loc_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-3"
+     },
+     {
+      "position": 3,
+      "asin": "B0DK41FW6R",
+      "title": "Beam Orange/Lucid Blue/White",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0DK41FW6R/ref=cs_sr_dp_loc_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-3"
+     },
+     {
+      "position": 4,
+      "asin": "B0F5SFNW4S",
+      "title": "Black",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0F5SFNW4S/ref=cs_sr_dp_loc_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-3"
+     },
+     {
+      "position": 5,
+      "asin": "B0CN2T91XC",
+      "title": "Black/Iron Metallic/Gold Metallic",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0CN2T91XC/ref=cs_sr_dp_loc_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-3"
+     },
+     {
+      "position": 6,
+      "asin": "B0DJTSKN8L",
+      "title": "Black/Iron Metallic/Lucid Lemon",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0DJTSKN8L/ref=cs_sr_dp_loc_6?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-3"
+     }
+    ],
+    "more_variants": "+9",
+    "more_variants_link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0F5SGJ9T7/ref=cs_sr_dp_loc_n?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-3"
+   },
+   "brand": "adidas",
+   "title": "Unisex-Adult F50 Pro Firm Ground",
+   "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0F5SGJ9T7/ref=sr_1_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-3",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0F5SGJ9T7/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0F5SGJ9T7&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/51Q42bDq2CL._AC_UL320_.jpg",
+   "rating": 4.5,
+   "reviews": 72,
+   "price": "$94.95",
+   "extracted_price": 94.95,
+   "old_price": "$124.95",
+   "extracted_old_price": 124.95,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$94.95",
+     "extracted_primary_price": 94.95,
+     "old_primary_price": "$124.95",
+     "extracted_old_primary_price": 124.95
+    }
+   ]
+  },
+  {
+   "position": 4,
+   "asin": "B0FXHFLGH5",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0FXHFLGH5",
+      "title": "Pulse Mint/Black/Solar Lemon",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHFLGH5/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-4"
+     },
+     {
+      "position": 2,
+      "asin": "B0FXHF3GRN",
+      "title": "Black/Black/Lucid Ray Blue",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHF3GRN/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-4"
+     },
+     {
+      "position": 3,
+      "asin": "B0FXH88BDQ",
+      "title": "Solar Turbo/Black/Gold Metallic",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXH88BDQ/ref=is_sr_dp_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-4"
+     },
+     {
+      "position": 4,
+      "asin": "B0FXHDPJQG",
+      "title": "White/Solar Purple/Solar Turbo",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHDPJQG/ref=is_sr_dp_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-4"
+     },
+     {
+      "position": 5,
+      "asin": "B0FXH6K4R1",
+      "title": "Pink",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXH6K4R1/ref=is_sr_dp_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-4"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Mens F50 Hyperfast Pro Firm Ground Sneakers Shoes - Pink",
+   "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHFLGH5/ref=sr_1_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-4",
+   "link_clean": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHFLGH5/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FXHFLGH5&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61sWB1Zb49L._AC_UL320_.jpg",
+   "rating": 4.8,
+   "reviews": 6,
+   "price": "$160.00",
+   "extracted_price": 160.0,
+   "delivery": [
+    "FREE delivery Mon, Dec 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$160.00",
+     "extracted_primary_price": 160.0
+    }
+   ]
+  },
+  {
+   "position": 5,
+   "asin": "B0FXHH4G38",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0FXHH4G38",
+      "title": "White/Solar Purple/Solar Turbo",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHH4G38/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-5"
+     },
+     {
+      "position": 2,
+      "asin": "B0FXHF6279",
+      "title": "Black/Black/Lucid Ray Blue",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHF6279/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-5"
+     },
+     {
+      "position": 3,
+      "asin": "B0FXHFLGH5",
+      "title": "Pulse Mint/Black/Solar Lemon",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHFLGH5/ref=is_sr_dp_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-5"
+     },
+     {
+      "position": 4,
+      "asin": "B0FXH88BDQ",
+      "title": "Solar Turbo/Black/Gold Metallic",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXH88BDQ/ref=is_sr_dp_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-5"
+     },
+     {
+      "position": 5,
+      "asin": "B0FXH6K4R1",
+      "title": "Pink",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXH6K4R1/ref=is_sr_dp_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-5"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Mens F50 Hyperfast Pro Firm Ground Sneakers Shoes - Pink",
+   "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHH4G38/ref=sr_1_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-5",
+   "link_clean": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHH4G38/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FXHH4G38&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61aSbv2ui8L._AC_UL320_.jpg",
+   "rating": 4.8,
+   "reviews": 6,
+   "price": "$119.95",
+   "extracted_price": 119.95,
+   "old_price": "$160.00",
+   "extracted_old_price": 160.0,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$119.95",
+     "extracted_primary_price": 119.95,
+     "old_primary_price": "$160.00",
+     "extracted_old_primary_price": 160.0
+    }
+   ]
+  },
+  {
+   "position": 6,
+   "asin": "B0FXH6BFYX",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0FXH6BFYX",
+      "title": "Solar Turbo/Black/Gold Metallic",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXH6BFYX/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-6"
+     },
+     {
+      "position": 2,
+      "asin": "B0FXHFNL8M",
+      "title": "Black/Black/Lucid Ray Blue",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHFNL8M/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-6"
+     },
+     {
+      "position": 3,
+      "asin": "B0FXHFLGH5",
+      "title": "Pulse Mint/Black/Solar Lemon",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHFLGH5/ref=is_sr_dp_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-6"
+     },
+     {
+      "position": 4,
+      "asin": "B0FXHDJ4SX",
+      "title": "White/Solar Purple/Solar Turbo",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHDJ4SX/ref=is_sr_dp_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-6"
+     },
+     {
+      "position": 5,
+      "asin": "B0FXH6K4R1",
+      "title": "Pink",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXH6K4R1/ref=is_sr_dp_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-6"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Mens F50 Hyperfast Pro Firm Ground Sneakers Shoes - Pink",
+   "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXH6BFYX/ref=sr_1_6?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-6",
+   "link_clean": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXH6BFYX/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FXH6BFYX&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61J6gV-jrtL._AC_UL320_.jpg",
+   "rating": 4.8,
+   "reviews": 6,
+   "price": "$134.80",
+   "extracted_price": 134.8,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$134.80",
+     "extracted_primary_price": 134.8
+    }
+   ]
+  },
+  {
+   "position": 7,
+   "asin": "B0FXHGMS8N",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0FXHGMS8N",
+      "title": "Black/Black/Lucid Ray Blue",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHGMS8N/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-7"
+     },
+     {
+      "position": 2,
+      "asin": "B0FXHFLGH5",
+      "title": "Pulse Mint/Black/Solar Lemon",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHFLGH5/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-7"
+     },
+     {
+      "position": 3,
+      "asin": "B0FXGZFCKQ",
+      "title": "Solar Turbo/Black/Gold Metallic",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXGZFCKQ/ref=is_sr_dp_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-7"
+     },
+     {
+      "position": 4,
+      "asin": "B0FXHCVV2Q",
+      "title": "White/Solar Purple/Solar Turbo",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHCVV2Q/ref=is_sr_dp_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-7"
+     },
+     {
+      "position": 5,
+      "asin": "B0FXH6K4R1",
+      "title": "Pink",
+      "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXH6K4R1/ref=is_sr_dp_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-7"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Mens F50 Hyperfast Pro Firm Ground Sneakers Shoes - Pink",
+   "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHGMS8N/ref=sr_1_7?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-7",
+   "link_clean": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXHGMS8N/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FXHGMS8N&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/51HwN4CXr-L._AC_UL320_.jpg",
+   "rating": 4.8,
+   "reviews": 6,
+   "price": "$109.65",
+   "extracted_price": 109.65,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$109.65",
+     "extracted_primary_price": 109.65
+    }
+   ]
+  },
+  {
+   "position": 8,
+   "asin": "B0F5SKXR7G",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0F5SKXR7G",
+      "title": "Almost Blue/Yellow",
+      "link": "https://www.amazon.com/adidas-Womens-Sparkfusion-Soccer-Sneaker/dp/B0F5SKXR7G/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-8"
+     },
+     {
+      "position": 2,
+      "asin": "B0F5SG4Y77",
+      "title": "White/Iron Metallic/Yellow",
+      "link": "https://www.amazon.com/adidas-Womens-Sparkfusion-Soccer-Sneaker/dp/B0F5SG4Y77/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-8"
+     },
+     {
+      "position": 3,
+      "asin": "B0DK43P4PR",
+      "title": "Bliss Orange/Lucid Blue/Beam Orange",
+      "link": "https://www.amazon.com/adidas-Womens-Sparkfusion-Soccer-Sneaker/dp/B0DK43P4PR/ref=is_sr_dp_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-8"
+     },
+     {
+      "position": 4,
+      "asin": "B0G1NC73WZ",
+      "title": "Pink",
+      "link": "https://www.amazon.com/adidas-Womens-Sparkfusion-Soccer-Sneaker/dp/B0G1NC73WZ/ref=is_sr_dp_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-8"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Women's F50 Sparkfusion Pro Mid Top Firm/Artificial Ground Cleat",
+   "link": "https://www.amazon.com/adidas-Womens-Sparkfusion-Soccer-Sneaker/dp/B0F5SKXR7G/ref=sr_1_8?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-8",
+   "link_clean": "https://www.amazon.com/adidas-Womens-Sparkfusion-Soccer-Sneaker/dp/B0F5SKXR7G/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0F5SKXR7G&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/711dcS46AXL._AC_UL320_.jpg",
+   "rating": 4.3,
+   "reviews": 11,
+   "price": "$106.61",
+   "extracted_price": 106.61,
+   "old_price": "$115.16",
+   "extracted_old_price": 115.16,
+   "delivery": [
+    "$9.95 delivery Tue, Dec 8"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$106.61",
+     "extracted_primary_price": 106.61,
+     "old_primary_price": "$115.16",
+     "extracted_old_primary_price": 115.16
+    }
+   ]
+  },
+  {
+   "position": 9,
+   "asin": "B0F5SNHK95",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0F5SNHK95",
+      "title": "Team Solar Yellow/Black/Lucid Red",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0F5SNHK95/ref=cs_sr_dp_loc_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-9"
+     },
+     {
+      "position": 2,
+      "asin": "B0D31W2SDR",
+      "title": "White/Black/Solar Yellow",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0D31W2SDR/ref=cs_sr_dp_loc_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-9"
+     },
+     {
+      "position": 3,
+      "asin": "B0DK41FW6R",
+      "title": "Beam Orange/Lucid Blue/White",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0DK41FW6R/ref=cs_sr_dp_loc_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-9"
+     },
+     {
+      "position": 4,
+      "asin": "B0F5RZLVNW",
+      "title": "Black",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0F5RZLVNW/ref=cs_sr_dp_loc_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-9"
+     },
+     {
+      "position": 5,
+      "asin": "B0CN2T91XC",
+      "title": "Black/Iron Metallic/Gold Metallic",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0CN2T91XC/ref=cs_sr_dp_loc_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-9"
+     },
+     {
+      "position": 6,
+      "asin": "B0DJTSKN8L",
+      "title": "Black/Iron Metallic/Lucid Lemon",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0DJTSKN8L/ref=cs_sr_dp_loc_6?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-9"
+     }
+    ],
+    "more_variants": "+9",
+    "more_variants_link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0F5SNHK95/ref=cs_sr_dp_loc_n?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-9"
+   },
+   "brand": "adidas",
+   "title": "Unisex-Adult F50 Pro Firm Ground",
+   "link": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0F5SNHK95/ref=sr_1_9?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-9",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Ground-Football-Sneaker/dp/B0F5SNHK95/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0F5SNHK95&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61z7VAgkRLL._AC_UL320_.jpg",
+   "rating": 4.5,
+   "reviews": 72,
+   "price": "$80.44",
+   "extracted_price": 80.44,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$80.44",
+     "extracted_primary_price": 80.44
+    }
+   ]
+  },
+  {
+   "position": 10,
+   "asin": "B0D31X571F",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0D31X571F",
+      "title": "White/Black/Solar Yellow",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Sneaker-Yellow/dp/B0D31X571F/ref=cs_sr_dp_loc_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-10"
+     },
+     {
+      "position": 2,
+      "asin": "B0DK43L8GM",
+      "title": "Beam Orange/Lucid Blue/White",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Sneaker-Yellow/dp/B0DK43L8GM/ref=cs_sr_dp_loc_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-10"
+     },
+     {
+      "position": 3,
+      "asin": "B0F5RZLVNW",
+      "title": "Black",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Sneaker-Yellow/dp/B0F5RZLVNW/ref=cs_sr_dp_loc_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-10"
+     },
+     {
+      "position": 4,
+      "asin": "B0CN2T32Y3",
+      "title": "Black/Iron Metallic/Gold Metallic",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Sneaker-Yellow/dp/B0CN2T32Y3/ref=cs_sr_dp_loc_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-10"
+     },
+     {
+      "position": 5,
+      "asin": "B0DJVD7C5B",
+      "title": "Black/Iron Metallic/Lucid Lemon",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Sneaker-Yellow/dp/B0DJVD7C5B/ref=cs_sr_dp_loc_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-10"
+     },
+     {
+      "position": 6,
+      "asin": "B0D31VSVYQ",
+      "title": "Blue Fusion/Lucid Lemon/Lucid Pink",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Sneaker-Yellow/dp/B0D31VSVYQ/ref=cs_sr_dp_loc_6?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-10"
+     }
+    ],
+    "more_variants": "+9",
+    "more_variants_link": "https://www.amazon.com/adidas-Unisex-Ground-Sneaker-Yellow/dp/B0D31X571F/ref=cs_sr_dp_loc_n?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-10"
+   },
+   "brand": "adidas",
+   "title": "Unisex-Adult F50 Pro Firm Ground",
+   "link": "https://www.amazon.com/adidas-Unisex-Ground-Sneaker-Yellow/dp/B0D31X571F/ref=sr_1_10?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-10",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Ground-Sneaker-Yellow/dp/B0D31X571F/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0D31X571F&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61mgqBT-s0L._AC_UL320_.jpg",
+   "rating": 4.5,
+   "reviews": 72,
+   "price": "$109.99",
+   "extracted_price": 109.99,
+   "delivery": [
+    "Join Prime to get FREE delivery Sat, Nov 28",
+    "Or Non-members get FREE delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$109.99",
+     "extracted_primary_price": 109.99
+    }
+   ]
+  },
+  {
+   "position": 11,
+   "asin": "B0F5SCS4TZ",
+   "variants": {
+    "more_variants": "+14 other colors/patterns",
+    "more_variants_link": "https://www.amazon.com/adidas-Unisex-BlueTeam-Yellow-Aquamarine/dp/B0F5SCS4TZ/ref=cs_sr_dp_loc?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-11"
+   },
+   "brand": "adidas",
+   "title": "Unisex-Adult F50 Pro Firm Ground",
+   "link": "https://www.amazon.com/adidas-Unisex-BlueTeam-Yellow-Aquamarine/dp/B0F5SCS4TZ/ref=sr_1_11?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-11",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-BlueTeam-Yellow-Aquamarine/dp/B0F5SCS4TZ/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0F5SCS4TZ&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/41lK6E2U5EL._AC_UL320_.jpg",
+   "rating": 4.5,
+   "reviews": 72,
+   "price": "$74.95",
+   "extracted_price": 74.95,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$74.95",
+     "extracted_primary_price": 74.95
+    }
+   ]
+  },
+  {
+   "position": 12,
+   "asin": "B0FQYWWMK5",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0FQYWWMK5",
+      "title": "Pink",
+      "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-League-Metallic/dp/B0FQYWWMK5/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-12"
+     },
+     {
+      "position": 2,
+      "asin": "B0FWX65XVY",
+      "title": "Black/Black/Lucid Ray Blue",
+      "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-League-Metallic/dp/B0FWX65XVY/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-12"
+     },
+     {
+      "position": 3,
+      "asin": "B0FWX3MP9K",
+      "title": "White/Solar Purple/Solar Turbo",
+      "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-League-Metallic/dp/B0FWX3MP9K/ref=is_sr_dp_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-12"
+     },
+     {
+      "position": 4,
+      "asin": "B0FWWNN9LR",
+      "title": "Black/Lucid Ray Blue",
+      "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-League-Metallic/dp/B0FWWNN9LR/ref=is_sr_dp_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-12"
+     },
+     {
+      "position": 5,
+      "asin": "B0FWWQ118X",
+      "title": "White/Solar Purple/Turbo",
+      "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-League-Metallic/dp/B0FWWQ118X/ref=is_sr_dp_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-12"
+     },
+     {
+      "position": 6,
+      "asin": "B0FWWYS3FD",
+      "title": "Pulse Mint/Night Navy/Solar Lemon",
+      "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-League-Metallic/dp/B0FWWYS3FD/ref=is_sr_dp_6?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-12"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Mens F50 Hyperfast League Firm Ground Sneakers Shoes - Pink",
+   "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-League-Metallic/dp/B0FQYWWMK5/ref=sr_1_12?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-12",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Hyperfast-League-Metallic/dp/B0FQYWWMK5/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FQYWWMK5&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61R7swUtoxL._AC_UL320_.jpg",
+   "rating": 4.6,
+   "reviews": 43,
+   "price": "$61.81",
+   "extracted_price": 61.81,
+   "old_price": "$90.00",
+   "extracted_old_price": 90.0,
+   "delivery": [
+    "FREE delivery Wed, Dec 2"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$61.81",
+     "extracted_primary_price": 61.81,
+     "old_primary_price": "$90.00",
+     "extracted_old_primary_price": 90.0
+    }
+   ]
+  },
+  {
+   "position": 13,
+   "asin": "B0FXH6CCN2",
+   "brand": "adidas",
+   "title": "Mens F50 Hyperfast Pro Firm Ground Sneakers Shoes - Pink - Size 10- M",
+   "link": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXH6CCN2/ref=sr_1_13?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-13",
+   "link_clean": "https://www.amazon.com/adidas-Hyperfast-Ground-Sneakers-Shoes/dp/B0FXH6CCN2/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FXH6CCN2&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61J6gV-jrtL._AC_UL320_.jpg",
+   "price": "$134.80",
+   "extracted_price": 134.8,
+   "old_price": "$160.00",
+   "extracted_old_price": 160.0,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$134.80",
+     "extracted_primary_price": 134.8,
+     "old_primary_price": "$160.00",
+     "extracted_old_primary_price": 160.0
+    }
+   ]
+  },
+  {
+   "position": 14,
+   "asin": "B0DK42ZZLV",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0DK42ZZLV",
+      "title": "Team Royal Blue/Solar Yellow/Semi Blue Burst",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Sneaker-Yellow/dp/B0DK42ZZLV/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-14"
+     },
+     {
+      "position": 2,
+      "asin": "B0DJTTFNZQ",
+      "title": "White/Lucid Red/Silver Metallic",
+      "link": "https://www.amazon.com/adidas-Unisex-Ground-Sneaker-Yellow/dp/B0DJTTFNZQ/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-14"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Unisex Adult F50 Messi Pro Firm Ground Soccer Cleats",
+   "link": "https://www.amazon.com/adidas-Unisex-Ground-Sneaker-Yellow/dp/B0DK42ZZLV/ref=sr_1_14?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-14",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Ground-Sneaker-Yellow/dp/B0DK42ZZLV/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0DK42ZZLV&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/71hhnODbkmL._AC_UL320_.jpg",
+   "rating": 4.9,
+   "reviews": 15,
+   "price": "$79.95",
+   "extracted_price": 79.95,
+   "old_price": "$104.95",
+   "extracted_old_price": 104.95,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$79.95",
+     "extracted_primary_price": 79.95,
+     "old_primary_price": "$104.95",
+     "extracted_old_primary_price": 104.95
+    }
+   ]
+  },
+  {
+   "position": 15,
+   "asin": "B0FWV91V2K",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0FWV91V2K",
+      "title": "White/Solar Purple/Solar Turbo",
+      "link": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-League-WhiteSolarPurpleSolarTurbo/dp/B0FWV91V2K/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-15"
+     },
+     {
+      "position": 2,
+      "asin": "B0FWW4KW1R",
+      "title": "Pulse Mint/Night Navy/Solar Lemon",
+      "link": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-League-WhiteSolarPurpleSolarTurbo/dp/B0FWW4KW1R/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-15"
+     },
+     {
+      "position": 3,
+      "asin": "B0FWWPZC1G",
+      "title": "Black/Black/Lucid Ray Blue",
+      "link": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-League-WhiteSolarPurpleSolarTurbo/dp/B0FWWPZC1G/ref=is_sr_dp_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-15"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Mens F50 Hyperfast League Mid Firm Ground Sneakers Shoes - White",
+   "link": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-League-WhiteSolarPurpleSolarTurbo/dp/B0FWV91V2K/ref=sr_1_15?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-15",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-League-WhiteSolarPurpleSolarTurbo/dp/B0FWV91V2K/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FWV91V2K&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61j5fXgbJJL._AC_UL320_.jpg",
+   "rating": 5.0,
+   "reviews": 9,
+   "price": "$89.95",
+   "extracted_price": 89.95,
+   "delivery": [
+    "Join Prime to get FREE delivery Sat, Nov 28",
+    "Or Non-members get FREE delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$89.95",
+     "extracted_primary_price": 89.95
+    }
+   ]
+  },
+  {
+   "position": 16,
+   "asin": "B0F5SY8X8G",
+   "brand": "adidas",
+   "title": "Mens F50 Messi Pro Firm Ground Soccer - Orange",
+   "link": "https://www.amazon.com/adidas-Unisex-Football-Sneaker-Tangerine/dp/B0F5SY8X8G/ref=sr_1_16?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-16",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Football-Sneaker-Tangerine/dp/B0F5SY8X8G/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0F5SY8X8G&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/51Kdj4KwvhL._AC_UL320_.jpg",
+   "price": "$89.95",
+   "extracted_price": 89.95,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$89.95",
+     "extracted_primary_price": 89.95
+    }
+   ]
+  },
+  {
+   "position": 17,
+   "asin": "B0FXH27W1B",
+   "brand": "adidas",
+   "title": "Womens F50 Sparkfusion Pro Mid Cut Firm Ground Artificial Ground Sneakers Shoes - Pink",
+   "link": "https://www.amazon.com/adidas-Womens-Soccer-Sparkfusion-Cleats/dp/B0FXH27W1B/ref=sr_1_17?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-17",
+   "link_clean": "https://www.amazon.com/adidas-Womens-Soccer-Sparkfusion-Cleats/dp/B0FXH27W1B/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FXH27W1B&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/51z4vOrnt5L._AC_UL320_.jpg",
+   "rating": 5.0,
+   "reviews": 1,
+   "price": "$174.65",
+   "extracted_price": 174.65,
+   "delivery": [
+    "FREE delivery Wed, Dec 9",
+    "Or fastest delivery Dec 7 - 8"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$174.65",
+     "extracted_primary_price": 174.65
+    }
+   ]
+  },
+  {
+   "position": 18,
+   "asin": "B0F5SJS2QZ",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0F5SJS2QZ",
+      "title": "White/Iron Metallic/Yellow",
+      "link": "https://www.amazon.com/adidas-Womens-Sparkfusion-Sneaker-Metallic/dp/B0F5SJS2QZ/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-18"
+     },
+     {
+      "position": 2,
+      "asin": "B0DK43VDPW",
+      "title": "Bliss Orange/Lucid Blue/Beam Orange",
+      "link": "https://www.amazon.com/adidas-Womens-Sparkfusion-Sneaker-Metallic/dp/B0DK43VDPW/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-18"
+     },
+     {
+      "position": 3,
+      "asin": "B0F5SFNW5C",
+      "title": "Almost Blue/Yellow",
+      "link": "https://www.amazon.com/adidas-Womens-Sparkfusion-Sneaker-Metallic/dp/B0F5SFNW5C/ref=is_sr_dp_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-18"
+     },
+     {
+      "position": 4,
+      "asin": "B0G1NC73WZ",
+      "title": "Pink",
+      "link": "https://www.amazon.com/adidas-Womens-Sparkfusion-Sneaker-Metallic/dp/B0G1NC73WZ/ref=is_sr_dp_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-18"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Women's F50 Sparkfusion Pro Mid Top Firm/Artificial Ground Cleat",
+   "link": "https://www.amazon.com/adidas-Womens-Sparkfusion-Sneaker-Metallic/dp/B0F5SJS2QZ/ref=sr_1_18?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-18",
+   "link_clean": "https://www.amazon.com/adidas-Womens-Sparkfusion-Sneaker-Metallic/dp/B0F5SJS2QZ/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0F5SJS2QZ&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61o5bnEAFeL._AC_UL320_.jpg",
+   "rating": 4.3,
+   "reviews": 11,
+   "price": "$94.00",
+   "extracted_price": 94.0,
+   "delivery": [
+    "Join Prime to get FREE delivery Sat, Nov 28",
+    "Or Non-members get FREE delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$94.00",
+     "extracted_primary_price": 94.0
+    }
+   ]
+  },
+  {
+   "position": 19,
+   "asin": "B0FXGYJ1SN",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0FXGYJ1SN",
+      "title": "Blue",
+      "link": "https://www.amazon.com/adidas-Messi-Ground-Sneakers-Shoes/dp/B0FXGYJ1SN/ref=cs_sr_dp_loc_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-19"
+     },
+     {
+      "position": 2,
+      "asin": "B0FXGZCWKW",
+      "title": "Ivory/Semi Blue Burst/Icey Blue",
+      "link": "https://www.amazon.com/adidas-Messi-Ground-Sneakers-Shoes/dp/B0FXGZCWKW/ref=cs_sr_dp_loc_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-19"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Mens F50 Messi Pro Firm Ground Sneakers Shoes - Blue, White",
+   "link": "https://www.amazon.com/adidas-Messi-Ground-Sneakers-Shoes/dp/B0FXGYJ1SN/ref=sr_1_19?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-19",
+   "link_clean": "https://www.amazon.com/adidas-Messi-Ground-Sneakers-Shoes/dp/B0FXGYJ1SN/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FXGYJ1SN&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61BIC+fb68L._AC_UL320_.jpg",
+   "rating": 5.0,
+   "reviews": 1,
+   "price": "$139.95",
+   "extracted_price": 139.95,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$139.95",
+     "extracted_primary_price": 139.95
+    }
+   ]
+  },
+  {
+   "position": 20,
+   "asin": "B0D2V5DY33",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0D2V5DY33",
+      "title": "White",
+      "link": "https://www.amazon.com/adidas-Womens-Ground-Soccer-Sneaker/dp/B0D2V5DY33/ref=cs_sr_dp_loc_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-20"
+     },
+     {
+      "position": 2,
+      "asin": "B0D2V5QT5L",
+      "title": "Blue Fusion/Lucid Lemon/Lucid Pink",
+      "link": "https://www.amazon.com/adidas-Womens-Ground-Soccer-Sneaker/dp/B0D2V5QT5L/ref=cs_sr_dp_loc_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-20"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Women's F50 Pro Firm Ground Mid Top Soccer Cleats",
+   "link": "https://www.amazon.com/adidas-Womens-Ground-Soccer-Sneaker/dp/B0D2V5DY33/ref=sr_1_20?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-20",
+   "link_clean": "https://www.amazon.com/adidas-Womens-Ground-Soccer-Sneaker/dp/B0D2V5DY33/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0D2V5DY33&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/71w1mBCN0eL._AC_UL320_.jpg",
+   "rating": 4.3,
+   "reviews": 13,
+   "price": "$79.95",
+   "extracted_price": 79.95,
+   "old_price": "$99.95",
+   "extracted_old_price": 99.95,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$79.95",
+     "extracted_primary_price": 79.95,
+     "old_primary_price": "$99.95",
+     "extracted_old_primary_price": 99.95
+    }
+   ]
+  },
+  {
+   "position": 21,
+   "asin": "B0DK43QZ91",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0DK43QZ91",
+      "title": "Bliss Orange/Lucid Blue/Beam Orange",
+      "link": "https://www.amazon.com/adidas-Womens-Fusion-Artificial-Sneaker/dp/B0DK43QZ91/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-21"
+     },
+     {
+      "position": 2,
+      "asin": "B0F5S3TRSX",
+      "title": "White/Iron Metallic/Yellow",
+      "link": "https://www.amazon.com/adidas-Womens-Fusion-Artificial-Sneaker/dp/B0F5S3TRSX/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-21"
+     },
+     {
+      "position": 3,
+      "asin": "B0F5SJY4SX",
+      "title": "Almost Blue/Yellow",
+      "link": "https://www.amazon.com/adidas-Womens-Fusion-Artificial-Sneaker/dp/B0F5SJY4SX/ref=is_sr_dp_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-21"
+     },
+     {
+      "position": 4,
+      "asin": "B0G1NC73WZ",
+      "title": "Pink",
+      "link": "https://www.amazon.com/adidas-Womens-Fusion-Artificial-Sneaker/dp/B0G1NC73WZ/ref=is_sr_dp_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-21"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Women's F50 Sparkfusion Pro Mid Top Firm/Artificial Ground Cleat",
+   "link": "https://www.amazon.com/adidas-Womens-Fusion-Artificial-Sneaker/dp/B0DK43QZ91/ref=sr_1_21?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-21",
+   "link_clean": "https://www.amazon.com/adidas-Womens-Fusion-Artificial-Sneaker/dp/B0DK43QZ91/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0DK43QZ91&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61db3I-iRGL._AC_UL320_.jpg",
+   "rating": 4.3,
+   "reviews": 11,
+   "price": "$89.95",
+   "extracted_price": 89.95,
+   "old_price": "$150.00",
+   "extracted_old_price": 150.0,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$89.95",
+     "extracted_primary_price": 89.95,
+     "old_primary_price": "$150.00",
+     "extracted_old_primary_price": 150.0
+    }
+   ]
+  },
+  {
+   "position": 22,
+   "asin": "B0F5SZSYW4",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0F5SZSYW4",
+      "title": "White",
+      "link": "https://www.amazon.com/adidas-Womens-Sparkfusion-Artifici-Sneaker/dp/B0F5SZSYW4/ref=cs_sr_dp_loc_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-22"
+     },
+     {
+      "position": 2,
+      "asin": "B0F5T3B58R",
+      "title": "White/Team Royal Blue/Lucid Red",
+      "link": "https://www.amazon.com/adidas-Womens-Sparkfusion-Artifici-Sneaker/dp/B0F5T3B58R/ref=cs_sr_dp_loc_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-22"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Womens F50 Sparkfusion Pro Mid Cut Firm Ground Artificial Ground Soccer - White",
+   "link": "https://www.amazon.com/adidas-Womens-Sparkfusion-Artifici-Sneaker/dp/B0F5SZSYW4/ref=sr_1_22?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-22",
+   "link_clean": "https://www.amazon.com/adidas-Womens-Sparkfusion-Artifici-Sneaker/dp/B0F5SZSYW4/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0F5SZSYW4&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/51+9O4WHveL._AC_UL320_.jpg",
+   "price": "$79.95",
+   "extracted_price": 79.95,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$79.95",
+     "extracted_primary_price": 79.95
+    }
+   ]
+  },
+  {
+   "position": 23,
+   "asin": "B0F1XGTWDV",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0F1XGTWDV",
+      "title": "White/Iron Metallic/Yellow",
+      "link": "https://www.amazon.com/adidas-Sparkfusion-Artificial-Sneaker-Metallic/dp/B0F1XGTWDV/ref=cs_sr_dp_loc_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-23"
+     },
+     {
+      "position": 2,
+      "asin": "B0FWVTK9NN",
+      "title": "Solar Turbo/White/Distilled Pink",
+      "link": "https://www.amazon.com/adidas-Sparkfusion-Artificial-Sneaker-Metallic/dp/B0FWVTK9NN/ref=cs_sr_dp_loc_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-23"
+     },
+     {
+      "position": 3,
+      "asin": "B0FWWYXJLG",
+      "title": "Clear Mint/White/Solar Purple",
+      "link": "https://www.amazon.com/adidas-Sparkfusion-Artificial-Sneaker-Metallic/dp/B0FWWYXJLG/ref=cs_sr_dp_loc_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-23"
+     },
+     {
+      "position": 4,
+      "asin": "B0DHW3559Y",
+      "title": "Violet Tone/Lucid Lemon/Purple Rush",
+      "link": "https://www.amazon.com/adidas-Sparkfusion-Artificial-Sneaker-Metallic/dp/B0DHW3559Y/ref=cs_sr_dp_loc_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-23"
+     },
+     {
+      "position": 5,
+      "asin": "B0DK43FNB4",
+      "title": "Bliss Orange/Lucid Blue/Beam Orange",
+      "link": "https://www.amazon.com/adidas-Sparkfusion-Artificial-Sneaker-Metallic/dp/B0DK43FNB4/ref=cs_sr_dp_loc_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-23"
+     },
+     {
+      "position": 6,
+      "asin": "B0F1XJJQFR",
+      "title": "Almost Blue/Dusky Petrol/Yellow",
+      "link": "https://www.amazon.com/adidas-Sparkfusion-Artificial-Sneaker-Metallic/dp/B0F1XJJQFR/ref=cs_sr_dp_loc_6?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-23"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Women's F50 Sparkfusion League Firm Ground Soccer Shoes",
+   "link": "https://www.amazon.com/adidas-Sparkfusion-Artificial-Sneaker-Metallic/dp/B0F1XGTWDV/ref=sr_1_23?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-23",
+   "link_clean": "https://www.amazon.com/adidas-Sparkfusion-Artificial-Sneaker-Metallic/dp/B0F1XGTWDV/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0F1XGTWDV&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61BXIjojPuL._AC_UL320_.jpg",
+   "rating": 4.5,
+   "reviews": 240,
+   "price": "$64.95",
+   "extracted_price": 64.95,
+   "old_price": "$90.00",
+   "extracted_old_price": 90.0,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$64.95",
+     "extracted_primary_price": 64.95,
+     "old_primary_price": "$90.00",
+     "extracted_old_primary_price": 90.0
+    }
+   ]
+  },
+  {
+   "position": 24,
+   "asin": "B0FWVXFT81",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0FWVXFT81",
+      "title": "Black/Lucid Ray Blue",
+      "link": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-Ground-BlackBlackLucidRayBlue/dp/B0FWVXFT81/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-24"
+     },
+     {
+      "position": 2,
+      "asin": "B0FWW2M6WF",
+      "title": "White/Solar Purple/Solar Turbo",
+      "link": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-Ground-BlackBlackLucidRayBlue/dp/B0FWW2M6WF/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-24"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Mens F50 Hyperfast Club Mid Firm Ground Multi Ground Sneakers Shoes - White",
+   "link": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-Ground-BlackBlackLucidRayBlue/dp/B0FWVXFT81/ref=sr_1_24?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-24",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-Ground-BlackBlackLucidRayBlue/dp/B0FWVXFT81/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FWVXFT81&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61Zld23sPtL._AC_UL320_.jpg",
+   "rating": 4.8,
+   "reviews": 18,
+   "price": "$65.00",
+   "extracted_price": 65.0,
+   "delivery": [
+    "FREE delivery Dec 6 - 10",
+    "Or fastest delivery Dec 4 - 8"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$65.00",
+     "extracted_primary_price": 65.0
+    }
+   ]
+  },
+  {
+   "position": 25,
+   "asin": "B0D31SL7BD",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0D31SL7BD",
+      "title": "White/Black/Solar Yellow",
+      "link": "https://www.amazon.com/adidas-Unisex-Sneaker-White-Yellow/dp/B0D31SL7BD/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-25"
+     },
+     {
+      "position": 2,
+      "asin": "B0DJVD4JJK",
+      "title": "Purple Rush/White/Lucid Lemon",
+      "link": "https://www.amazon.com/adidas-Unisex-Sneaker-White-Yellow/dp/B0DJVD4JJK/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-25"
+     },
+     {
+      "position": 3,
+      "asin": "B0DK41KZ8P",
+      "title": "Beam Orange/Lucid Blue/White",
+      "link": "https://www.amazon.com/adidas-Unisex-Sneaker-White-Yellow/dp/B0DK41KZ8P/ref=is_sr_dp_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-25"
+     },
+     {
+      "position": 4,
+      "asin": "B0D31RGJTM",
+      "title": "Blue Fusion/Lucid Lemon/Lucid Pink",
+      "link": "https://www.amazon.com/adidas-Unisex-Sneaker-White-Yellow/dp/B0D31RGJTM/ref=is_sr_dp_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-25"
+     },
+     {
+      "position": 5,
+      "asin": "B0F5SL3WR7",
+      "title": "Team Solar Yellow/Black/Lucid Red",
+      "link": "https://www.amazon.com/adidas-Unisex-Sneaker-White-Yellow/dp/B0F5SL3WR7/ref=is_sr_dp_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-25"
+     },
+     {
+      "position": 6,
+      "asin": "B0F5SQG741",
+      "title": "Blue",
+      "link": "https://www.amazon.com/adidas-Unisex-Sneaker-White-Yellow/dp/B0F5SQG741/ref=is_sr_dp_6?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-25"
+     }
+    ],
+    "more_variants": "+2",
+    "more_variants_link": "https://www.amazon.com/adidas-Unisex-Sneaker-White-Yellow/dp/B0D31SL7BD/ref=is_sr_dp_n?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-25"
+   },
+   "brand": "adidas",
+   "title": "Unisex Adult F50 Pro Turf Shoes",
+   "link": "https://www.amazon.com/adidas-Unisex-Sneaker-White-Yellow/dp/B0D31SL7BD/ref=sr_1_25?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-25",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Sneaker-White-Yellow/dp/B0D31SL7BD/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0D31SL7BD&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/71U6SmOpAjL._AC_UL320_.jpg",
+   "rating": 4.6,
+   "reviews": 21,
+   "price": "$94.95",
+   "extracted_price": 94.95,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$94.95",
+     "extracted_primary_price": 94.95
+    }
+   ]
+  },
+  {
+   "position": 26,
+   "asin": "B0FQYRMBP3",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0FQYRMBP3",
+      "title": "Pink",
+      "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-Football-Metallic/dp/B0FQYRMBP3/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-26"
+     },
+     {
+      "position": 2,
+      "asin": "B0FWWWG27H",
+      "title": "White/Solar Purple/Solar Turbo",
+      "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-Football-Metallic/dp/B0FWWWG27H/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-26"
+     },
+     {
+      "position": 3,
+      "asin": "B0FWXJ56C6",
+      "title": "Black/Lucid Ray Blue",
+      "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-Football-Metallic/dp/B0FWXJ56C6/ref=is_sr_dp_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-26"
+     },
+     {
+      "position": 4,
+      "asin": "B0FWXH2X9V",
+      "title": "Black/Black/Lucid Ray Blue",
+      "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-Football-Metallic/dp/B0FWXH2X9V/ref=is_sr_dp_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-26"
+     },
+     {
+      "position": 5,
+      "asin": "B0FWWLRB3V",
+      "title": "White/Solar Purple/Turbo",
+      "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-Football-Metallic/dp/B0FWWLRB3V/ref=is_sr_dp_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-26"
+     },
+     {
+      "position": 6,
+      "asin": "B0FWWN35XN",
+      "title": "Pulse Mint/Night Navy/Solar Lemon",
+      "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-Football-Metallic/dp/B0FWWN35XN/ref=is_sr_dp_6?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-26"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "F50 Hyperfast League Turf Soccer",
+   "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-Football-Metallic/dp/B0FQYRMBP3/ref=sr_1_26?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-26",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Hyperfast-Football-Metallic/dp/B0FQYRMBP3/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FQYRMBP3&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61MNPXXRxoL._AC_UL320_.jpg",
+   "rating": 4.9,
+   "reviews": 15,
+   "price": "$80.00",
+   "extracted_price": 80.0,
+   "old_price": "$90.00",
+   "extracted_old_price": 90.0,
+   "delivery": [
+    "FREE delivery Thu, Dec 3",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$80.00",
+     "extracted_primary_price": 80.0,
+     "old_primary_price": "$90.00",
+     "extracted_old_primary_price": 90.0
+    }
+   ]
+  },
+  {
+   "position": 27,
+   "asin": "B0FWX8QKD2",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0FWX8QKD2",
+      "title": "White",
+      "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-Evolution-Football/dp/B0FWX8QKD2/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-27"
+     },
+     {
+      "position": 2,
+      "asin": "B0FXHF1XDM",
+      "title": "Yellow",
+      "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-Evolution-Football/dp/B0FXHF1XDM/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-27"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Mens F50 Hyperfast Evo Firm Ground Sneakers Shoes - Yellow",
+   "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-Evolution-Football/dp/B0FWX8QKD2/ref=sr_1_27?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-27",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Hyperfast-Evolution-Football/dp/B0FWX8QKD2/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FWX8QKD2&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/516aDhIPW7L._AC_UL320_.jpg",
+   "price": "$214.95",
+   "extracted_price": 214.95,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$214.95",
+     "extracted_primary_price": 214.95
+    }
+   ]
+  },
+  {
+   "position": 28,
+   "asin": "B0DHTXQMFR",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0DHTXQMFR",
+      "title": "Purple Rush/White/Lucid Lemon",
+      "link": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0DHTXQMFR/ref=cs_sr_dp_loc_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-28"
+     },
+     {
+      "position": 2,
+      "asin": "B0DHTYKCMC",
+      "title": "Black/Iron Metallic/Lucid Lemon",
+      "link": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0DHTYKCMC/ref=cs_sr_dp_loc_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-28"
+     },
+     {
+      "position": 3,
+      "asin": "B0DK42S1YW",
+      "title": "Beam Orange/Lucid Blue/White",
+      "link": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0DK42S1YW/ref=cs_sr_dp_loc_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-28"
+     },
+     {
+      "position": 4,
+      "asin": "B0DJV1TS38",
+      "title": "White/Black/Gold Metallic",
+      "link": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0DJV1TS38/ref=cs_sr_dp_loc_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-28"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Unisex Adult F50 League Firm Ground Soccer Cleats",
+   "link": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0DHTXQMFR/ref=sr_1_28?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-28",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0DHTXQMFR/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0DHTXQMFR&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/71z8uSE4EFL._AC_UL320_.jpg",
+   "rating": 4.6,
+   "reviews": 341,
+   "price": "$89.99",
+   "extracted_price": 89.99,
+   "delivery": [
+    "FREE delivery Mon, Dec 7"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$89.99",
+     "extracted_primary_price": 89.99
+    }
+   ]
+  },
+  {
+   "position": 29,
+   "asin": "B0FXHF2H2X",
+   "brand": "adidas",
+   "title": "Mens F50 Hyperfast Pro Turf Sneakers Shoes - White",
+   "link": "https://www.amazon.com/adidas-Mens-Hyperfast-Sneakers-Shoes/dp/B0FXHF2H2X/ref=sr_1_29?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-29",
+   "link_clean": "https://www.amazon.com/adidas-Mens-Hyperfast-Sneakers-Shoes/dp/B0FXHF2H2X/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FXHF2H2X&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/51Q8mt0MPoL._AC_UL320_.jpg",
+   "price": "$114.95",
+   "extracted_price": 114.95,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$114.95",
+     "extracted_primary_price": 114.95
+    }
+   ]
+  },
+  {
+   "position": 30,
+   "asin": "B0FXH6CHT1",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0FXH6CHT1",
+      "title": "White/Solar Turbo/Black",
+      "link": "https://www.amazon.com/adidas-Fold-Over-Tongue-Ground-Sneakers/dp/B0FXH6CHT1/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-30"
+     },
+     {
+      "position": 2,
+      "asin": "B0DK446XT8",
+      "title": "Signal Coral/White/Beam Orange",
+      "link": "https://www.amazon.com/adidas-Fold-Over-Tongue-Ground-Sneakers/dp/B0DK446XT8/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-30"
+     },
+     {
+      "position": 3,
+      "asin": "B0FXH5PHWZ",
+      "title": "Black",
+      "link": "https://www.amazon.com/adidas-Fold-Over-Tongue-Ground-Sneakers/dp/B0FXH5PHWZ/ref=is_sr_dp_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-30"
+     },
+     {
+      "position": 4,
+      "asin": "B0F5SL1VXZ",
+      "title": "Blue",
+      "link": "https://www.amazon.com/adidas-Fold-Over-Tongue-Ground-Sneakers/dp/B0F5SL1VXZ/ref=is_sr_dp_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-30"
+     },
+     {
+      "position": 5,
+      "asin": "B0DJVCDHHM",
+      "title": "Black/Carbon/Lucid Lemon",
+      "link": "https://www.amazon.com/adidas-Fold-Over-Tongue-Ground-Sneakers/dp/B0DJVCDHHM/ref=is_sr_dp_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-30"
+     },
+     {
+      "position": 6,
+      "asin": "B0DJV9PRDL",
+      "title": "White/Black/Lucid Lemon",
+      "link": "https://www.amazon.com/adidas-Fold-Over-Tongue-Ground-Sneakers/dp/B0DJV9PRDL/ref=is_sr_dp_6?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-30"
+     }
+    ],
+    "more_variants": "+2",
+    "more_variants_link": "https://www.amazon.com/adidas-Fold-Over-Tongue-Ground-Sneakers/dp/B0FXH6CHT1/ref=is_sr_dp_n?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-30"
+   },
+   "brand": "adidas",
+   "title": "Unisex Pro Fold-Over Tongue Firm Ground",
+   "link": "https://www.amazon.com/adidas-Fold-Over-Tongue-Ground-Sneakers/dp/B0FXH6CHT1/ref=sr_1_30?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-30",
+   "link_clean": "https://www.amazon.com/adidas-Fold-Over-Tongue-Ground-Sneakers/dp/B0FXH6CHT1/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FXH6CHT1&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/611Xb1aPjeL._AC_UL320_.jpg",
+   "rating": 4.6,
+   "reviews": 36,
+   "price": "$169.95",
+   "extracted_price": 169.95,
+   "delivery": [
+    "Join Prime to get FREE delivery Sun, Nov 29",
+    "Or Non-members get FREE delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$169.95",
+     "extracted_primary_price": 169.95
+    }
+   ]
+  },
+  {
+   "position": 31,
+   "asin": "B0F33PZTMC",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0F33PZTMC",
+      "title": "Black/Lucid Red/Black",
+      "link": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0F33PZTMC/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-31"
+     },
+     {
+      "position": 2,
+      "asin": "B0CKM9H6F2",
+      "title": "Black/Iron Metallic/Gold Metallic",
+      "link": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0CKM9H6F2/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-31"
+     },
+     {
+      "position": 3,
+      "asin": "B0D2JD61SJ",
+      "title": "Black/Iron Metallic/Lucid Red",
+      "link": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0D2JD61SJ/ref=is_sr_dp_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-31"
+     },
+     {
+      "position": 4,
+      "asin": "B0D31SHLBX",
+      "title": "Blue Fusion/Lucid Lemon/Lucid Pink",
+      "link": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0D31SHLBX/ref=is_sr_dp_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-31"
+     },
+     {
+      "position": 5,
+      "asin": "B0D31T12X3",
+      "title": "Lucid Pink/Lucid Lemon/Blue Fusion",
+      "link": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0D31T12X3/ref=is_sr_dp_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-31"
+     },
+     {
+      "position": 6,
+      "asin": "B0F1XQ4RHD",
+      "title": "Lucid Ray Blue/Team Solar Yellow/Lucid Aquamarine",
+      "link": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0F1XQ4RHD/ref=is_sr_dp_6?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-31"
+     }
+    ],
+    "more_variants": "+4",
+    "more_variants_link": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0F33PZTMC/ref=is_sr_dp_n?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-31"
+   },
+   "brand": "adidas",
+   "title": "Unisex-Adult F50 League Firm Ground/Multi Ground",
+   "link": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0F33PZTMC/ref=sr_1_31?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-31",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0F33PZTMC/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0F33PZTMC&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61RZMlM0NEL._AC_UL320_.jpg",
+   "rating": 4.5,
+   "reviews": 415,
+   "price": "$132.29",
+   "extracted_price": 132.29,
+   "purchase_options": [
+    {
+     "primary_price": "$132.29",
+     "extracted_primary_price": 132.29
+    }
+   ]
+  },
+  {
+   "position": 32,
+   "asin": "B0G6ZSRNFS",
+   "brand": "adidas",
+   "title": "Mens F50 Elite Firm Ground Soccer - Blue",
+   "link": "https://www.amazon.com/adidas-Elite-Ground-Soccer-Cleats/dp/B0G6ZSRNFS/ref=sr_1_32?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-32",
+   "link_clean": "https://www.amazon.com/adidas-Elite-Ground-Soccer-Cleats/dp/B0G6ZSRNFS/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0G6ZSRNFS&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/51FmVixHYiL._AC_UL320_.jpg",
+   "price": "$139.95",
+   "extracted_price": 139.95,
+   "old_price": "$179.00",
+   "extracted_old_price": 179.0,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$139.95",
+     "extracted_primary_price": 139.95,
+     "old_primary_price": "$179.00",
+     "extracted_old_primary_price": 179.0
+    }
+   ]
+  },
+  {
+   "position": 33,
+   "asin": "B0F5SBVZ1J",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0F5SBVZ1J",
+      "title": "Black",
+      "link": "https://www.amazon.com/adidas-Predator-Fold-Over-Football-Sneaker/dp/B0F5SBVZ1J/ref=cs_sr_dp_loc_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-33"
+     },
+     {
+      "position": 2,
+      "asin": "B0F5SGP29Y",
+      "title": "Lucid Red/Black/White",
+      "link": "https://www.amazon.com/adidas-Predator-Fold-Over-Football-Sneaker/dp/B0F5SGP29Y/ref=cs_sr_dp_loc_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-33"
+     },
+     {
+      "position": 3,
+      "asin": "B0F5SFPM7M",
+      "title": "White/Zero Metallic/Team Royal Blue",
+      "link": "https://www.amazon.com/adidas-Predator-Fold-Over-Football-Sneaker/dp/B0F5SFPM7M/ref=cs_sr_dp_loc_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-33"
+     },
+     {
+      "position": 4,
+      "asin": "B0F5SCZLJJ",
+      "title": "Multi",
+      "link": "https://www.amazon.com/adidas-Predator-Fold-Over-Football-Sneaker/dp/B0F5SCZLJJ/ref=cs_sr_dp_loc_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-33"
+     },
+     {
+      "position": 5,
+      "asin": "B0F5SC5C6P",
+      "title": "Grey",
+      "link": "https://www.amazon.com/adidas-Predator-Fold-Over-Football-Sneaker/dp/B0F5SC5C6P/ref=cs_sr_dp_loc_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-33"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Predator Pro Fold-Over Tongue Firm Ground Football Soccer Cleats",
+   "link": "https://www.amazon.com/adidas-Predator-Fold-Over-Football-Sneaker/dp/B0F5SBVZ1J/ref=sr_1_33?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-33",
+   "link_clean": "https://www.amazon.com/adidas-Predator-Fold-Over-Football-Sneaker/dp/B0F5SBVZ1J/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0F5SBVZ1J&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/617xRSuWTlL._AC_UL320_.jpg",
+   "rating": 3.8,
+   "reviews": 11,
+   "price": "$138.61",
+   "extracted_price": 138.61,
+   "old_price": "$170.00",
+   "extracted_old_price": 170.0,
+   "delivery": [
+    "Join Prime to get FREE delivery Sat, Nov 28",
+    "Or Non-members get FREE delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$138.61",
+     "extracted_primary_price": 138.61,
+     "old_primary_price": "$170.00",
+     "extracted_old_primary_price": 170.0
+    }
+   ]
+  },
+  {
+   "position": 34,
+   "asin": "B0FWW1Z5H1",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0FWW1Z5H1",
+      "title": "White/Solar Purple/Solar Turbo",
+      "link": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-Ground-WhiteSolarPurpleSolarTurbo/dp/B0FWW1Z5H1/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-34"
+     },
+     {
+      "position": 2,
+      "asin": "B0FWWP9JYY",
+      "title": "Black/Black/Lucid Ray Blue",
+      "link": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-Ground-WhiteSolarPurpleSolarTurbo/dp/B0FWWP9JYY/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-34"
+     },
+     {
+      "position": 3,
+      "asin": "B0FWW4JVBD",
+      "title": "Pulse Mint/Night Navy/Solar Lemon",
+      "link": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-Ground-WhiteSolarPurpleSolarTurbo/dp/B0FWW4JVBD/ref=is_sr_dp_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-34"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Mens F50 Hyperfast Club Firm Ground Multi Ground Sneakers Shoes - White",
+   "link": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-Ground-WhiteSolarPurpleSolarTurbo/dp/B0FWW1Z5H1/ref=sr_1_34?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-34",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-Ground-WhiteSolarPurpleSolarTurbo/dp/B0FWW1Z5H1/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FWW1Z5H1&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61rel1I4cpL._AC_UL320_.jpg",
+   "rating": 4.6,
+   "reviews": 14,
+   "price": "$64.99",
+   "extracted_price": 64.99,
+   "delivery": [
+    "Join Prime to get FREE delivery Sun, Nov 29",
+    "Or Non-members get FREE delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$64.99",
+     "extracted_primary_price": 64.99
+    }
+   ]
+  },
+  {
+   "position": 35,
+   "asin": "B0FQYFYBJY",
+   "brand": "adidas",
+   "title": "Mens F50 Hyperfast League Laceless Firm Ground Sneakers Shoes - Pink",
+   "link": "https://www.amazon.com/adidas-Hyperfast-Laceless-Football-Metallic/dp/B0FQYFYBJY/ref=sr_1_35?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-35",
+   "link_clean": "https://www.amazon.com/adidas-Hyperfast-Laceless-Football-Metallic/dp/B0FQYFYBJY/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FQYFYBJY&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61j2+gUoZKL._AC_UL320_.jpg",
+   "rating": 4.3,
+   "reviews": 16,
+   "price": "$89.95",
+   "extracted_price": 89.95,
+   "delivery": [
+    "FREE delivery Dec 8 - 12",
+    "Or fastest delivery Dec 6 - 10"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$89.95",
+     "extracted_primary_price": 89.95
+    }
+   ]
+  },
+  {
+   "position": 36,
+   "asin": "B0D2JFHN9Z",
+   "badges": [
+    "Best Seller in Women's Soccer Shoes"
+   ],
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0D2JFHN9Z",
+      "title": "Black/White/Better Scarlet",
+      "link": "https://www.amazon.com/adidas-Unisex-Goletto-Sneaker-Scarlet/dp/B0D2JFHN9Z/ref=cs_sr_dp_loc_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-36"
+     },
+     {
+      "position": 2,
+      "asin": "B0D2JDZ8FT",
+      "title": "White/Bright Royal/Team Shock Pink",
+      "link": "https://www.amazon.com/adidas-Unisex-Goletto-Sneaker-Scarlet/dp/B0D2JDZ8FT/ref=cs_sr_dp_loc_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-36"
+     },
+     {
+      "position": 3,
+      "asin": "B0FQYM3BHJ",
+      "title": "White/Team Royal Blue/Better Scarlet",
+      "link": "https://www.amazon.com/adidas-Unisex-Goletto-Sneaker-Scarlet/dp/B0FQYM3BHJ/ref=cs_sr_dp_loc_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-36"
+     },
+     {
+      "position": 4,
+      "asin": "B0D2JK6L51",
+      "title": "Wonder Mauve/White/Wonder Mauve",
+      "link": "https://www.amazon.com/adidas-Unisex-Goletto-Sneaker-Scarlet/dp/B0D2JK6L51/ref=cs_sr_dp_loc_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-36"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Unisex-Adult Goletto IX Firm Ground/Multi Ground Cleats",
+   "link": "https://www.amazon.com/adidas-Unisex-Goletto-Sneaker-Scarlet/dp/B0D2JFHN9Z/ref=sr_1_36?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-36",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Goletto-Sneaker-Scarlet/dp/B0D2JFHN9Z/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0D2JFHN9Z&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/71647Oa7agL._AC_UL320_.jpg",
+   "rating": 4.4,
+   "reviews": 1700,
+   "bought_last_month": "200+ bought in past month",
+   "price": "$37.94",
+   "extracted_price": 37.94,
+   "old_price": "$50.00",
+   "extracted_old_price": 50.0,
+   "delivery": [
+    "Join Prime to get FREE delivery Sat, Nov 28",
+    "Or Non-members get FREE delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$37.94",
+     "extracted_primary_price": 37.94,
+     "old_primary_price": "$50.00",
+     "extracted_old_primary_price": 50.0
+    }
+   ]
+  },
+  {
+   "position": 37,
+   "asin": "B0F33ZQ5H9",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0F33ZQ5H9",
+      "title": "White/Lucid Pink/Flash Aqua",
+      "link": "https://www.amazon.com/adidas-Unisex-Adult-Messi-League-Ground/dp/B0F33ZQ5H9/ref=cs_sr_dp_loc_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-37"
+     },
+     {
+      "position": 2,
+      "asin": "B0DK4122YZ",
+      "title": "Team Royal Blue/Solar Yellow/Semi Blue Burst",
+      "link": "https://www.amazon.com/adidas-Unisex-Adult-Messi-League-Ground/dp/B0DK4122YZ/ref=cs_sr_dp_loc_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-37"
+     },
+     {
+      "position": 3,
+      "asin": "B0DHSQFBLQ",
+      "title": "White/Lucid Red/Silver Metallic",
+      "link": "https://www.amazon.com/adidas-Unisex-Adult-Messi-League-Ground/dp/B0DHSQFBLQ/ref=cs_sr_dp_loc_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-37"
+     },
+     {
+      "position": 4,
+      "asin": "B0F5SNRS5H",
+      "title": "Ice Tangerine/Gold Metallic",
+      "link": "https://www.amazon.com/adidas-Unisex-Adult-Messi-League-Ground/dp/B0F5SNRS5H/ref=cs_sr_dp_loc_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-37"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Unisex Adult F50 Messi League Firm Ground/Multi Ground Cleat",
+   "link": "https://www.amazon.com/adidas-Unisex-Adult-Messi-League-Ground/dp/B0F33ZQ5H9/ref=sr_1_37?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-37",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Adult-Messi-League-Ground/dp/B0F33ZQ5H9/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0F33ZQ5H9&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61qyTZxg8rL._AC_UL320_.jpg",
+   "rating": 4.4,
+   "reviews": 147,
+   "price": "$54.95",
+   "extracted_price": 54.95,
+   "old_price": "$95.00",
+   "extracted_old_price": 95.0,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$54.95",
+     "extracted_primary_price": 54.95,
+     "old_primary_price": "$95.00",
+     "extracted_old_primary_price": 95.0
+    }
+   ]
+  },
+  {
+   "position": 38,
+   "asin": "B0F3423HBN",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0F3423HBN",
+      "title": "Team Solar Yellow/Black/Lucid Red",
+      "link": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0F3423HBN/ref=cs_sr_dp_loc_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-38"
+     },
+     {
+      "position": 2,
+      "asin": "B0F33VRLN3",
+      "title": "Lucid Ray Blue/Team Solar Yellow/Lucid Aquamarine",
+      "link": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0F33VRLN3/ref=cs_sr_dp_loc_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-38"
+     },
+     {
+      "position": 3,
+      "asin": "B0F345F47H",
+      "title": "Black/Lucid Red/Black",
+      "link": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0F345F47H/ref=cs_sr_dp_loc_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-38"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Unisex-Adult F50 League Mid Top Firm Ground Cleat",
+   "link": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0F3423HBN/ref=sr_1_38?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-38",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-League-Ground-Sneaker/dp/B0F3423HBN/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0F3423HBN&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61WesR3Yt0L._AC_UL320_.jpg",
+   "rating": 4.4,
+   "reviews": 107,
+   "price": "$74.95",
+   "extracted_price": 74.95,
+   "old_price": "$90.00",
+   "extracted_old_price": 90.0,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$74.95",
+     "extracted_primary_price": 74.95,
+     "old_primary_price": "$90.00",
+     "extracted_old_primary_price": 90.0
+    }
+   ]
+  },
+  {
+   "position": 39,
+   "asin": "B0F5SQCFPF",
+   "brand": "adidas",
+   "title": "Womens F50 Sparkfusion League Mid Cut Firm Ground Artificial Ground Soccer - White",
+   "link": "https://www.amazon.com/adidas-Womens-Sparkfusion-League-Sneaker/dp/B0F5SQCFPF/ref=sr_1_39?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-39",
+   "link_clean": "https://www.amazon.com/adidas-Womens-Sparkfusion-League-Sneaker/dp/B0F5SQCFPF/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0F5SQCFPF&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/71jKwnmUQRL._AC_UL320_.jpg",
+   "rating": 3.1,
+   "reviews": 9,
+   "price": "$42.00",
+   "extracted_price": 42.0,
+   "old_price": "$75.50",
+   "extracted_old_price": 75.5,
+   "delivery": [
+    "Join Prime to get FREE delivery Sat, Nov 28",
+    "Or Non-members get FREE delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$42.00",
+     "extracted_primary_price": 42.0,
+     "old_primary_price": "$75.50",
+     "extracted_old_primary_price": 75.5
+    }
+   ]
+  },
+  {
+   "position": 40,
+   "asin": "B0FBLC5JNL",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0FBLC5JNL",
+      "title": "Cloud White/Core Black/Solar Yellow",
+      "link": "https://www.amazon.com/adidas-Laceless-Ground-Soccer-Cleats/dp/B0FBLC5JNL/ref=cs_sr_dp_loc_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-40"
+     },
+     {
+      "position": 2,
+      "asin": "B0FR678YXQ",
+      "title": "Pink",
+      "link": "https://www.amazon.com/adidas-Laceless-Ground-Soccer-Cleats/dp/B0FR678YXQ/ref=cs_sr_dp_loc_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-40"
+     },
+     {
+      "position": 3,
+      "asin": "B0GWWBWQHJ",
+      "title": "Blue Fusion/Lucid Lemon/Lucid Pink",
+      "link": "https://www.amazon.com/adidas-Laceless-Ground-Soccer-Cleats/dp/B0GWWBWQHJ/ref=cs_sr_dp_loc_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-40"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Mens F50 Elite Laceless Firm Ground Soccer - Pink",
+   "link": "https://www.amazon.com/adidas-Laceless-Ground-Soccer-Cleats/dp/B0FBLC5JNL/ref=sr_1_40?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-40",
+   "link_clean": "https://www.amazon.com/adidas-Laceless-Ground-Soccer-Cleats/dp/B0FBLC5JNL/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FBLC5JNL&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/51mmJxjzLEL._AC_UL320_.jpg",
+   "rating": 4.0,
+   "reviews": 5,
+   "price": "$134.95",
+   "extracted_price": 134.95,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$134.95",
+     "extracted_primary_price": 134.95
+    }
+   ]
+  },
+  {
+   "position": 41,
+   "asin": "B0FWXWXFS4",
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0FWXWXFS4",
+      "title": "Black/Black/Lucid Ray Blue",
+      "link": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-League-Laceless/dp/B0FWXWXFS4/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-41"
+     },
+     {
+      "position": 2,
+      "asin": "B0FWXR3M9F",
+      "title": "White/Solar Purple/Solar Turbo",
+      "link": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-League-Laceless/dp/B0FWXR3M9F/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-41"
+     },
+     {
+      "position": 3,
+      "asin": "B0FWW4MC1C",
+      "title": "Pulse Mint/Night Navy/Solar Lemon",
+      "link": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-League-Laceless/dp/B0FWW4MC1C/ref=is_sr_dp_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-41"
+     }
+    ]
+   },
+   "brand": "adidas",
+   "title": "Mens F50 Hyperfast League Laceless Firm Ground Sneakers Shoes - White",
+   "link": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-League-Laceless/dp/B0FWXWXFS4/ref=sr_1_41?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-41",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Adult-Hyperfast-League-Laceless/dp/B0FWXWXFS4/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FWXWXFS4&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61RtM8W2oVL._AC_UL320_.jpg",
+   "rating": 4.2,
+   "reviews": 19,
+   "price": "$90.00",
+   "extracted_price": 90.0,
+   "delivery": [
+    "Join Prime to get FREE delivery Sat, Nov 28",
+    "Or Non-members get FREE delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$90.00",
+     "extracted_primary_price": 90.0
+    }
+   ]
+  },
+  {
+   "position": 42,
+   "asin": "B0DWV5514V",
+   "badges": [
+    "Black Friday Deal"
+   ],
+   "variants": {
+    "options": [
+     {
+      "position": 1,
+      "asin": "B0DWV5514V",
+      "title": "White-black-glowing Red Ah25",
+      "link": "https://www.amazon.com/PUMA-Future-Artificial-Sneaker-White-Black-Glowing/dp/B0DWV5514V/ref=is_sr_dp_1?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-42"
+     },
+     {
+      "position": 2,
+      "asin": "B0DWTQLVDZ",
+      "title": "Black/Fizzy Light/Green Terrain",
+      "link": "https://www.amazon.com/PUMA-Future-Artificial-Sneaker-White-Black-Glowing/dp/B0DWTQLVDZ/ref=is_sr_dp_2?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-42"
+     },
+     {
+      "position": 3,
+      "asin": "B0DB3LPH3T",
+      "title": "Puma Black-cool Light Gray-fluo Green",
+      "link": "https://www.amazon.com/PUMA-Future-Artificial-Sneaker-White-Black-Glowing/dp/B0DB3LPH3T/ref=is_sr_dp_3?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-42"
+     },
+     {
+      "position": 4,
+      "asin": "B0DYKWY7XD",
+      "title": "Hero Blue-white-sunset Pink Ah25",
+      "link": "https://www.amazon.com/PUMA-Future-Artificial-Sneaker-White-Black-Glowing/dp/B0DYKWY7XD/ref=is_sr_dp_4?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-42"
+     },
+     {
+      "position": 5,
+      "asin": "B0DB3RGPVH",
+      "title": "Puma Black-puma White-glowing Red",
+      "link": "https://www.amazon.com/PUMA-Future-Artificial-Sneaker-White-Black-Glowing/dp/B0DB3RGPVH/ref=is_sr_dp_5?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-42"
+     },
+     {
+      "position": 6,
+      "asin": "B0DB3TPPWF",
+      "title": "Puma White-ultra Blue-feather Gray-puma Black-glowing Red",
+      "link": "https://www.amazon.com/PUMA-Future-Artificial-Sneaker-White-Black-Glowing/dp/B0DB3TPPWF/ref=is_sr_dp_6?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-42"
+     }
+    ],
+    "more_variants": "+3",
+    "more_variants_link": "https://www.amazon.com/PUMA-Future-Artificial-Sneaker-White-Black-Glowing/dp/B0DWV5514V/ref=is_sr_dp_n?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-42"
+   },
+   "brand": "PUMA",
+   "title": "Mens Future 8 Match Firm, Artificial Ground Soccer Cleats",
+   "link": "https://www.amazon.com/PUMA-Future-Artificial-Sneaker-White-Black-Glowing/dp/B0DWV5514V/ref=sr_1_42?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-42",
+   "link_clean": "https://www.amazon.com/PUMA-Future-Artificial-Sneaker-White-Black-Glowing/dp/B0DWV5514V/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0DWV5514V&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61g03WO7CKL._AC_UL320_.jpg",
+   "rating": 4.4,
+   "reviews": 193,
+   "price": "$48.99",
+   "extracted_price": 48.99,
+   "old_price": "$95.00",
+   "extracted_old_price": 95.0,
+   "delivery": [
+    "Join Prime to get FREE delivery Sat, Nov 28",
+    "Or Non-members get FREE delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$48.99",
+     "extracted_primary_price": 48.99,
+     "old_primary_price": "$95.00",
+     "extracted_old_primary_price": 95.0
+    }
+   ]
+  },
+  {
+   "position": 43,
+   "asin": "B0FGBBYQNV",
+   "brand": "adidas",
+   "title": "Men's F50 Pro Firm Ground Soccer Cleats",
+   "link": "https://www.amazon.com/adidas-Mens-Ground-Soccer-Cleats/dp/B0FGBBYQNV/ref=sr_1_43?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-43",
+   "link_clean": "https://www.amazon.com/adidas-Mens-Ground-Soccer-Cleats/dp/B0FGBBYQNV/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FGBBYQNV&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/51xiuVp0XuL._AC_UL320_.jpg",
+   "price": "$74.95",
+   "extracted_price": 74.95,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$74.95",
+     "extracted_primary_price": 74.95
+    }
+   ]
+  },
+  {
+   "position": 44,
+   "asin": "B0FQYHTG1P",
+   "brand": "adidas",
+   "title": "Mens F50 Hyperfast Club Firm Ground Multi Ground Sneakers Shoes - Pink",
+   "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-Ground-Metallic/dp/B0FQYHTG1P/ref=sr_1_44?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-44",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Hyperfast-Ground-Metallic/dp/B0FQYHTG1P/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FQYHTG1P&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/61qWKryS3xL._AC_UL320_.jpg",
+   "rating": 4.6,
+   "reviews": 26,
+   "price": "$44.95",
+   "extracted_price": 44.95,
+   "old_price": "$60.00",
+   "extracted_old_price": 60.0,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$44.95",
+     "extracted_primary_price": 44.95,
+     "old_primary_price": "$60.00",
+     "extracted_old_primary_price": 60.0
+    }
+   ]
+  },
+  {
+   "position": 45,
+   "asin": "B0HMDCQVWN",
+   "brand": "adidas",
+   "title": "Mens F50 Hyperfast Elite Artificial Ground Sneakers Shoes - Green",
+   "link": "https://www.amazon.com/adidas-Hyperfast-Artificial-Ground-Sneakers/dp/B0HMDCQVWN/ref=sr_1_45?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-45",
+   "link_clean": "https://www.amazon.com/adidas-Hyperfast-Artificial-Ground-Sneakers/dp/B0HMDCQVWN/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0HMDCQVWN&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/51LGadhcgSL._AC_UL320_.jpg",
+   "price": "$269.95",
+   "extracted_price": 269.95,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$269.95",
+     "extracted_primary_price": 269.95
+    }
+   ]
+  },
+  {
+   "position": 46,
+   "asin": "B0DJV37LY1",
+   "brand": "adidas",
+   "title": "Women's F50 Sparkfusion Pro Mid Top Firm/Artificial Ground Cleat",
+   "link": "https://www.amazon.com/adidas-Womens-Fusion-Artificial-Sneaker/dp/B0DJV37LY1/ref=sr_1_46_mod_primary_new?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-46",
+   "link_clean": "https://www.amazon.com/adidas-Womens-Fusion-Artificial-Sneaker/dp/B0DJV37LY1/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0DJV37LY1&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/71LWFGfFesL._AC_UL320_.jpg",
+   "rating": 4.4,
+   "reviews": 17,
+   "price": "$94.95",
+   "extracted_price": 94.95,
+   "old_price": "$150.00",
+   "extracted_old_price": 150.0,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "type": "One-time purchase",
+     "primary_price": "$94.95",
+     "extracted_primary_price": 94.95,
+     "old_primary_price": "$150.00",
+     "extracted_old_primary_price": 150.0
+    },
+    {
+     "type": "Get it faster",
+     "primary_price": "$108.30",
+     "extracted_primary_price": 108.3,
+     "old_primary_price": "$150.00",
+     "extracted_old_primary_price": 150.0
+    }
+   ]
+  },
+  {
+   "position": 47,
+   "asin": "B0FMKP16NN",
+   "brand": "adidas",
+   "title": "Mens F50 Pro Messi Firm Ground Soccer - Silver",
+   "link": "https://www.amazon.com/adidas-Messi-Ground-Soccer-Cleats/dp/B0FMKP16NN/ref=sr_1_47?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-47",
+   "link_clean": "https://www.amazon.com/adidas-Messi-Ground-Soccer-Cleats/dp/B0FMKP16NN/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FMKP16NN&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/51BAByENO7L._AC_UL320_.jpg",
+   "rating": 5.0,
+   "reviews": 1,
+   "price": "$64.95",
+   "extracted_price": 64.95,
+   "old_price": "$75.95",
+   "extracted_old_price": 75.95,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$64.95",
+     "extracted_primary_price": 64.95,
+     "old_primary_price": "$75.95",
+     "extracted_old_primary_price": 75.95
+    }
+   ]
+  },
+  {
+   "position": 48,
+   "asin": "B0FQYP9HGK",
+   "brand": "adidas",
+   "title": "Mens F50 Hyperfast League Mid Firm Ground Sneakers Shoes - Pink",
+   "link": "https://www.amazon.com/adidas-Unisex-Hyperfast-League-Metallic/dp/B0FQYP9HGK/ref=sr_1_48?keywords=adidas+F50+Pro+FG+Soccer+Cleats&qid=1795736525&sr=8-48",
+   "link_clean": "https://www.amazon.com/adidas-Unisex-Hyperfast-League-Metallic/dp/B0FQYP9HGK/",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&asin=B0FQYP9HGK&device=desktop&engine=amazon_product",
+   "thumbnail": "https://m.media-amazon.com/images/I/71bpOTL2sNL._AC_UL320_.jpg",
+   "rating": 4.3,
+   "reviews": 8,
+   "price": "$64.95",
+   "extracted_price": 64.95,
+   "old_price": "$90.00",
+   "extracted_old_price": 90.0,
+   "delivery": [
+    "FREE delivery Dec 5 - 7",
+    "Or fastest delivery Tue, Dec 1"
+   ],
+   "purchase_options": [
+    {
+     "primary_price": "$64.95",
+     "extracted_primary_price": 64.95,
+     "old_primary_price": "$90.00",
+     "extracted_old_primary_price": 90.0
+    }
+   ]
+  }
+ ],
+ "categories": [
+  {
+   "position": 1,
+   "name": "Audible",
+   "link": "https://www.amazon.com/Audible-Books-and-Originals/b/?ie=UTF8&node=18145289011&ref_=nav_cs_audible",
+   "node": "18145289011",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&node=18145289011"
+  },
+  {
+   "position": 2,
+   "name": "Beauty & Personal Care",
+   "link": "https://www.amazon.com/Beauty-Makeup-Skin-Hair-Products/b/?ie=UTF8&node=3760911&ref_=nav_cs_beauty",
+   "node": "3760911",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&node=3760911"
+  },
+  {
+   "position": 3,
+   "name": "Fashion",
+   "link": "https://www.amazon.com/amazon-fashion/b/?ie=UTF8&node=7141123011&ref_=nav_cs_fashion",
+   "node": "7141123011",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&node=7141123011"
+  },
+  {
+   "position": 4,
+   "name": "Automotive",
+   "link": "https://www.amazon.com/automotive-auto-truck-replacements-parts/b/?ie=UTF8&node=15684181&ref_=nav_cs_automotive",
+   "node": "15684181",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&node=15684181"
+  },
+  {
+   "position": 5,
+   "name": "Video Games",
+   "link": "https://www.amazon.com/computer-video-games-hardware-accessories/b/?ie=UTF8&node=468642&ref_=nav_cs_video_games",
+   "node": "468642",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&node=468642"
+  },
+  {
+   "position": 6,
+   "name": "Baby",
+   "link": "https://www.amazon.com/baby-car-seats-strollers-bedding/b/?ie=UTF8&node=165796011&ref_=nav_cs_baby",
+   "node": "165796011",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&node=165796011"
+  },
+  {
+   "position": 7,
+   "name": "Kindle Books",
+   "link": "https://www.amazon.com/Kindle-eBooks/b/?ie=UTF8&node=154606011&ref_=nav_cs_kindle_books",
+   "node": "154606011",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&node=154606011"
+  },
+  {
+   "position": 8,
+   "name": "Smart Home",
+   "link": "https://www.amazon.com/Smart-Home/b/?ie=UTF8&node=6563140011&ref_=nav_cs_smart_home",
+   "node": "6563140011",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&node=6563140011"
+  },
+  {
+   "position": 9,
+   "name": "Books",
+   "link": "https://www.amazon.com/books-used-books-textbooks/b/?ie=UTF8&node=283155&ref_=nav_cs_books",
+   "node": "283155",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&node=283155"
+  },
+  {
+   "position": 10,
+   "name": "Computers",
+   "link": "https://www.amazon.com/computer-pc-hardware-accessories-add-ons/b/?ie=UTF8&node=541966&ref_=nav_cs_pc",
+   "node": "541966",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&node=541966"
+  },
+  {
+   "position": 11,
+   "name": "TV & Video",
+   "link": "https://www.amazon.com/tvs/b/?ie=UTF8&node=172659&ref_=nav_cs_tv",
+   "node": "172659",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&node=172659"
+  },
+  {
+   "position": 12,
+   "name": "Household, Health & Baby Care",
+   "link": "https://www.amazon.com/health-personal-care-nutrition-fitness/b/?ie=UTF8&node=3760901&ref_=nav_cs_hpc",
+   "node": "3760901",
+   "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&node=3760901"
+  }
+ ],
+ "filters": {
+  "eligible_for_free_shipping": [
+   {
+    "position": 1,
+    "name": "Free Shipping by Amazon",
+    "description": "Get FREE Shipping on eligible orders shipped by Amazon",
+    "rh": "p_76:2661625011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_76%3A2661625011&dc&qid=1795736525&rnid=2661623011&ref=sr_nr_p_76_1&ds=v1%3ArgzXO1ltPMTKBToT1fcCsDxCCO0UWmyj60a1CXxBMGk",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_76%3A2661625011"
+   }
+  ],
+  "gender": [
+   {
+    "position": 1,
+    "name": "Men",
+    "rh": "p_n_g-101015233022111:121075132011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101015233022111%3A121075132011&dc&qid=1795736525&rnid=121075130011&ref=sr_nr_p_n_g-101015233022111_1&ds=v1%3AtWOseXtMuv679ssu10q1%2BNYdVM66ZbRDxZhw4WI90n8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101015233022111%3A121075132011"
+   },
+   {
+    "position": 2,
+    "name": "Women",
+    "rh": "p_n_g-101015233022111:121075131011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101015233022111%3A121075131011&dc&qid=1795736525&rnid=121075130011&ref=sr_nr_p_n_g-101015233022111_2&ds=v1%3A9qUfP%2Bqv%2BEvtwaJnBZhTIXY%2BRl5NMbkpLkffPS53kOU",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101015233022111%3A121075131011"
+   },
+   {
+    "position": 3,
+    "name": "Boys",
+    "rh": "p_n_g-101015233022111:121075136011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101015233022111%3A121075136011&dc&qid=1795736525&rnid=121075130011&ref=sr_nr_p_n_g-101015233022111_3&ds=v1%3Av1doljQPEuCe5watlsssh0Fcr24AOnoTQkDRxwhTmn4",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101015233022111%3A121075136011"
+   },
+   {
+    "position": 4,
+    "name": "Unisex",
+    "rh": "p_n_g-101015233022111:121833112011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101015233022111%3A121833112011&dc&qid=1795736525&rnid=121075130011&ref=sr_nr_p_n_g-101015233022111_4&ds=v1%3AeaEmJ8U51dSq9hrT8cj0SHbasvPIOV2sEt7eXr5gl0g",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101015233022111%3A121833112011"
+   }
+  ],
+  "brands": [
+   {
+    "position": 1,
+    "name": "adidas",
+    "rh": "p_123:198664",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_123%3A198664&dc&qid=1795736525&rnid=85457740011&ref=sr_nr_p_123_1&ds=v1%3A2Relt4uygbOXtCH5R71oEJNfn%2FPMN%2BZIrr6XIRnJrWo",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_123%3A198664"
+   },
+   {
+    "position": 2,
+    "name": "Nike",
+    "rh": "p_123:234394",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_123%3A234394&dc&qid=1795736525&rnid=85457740011&ref=sr_nr_p_123_2&ds=v1%3AbGsvEI9nFr1gHVyT%2F6LfvlDZsihfp38DTY0R%2Fl7yjDA",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_123%3A234394"
+   },
+   {
+    "position": 3,
+    "name": "New Balance",
+    "rh": "p_123:197955",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_123%3A197955&dc&qid=1795736525&rnid=85457740011&ref=sr_nr_p_123_3&ds=v1%3ArdABhXY4TrYw36dYJO1KdXqvYIdZiK136%2BepYZsuzC8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_123%3A197955"
+   },
+   {
+    "position": 4,
+    "name": "Premium Brands",
+    "rh": "p_n_g-1004227705091:21451213011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004227705091%3A21451213011&dc&qid=1795736525&rnid=14630382011&ref=sr_nr_p_n_g-1004227705091_1&ds=v1%3AT%2BBhpX5QvB7f47mK8d1nS500D84JoWrMTn%2Fl010n70o",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004227705091%3A21451213011"
+   },
+   {
+    "position": 5,
+    "name": "Top Brands",
+    "rh": "p_n_g-1004227705091:14630392011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004227705091%3A14630392011&dc&qid=1795736525&rnid=14630382011&ref=sr_nr_p_n_g-1004227705091_2&ds=v1%3AA3vL0IKQHY9Kpt9dVjU57fp0dKDj6mWteLiLccibRFw",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004227705091%3A14630392011"
+   }
+  ],
+  "amazon_fashion": [
+   {
+    "position": 1,
+    "name": "Premium Brands",
+    "rh": "p_n_g-1004227705091:21451213011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004227705091%3A21451213011&dc&qid=1795736525&rnid=14630382011&ref=sr_nr_p_n_g-1004227705091_1&ds=v1%3AT%2BBhpX5QvB7f47mK8d1nS500D84JoWrMTn%2Fl010n70o",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004227705091%3A21451213011"
+   },
+   {
+    "position": 2,
+    "name": "Top Brands",
+    "rh": "p_n_g-1004227705091:14630392011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004227705091%3A14630392011&dc&qid=1795736525&rnid=14630382011&ref=sr_nr_p_n_g-1004227705091_2&ds=v1%3AA3vL0IKQHY9Kpt9dVjU57fp0dKDj6mWteLiLccibRFw",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004227705091%3A14630392011"
+   }
+  ],
+  "customer_review": [
+   {
+    "position": 1,
+    "name": "4 Stars & Up",
+    "rh": "p_72:2661618011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_72%3A2661618011&dc&qid=1795736525&rnid=2661617011&ref=sr_nr_p_72_1&ds=v1%3A7rl5qS7XIwjm7fohwS9xP%2F9ibN0%2F95lvQznpPoZzlsw",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_72%3A2661618011"
+   }
+  ],
+  "shoe_heel_height": [
+   {
+    "position": 1,
+    "name": "Under 1\"",
+    "rh": "p_n_feature_four_browse-bin:2055867011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_feature_four_browse-bin%3A2055867011&dc&qid=1795736525&rnid=2055866011&ref=sr_nr_p_n_feature_four_browse-bin_1&ds=v1%3AIlQhCZP1cVLf0ZPeehpfhK7UePYmjGIHjSW1Js0xj9s",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_feature_four_browse-bin%3A2055867011"
+   },
+   {
+    "position": 2,
+    "name": "1\" - 1 3/4\"",
+    "rh": "p_n_feature_four_browse-bin:2055868011"
+   },
+   {
+    "position": 3,
+    "name": "2\" - 2 3/4\"",
+    "rh": "p_n_feature_four_browse-bin:2055869011"
+   },
+   {
+    "position": 4,
+    "name": "3\" - 3 3/4\"",
+    "rh": "p_n_feature_four_browse-bin:2055870011"
+   },
+   {
+    "position": 5,
+    "name": "4\" & Up",
+    "rh": "p_n_feature_four_browse-bin:2055871011"
+   }
+  ],
+  "shoes_closure_type": [
+   {
+    "position": 1,
+    "name": "Lace-Up",
+    "rh": "p_n_g-1003465852111:24436296011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003465852111%3A24436296011&dc&qid=1795736525&rnid=24436292011&ref=sr_nr_p_n_g-1003465852111_1&ds=v1%3AnHy4tqH2aZ7NTT8ToD%2Bc6xscvFVzfkTmjlV2ONCzg%2Bg",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003465852111%3A24436296011"
+   }
+  ],
+  "water_resistance_level": [
+   {
+    "position": 1,
+    "name": "Not Water Resistant",
+    "rh": "p_n_g-101017968916111:221385250011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017968916111%3A221385250011&dc&qid=1795736525&rnid=221385248011&ref=sr_nr_p_n_g-101017968916111_1&ds=v1%3AVf%2FeRE%2BU%2B7qStPmVdwQAgmNEQvu3%2BFcA9uOpmEyfvaE",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017968916111%3A221385250011"
+   }
+  ],
+  "seasons": [
+   {
+    "position": 1,
+    "name": "Fall",
+    "rh": "p_n_g-1003397347111:24045080011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003397347111%3A24045080011&dc&qid=1795736525&rnid=24044712011&ref=sr_nr_p_n_g-1003397347111_1&ds=v1%3AsnZFBbHvX3aaZR0NDcTWb3IuiWkWN7nWT9y9O9yOcAg",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003397347111%3A24045080011"
+   },
+   {
+    "position": 2,
+    "name": "All",
+    "rh": "p_n_g-1003397347111:204067898011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003397347111%3A204067898011&dc&qid=1795736525&rnid=24044712011&ref=sr_nr_p_n_g-1003397347111_2&ds=v1%3AA9gz0Or%2BeAzxuCxr7VXDYM%2BmOCJPFt1CYGI0GZCSHU0",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003397347111%3A204067898011"
+   }
+  ],
+  "heel_type": [
+   {
+    "position": 1,
+    "name": "Flat",
+    "rh": "p_n_g-101018073212111:222412461011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101018073212111%3A222412461011&dc&qid=1795736525&rnid=222412457011&ref=sr_nr_p_n_g-101018073212111_1&ds=v1%3A8ERkvKovt4RwoqkY1wnjS7jyCn82aoQxD3tNpQBem%2Fw",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101018073212111%3A222412461011"
+   },
+   {
+    "position": 2,
+    "name": "No Heel",
+    "rh": "p_n_g-101018073212111:222412466011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101018073212111%3A222412466011&dc&qid=1795736525&rnid=222412457011&ref=sr_nr_p_n_g-101018073212111_2&ds=v1%3AzWL77WJzbwFy4XnrI68h%2BO5QbUaRPchAVwNSu%2BX1hCA",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101018073212111%3A222412466011"
+   }
+  ],
+  "seller": [
+   {
+    "position": 1,
+    "name": "SHOEBACCA",
+    "rh": "p_6:AG670YE9WDQRF",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_6%3AAG670YE9WDQRF&dc&qid=1795736525&rnid=2661622011&ref=sr_nr_p_6_1&ds=v1%3AQbYpmxxnyuFcJMm1n3HX%2FiDo1wDxuvWuB5srksVUmsU",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_6%3AAG670YE9WDQRF"
+   },
+   {
+    "position": 2,
+    "name": "Amazon.com",
+    "rh": "p_6:ATVPDKIKX0DER",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_6%3AATVPDKIKX0DER&dc&qid=1795736525&rnid=2661622011&ref=sr_nr_p_6_2&ds=v1%3AEqB6WXwYRnVJ6M%2FvP3oQqG5kcwRI%2BsFg5mzumT73d34",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_6%3AATVPDKIKX0DER"
+   },
+   {
+    "position": 3,
+    "name": "Quality First Shopee",
+    "rh": "p_6:A1C1P4PKIZUP25",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_6%3AA1C1P4PKIZUP25&dc&qid=1795736525&rnid=2661622011&ref=sr_nr_p_6_3&ds=v1%3AoCvE1epoNb9JBfKPogdIaq4RfWTFRqfZ64qwqpYXK3I",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_6%3AA1C1P4PKIZUP25"
+   },
+   {
+    "position": 4,
+    "name": "Zappos",
+    "rh": "p_6:AH1YFAUS3NHX2",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_6%3AAH1YFAUS3NHX2&dc&qid=1795736525&rnid=2661622011&ref=sr_nr_p_6_4&ds=v1%3AnaITU4TMhu488ofF3Dy8NMEnxlwkcIB4YKc7CItn2LI",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_6%3AAH1YFAUS3NHX2"
+   },
+   {
+    "position": 5,
+    "name": "Bixemi",
+    "rh": "p_6:A3P8U6BAN7HQM8",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_6%3AA3P8U6BAN7HQM8&dc&qid=1795736525&rnid=2661622011&ref=sr_nr_p_6_5&ds=v1%3AT37jq6iHx5t4ocWxYffyhelf%2BZdkSW638wgi9Pxn1Ow",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_6%3AA3P8U6BAN7HQM8"
+   },
+   {
+    "position": 6,
+    "name": "SF0 Athletics",
+    "rh": "p_6:A2TVRE2CB5TELZ",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_6%3AA2TVRE2CB5TELZ&dc&qid=1795736525&rnid=2661622011&ref=sr_nr_p_6_6&ds=v1%3AvdBKSpZsAQv6UqHG9CR%2BPh9TD6g%2FEIujufkjmGCMR80",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_6%3AA2TVRE2CB5TELZ"
+   },
+   {
+    "position": 7,
+    "name": "Tyler Athletics",
+    "rh": "p_6:A2W6ZNM8TL4OB7",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_6%3AA2W6ZNM8TL4OB7&dc&qid=1795736525&rnid=2661622011&ref=sr_nr_p_6_7&ds=v1%3AfQjYitKJ%2FaJuWg4%2F5A1fdcTr%2B9IUCEG%2F2RL6s1uj%2FMc",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_6%3AA2W6ZNM8TL4OB7"
+   }
+  ],
+  "pattern": [
+   {
+    "position": 1,
+    "name": "Geometric",
+    "rh": "p_n_g-101017157714111:213408758011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017157714111%3A213408758011&dc&qid=1795736525&rnid=213408748011&ref=sr_nr_p_n_g-101017157714111_1&ds=v1%3APQ1t%2BRSnLHVXC%2Bq62BRMo1NNx4lmzps551JTCE0v5R8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017157714111%3A213408758011"
+   },
+   {
+    "position": 2,
+    "name": "Solid",
+    "rh": "p_n_g-101017157714111:213408750011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017157714111%3A213408750011&dc&qid=1795736525&rnid=213408748011&ref=sr_nr_p_n_g-101017157714111_2&ds=v1%3AoPm%2FdAZqCYAjrNt5tAI5mO1VdhQYSox0CH%2Bqg%2FECYyU",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017157714111%3A213408750011"
+   },
+   {
+    "position": 3,
+    "name": "Striped",
+    "rh": "p_n_g-101017157714111:213408753011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017157714111%3A213408753011&dc&qid=1795736525&rnid=213408748011&ref=sr_nr_p_n_g-101017157714111_3&ds=v1%3AJti%2BukNhU9fRo%2BjFoz7kNrd8NRzFmFN0UUF2RraJgh8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017157714111%3A213408753011"
+   }
+  ],
+  "men_s_shoe_width": [
+   {
+    "position": 1,
+    "name": "XX-Narrow",
+    "rh": "p_n_pt_nav_size_men_shoe_width:1285106011"
+   },
+   {
+    "position": 2,
+    "name": "X-Narrow",
+    "rh": "p_n_pt_nav_size_men_shoe_width:1285149011"
+   },
+   {
+    "position": 3,
+    "name": "Narrow",
+    "rh": "p_n_pt_nav_size_men_shoe_width:1285109011"
+   },
+   {
+    "position": 4,
+    "name": "Medium",
+    "rh": "p_n_pt_nav_size_men_shoe_width:1285110011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe_width%3A1285110011&dc&qid=1795736525&rnid=1285102011&ref=sr_nr_p_n_pt_nav_size_men_shoe_width_4&ds=v1%3AD4Cdetf%2FhYY%2BwlD0k2ZTi%2F0SQ87%2FDRsi%2FSoNbykbdUM",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe_width%3A1285110011"
+   },
+   {
+    "position": 5,
+    "name": "Wide",
+    "rh": "p_n_pt_nav_size_men_shoe_width:1285111011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe_width%3A1285111011&dc&qid=1795736525&rnid=1285102011&ref=sr_nr_p_n_pt_nav_size_men_shoe_width_5&ds=v1%3Avb9V%2Bm2ZnnI0dv296OeeHAMb52%2FXrVWwQGHeCD53nSI",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe_width%3A1285111011"
+   },
+   {
+    "position": 6,
+    "name": "X-Wide",
+    "rh": "p_n_pt_nav_size_men_shoe_width:1285105011"
+   },
+   {
+    "position": 7,
+    "name": "XX-Wide",
+    "rh": "p_n_pt_nav_size_men_shoe_width:1285108011"
+   },
+   {
+    "position": 8,
+    "name": "4.5",
+    "rh": "p_n_g-1004158520091:1285129011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285129011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_1&ds=v1%3AuNylN6vzC7qYzMfy5yCLPlxln3kQRRtIoB5IFew%2BBpc",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285129011"
+   },
+   {
+    "position": 9,
+    "name": "5",
+    "rh": "p_n_g-1004158520091:1285130011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285130011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_2&ds=v1%3AXj%2F1kZeZ6oQsehti9rGV3ELL59PpHgPW3ht5Fy4WWgw",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285130011"
+   },
+   {
+    "position": 10,
+    "name": "5.5",
+    "rh": "p_n_g-1004158520091:1285131011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285131011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_3&ds=v1%3AeFovYp6nHTVx2In8r8oHjMUAI58%2B9YO%2FitrlfKFG0Wg",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285131011"
+   },
+   {
+    "position": 11,
+    "name": "6.5",
+    "rh": "p_n_g-1004158520091:1285133011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285133011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_4&ds=v1%3AqKllvxPByrp79%2BgwBsOI%2BPFFZS0STgIor3Zym5XRgzc",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285133011"
+   },
+   {
+    "position": 12,
+    "name": "7",
+    "rh": "p_n_g-1004158520091:1285134011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285134011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_5&ds=v1%3A4WHQ4yee3ts6oKEOSwrmPdr8a7i0wil1E2Ow0EVvFNo",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285134011"
+   },
+   {
+    "position": 13,
+    "name": "7.5",
+    "rh": "p_n_g-1004158520091:1285135011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285135011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_6&ds=v1%3AISFIPU1WRzwgkn4BWe4odb2uK4B7qQpeQQPKHmbdkbU",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285135011"
+   },
+   {
+    "position": 14,
+    "name": "8",
+    "rh": "p_n_g-1004158520091:1285136011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285136011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_7&ds=v1%3AOVjbqmeAPU8OIYUGN8VY8LCZU8ZZ3wXifYZoEVKLIME",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285136011"
+   },
+   {
+    "position": 15,
+    "name": "8.5",
+    "rh": "p_n_g-1004158520091:1285137011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285137011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_8&ds=v1%3AR052Mx1nov1p2w%2Fa9cu8KywisEbEFQX8tEKRhbyk14A",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285137011"
+   },
+   {
+    "position": 16,
+    "name": "9",
+    "rh": "p_n_g-1004158520091:1285138011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285138011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_9&ds=v1%3A1jpBBSs4Kz6VbJxnv%2Ff6iaKTOKq%2BwKoQU3ivdbi0pqo",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285138011"
+   },
+   {
+    "position": 17,
+    "name": "9.5",
+    "rh": "p_n_g-1004158520091:1285139011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285139011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_10&ds=v1%3AUrfQyJ0upn1okI2rPq1IsdUfuf5RN0FcaHQfMc9%2FGvQ",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285139011"
+   },
+   {
+    "position": 18,
+    "name": "10",
+    "rh": "p_n_g-1004158520091:1285113011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285113011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_11&ds=v1%3AozPVk2YnWva%2Fyp7e2BD2ZOxuT2CVjhZvN0McadigtqQ",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285113011"
+   },
+   {
+    "position": 19,
+    "name": "11",
+    "rh": "p_n_g-1004158520091:1285115011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285115011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_12&ds=v1%3Adle8VGhnar8lpJPg1udOBF8COwz6YTqYVHgnVpGzGU4",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285115011"
+   },
+   {
+    "position": 20,
+    "name": "11.5",
+    "rh": "p_n_g-1004158520091:1285116011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285116011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_13&ds=v1%3AKUGtCPlBGDMuq2Sk3u%2BiMSeG1vNlPXii1B54sPl%2BqVg",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285116011"
+   },
+   {
+    "position": 21,
+    "name": "12",
+    "rh": "p_n_g-1004158520091:1285117011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285117011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_14&ds=v1%3AyMkWGZotUVpQbyXrGyX4j9ZVTNS2R7MaRfdPp1eEg64",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285117011"
+   },
+   {
+    "position": 22,
+    "name": "12.5",
+    "rh": "p_n_g-1004158520091:1285118011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285118011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_15&ds=v1%3A0klr5%2Bu2nBIOy6BE8aP%2FBLLjH1IH7lHHR2hiz%2FlQ2VI",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285118011"
+   },
+   {
+    "position": 23,
+    "name": "13",
+    "rh": "p_n_g-1004158520091:1285119011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285119011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_16&ds=v1%3ARokU4HjFnEIDfSEpXFcq2BOyt%2BODVD4eF00TXiUzfJM",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285119011"
+   },
+   {
+    "position": 24,
+    "name": "Narrow",
+    "rh": "p_n_pt_nav_size_kids_shoe_width:1285067011"
+   },
+   {
+    "position": 25,
+    "name": "Medium",
+    "rh": "p_n_pt_nav_size_kids_shoe_width:1285066011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_kids_shoe_width%3A1285066011&dc&qid=1795736525&rnid=1285063011&ref=sr_nr_p_n_pt_nav_size_kids_shoe_width_2&ds=v1%3AEeJ8FgOzG3Ww%2BmbwbiHOkn9XsenGyxRsBC5f3tv1YWE",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_kids_shoe_width%3A1285066011"
+   },
+   {
+    "position": 26,
+    "name": "Wide",
+    "rh": "p_n_pt_nav_size_kids_shoe_width:1285064011"
+   },
+   {
+    "position": 27,
+    "name": "X-Wide",
+    "rh": "p_n_pt_nav_size_kids_shoe_width:1285065011"
+   },
+   {
+    "position": 28,
+    "name": "4",
+    "rh": "p_n_pt_nav_size_men_shoe:1285090011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285090011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_1&ds=v1%3AuKefvlQUSwuAUPSGistqC90igjFrl7DQAjuf6pLT07w",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285090011"
+   },
+   {
+    "position": 29,
+    "name": "6.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285095011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285095011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_2&ds=v1%3AUaztLliyQjhbe3OjbFFBJBCoo2%2FoCeAQ64Qa7WzjVrg",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285095011"
+   },
+   {
+    "position": 30,
+    "name": "7",
+    "rh": "p_n_pt_nav_size_men_shoe:1285096011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285096011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_3&ds=v1%3AvRgQvljUednzcqjuRKj3CWfdzhB7P0P60fjqr%2BPN8xc",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285096011"
+   },
+   {
+    "position": 31,
+    "name": "7.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285097011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285097011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_4&ds=v1%3AxogK34oMSOBSDlFemjka7ocxBNOBsS7MxfFh4gg8cR8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285097011"
+   },
+   {
+    "position": 32,
+    "name": "8",
+    "rh": "p_n_pt_nav_size_men_shoe:1285098011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285098011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_5&ds=v1%3A7voyrFzmXU9p0r269ZpeJPzZaQ6JnVvF1vf2NC0OSEo",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285098011"
+   },
+   {
+    "position": 33,
+    "name": "8.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285099011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285099011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_6&ds=v1%3AUYefqPYshvwPlXtFTompNHAxfKOXZdbqg12Ohh6IbY8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285099011"
+   },
+   {
+    "position": 34,
+    "name": "9",
+    "rh": "p_n_pt_nav_size_men_shoe:1285100011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285100011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_7&ds=v1%3AstN9o0MBa79Svm1xse%2FeKOyYA59KA7KRVz6alH8J350",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285100011"
+   },
+   {
+    "position": 35,
+    "name": "9.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285101011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285101011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_8&ds=v1%3A%2BS1d1i508B6IU54fY1HT1ndBYt%2F9%2FY2v8cuR24HE0L8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285101011"
+   },
+   {
+    "position": 36,
+    "name": "10",
+    "rh": "p_n_pt_nav_size_men_shoe:1285069011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285069011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_9&ds=v1%3AGAg1w2MRIoAbd%2B8ftEbP19gkSJ%2BChHKNHqRrjPOCPQg",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285069011"
+   },
+   {
+    "position": 37,
+    "name": "10.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285070011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285070011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_10&ds=v1%3Ab4G5biHZ1aJmGXW30G5DpQgqVFnRqYZ6FYJrrbkQEQw",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285070011"
+   },
+   {
+    "position": 38,
+    "name": "11",
+    "rh": "p_n_pt_nav_size_men_shoe:1285071011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285071011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_11&ds=v1%3Au1emjBqxunW5bs1NWSzC00kL1bcID1UvfWsN436K1gM",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285071011"
+   },
+   {
+    "position": 39,
+    "name": "11.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285072011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285072011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_12&ds=v1%3AAYbrTmN16ZPmYtqjavpzVJByxqgTrd3yC8T5OWyGy04",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285072011"
+   },
+   {
+    "position": 40,
+    "name": "12.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285074011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285074011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_13&ds=v1%3AX%2BVtyQCdBUQb3hcAFJHgEl%2BiCqfR%2Fz7WoSMLos7%2F1TM",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285074011"
+   },
+   {
+    "position": 41,
+    "name": "13",
+    "rh": "p_n_pt_nav_size_men_shoe:1285075011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285075011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_14&ds=v1%3AhnoZN13yQ%2BCKgNkTRXuyVhZz7gwjmF8qL4AcCTlunnM",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285075011"
+   }
+  ],
+  "women_s_shoe_size": [
+   {
+    "position": 1,
+    "name": "4.5",
+    "rh": "p_n_g-1004158520091:1285129011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285129011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_1&ds=v1%3AuNylN6vzC7qYzMfy5yCLPlxln3kQRRtIoB5IFew%2BBpc",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285129011"
+   },
+   {
+    "position": 2,
+    "name": "5",
+    "rh": "p_n_g-1004158520091:1285130011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285130011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_2&ds=v1%3AXj%2F1kZeZ6oQsehti9rGV3ELL59PpHgPW3ht5Fy4WWgw",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285130011"
+   },
+   {
+    "position": 3,
+    "name": "5.5",
+    "rh": "p_n_g-1004158520091:1285131011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285131011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_3&ds=v1%3AeFovYp6nHTVx2In8r8oHjMUAI58%2B9YO%2FitrlfKFG0Wg",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285131011"
+   },
+   {
+    "position": 4,
+    "name": "6.5",
+    "rh": "p_n_g-1004158520091:1285133011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285133011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_4&ds=v1%3AqKllvxPByrp79%2BgwBsOI%2BPFFZS0STgIor3Zym5XRgzc",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285133011"
+   },
+   {
+    "position": 5,
+    "name": "7",
+    "rh": "p_n_g-1004158520091:1285134011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285134011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_5&ds=v1%3A4WHQ4yee3ts6oKEOSwrmPdr8a7i0wil1E2Ow0EVvFNo",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285134011"
+   },
+   {
+    "position": 6,
+    "name": "7.5",
+    "rh": "p_n_g-1004158520091:1285135011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285135011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_6&ds=v1%3AISFIPU1WRzwgkn4BWe4odb2uK4B7qQpeQQPKHmbdkbU",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285135011"
+   },
+   {
+    "position": 7,
+    "name": "8",
+    "rh": "p_n_g-1004158520091:1285136011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285136011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_7&ds=v1%3AOVjbqmeAPU8OIYUGN8VY8LCZU8ZZ3wXifYZoEVKLIME",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285136011"
+   },
+   {
+    "position": 8,
+    "name": "8.5",
+    "rh": "p_n_g-1004158520091:1285137011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285137011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_8&ds=v1%3AR052Mx1nov1p2w%2Fa9cu8KywisEbEFQX8tEKRhbyk14A",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285137011"
+   },
+   {
+    "position": 9,
+    "name": "9",
+    "rh": "p_n_g-1004158520091:1285138011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285138011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_9&ds=v1%3A1jpBBSs4Kz6VbJxnv%2Ff6iaKTOKq%2BwKoQU3ivdbi0pqo",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285138011"
+   },
+   {
+    "position": 10,
+    "name": "9.5",
+    "rh": "p_n_g-1004158520091:1285139011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285139011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_10&ds=v1%3AUrfQyJ0upn1okI2rPq1IsdUfuf5RN0FcaHQfMc9%2FGvQ",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285139011"
+   },
+   {
+    "position": 11,
+    "name": "10",
+    "rh": "p_n_g-1004158520091:1285113011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285113011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_11&ds=v1%3AozPVk2YnWva%2Fyp7e2BD2ZOxuT2CVjhZvN0McadigtqQ",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285113011"
+   },
+   {
+    "position": 12,
+    "name": "11",
+    "rh": "p_n_g-1004158520091:1285115011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285115011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_12&ds=v1%3Adle8VGhnar8lpJPg1udOBF8COwz6YTqYVHgnVpGzGU4",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285115011"
+   },
+   {
+    "position": 13,
+    "name": "11.5",
+    "rh": "p_n_g-1004158520091:1285116011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285116011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_13&ds=v1%3AKUGtCPlBGDMuq2Sk3u%2BiMSeG1vNlPXii1B54sPl%2BqVg",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285116011"
+   },
+   {
+    "position": 14,
+    "name": "12",
+    "rh": "p_n_g-1004158520091:1285117011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285117011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_14&ds=v1%3AyMkWGZotUVpQbyXrGyX4j9ZVTNS2R7MaRfdPp1eEg64",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285117011"
+   },
+   {
+    "position": 15,
+    "name": "12.5",
+    "rh": "p_n_g-1004158520091:1285118011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285118011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_15&ds=v1%3A0klr5%2Bu2nBIOy6BE8aP%2FBLLjH1IH7lHHR2hiz%2FlQ2VI",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285118011"
+   },
+   {
+    "position": 16,
+    "name": "13",
+    "rh": "p_n_g-1004158520091:1285119011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285119011&dc&qid=1795736525&rnid=1285112011&ref=sr_nr_p_n_g-1004158520091_16&ds=v1%3ARokU4HjFnEIDfSEpXFcq2BOyt%2BODVD4eF00TXiUzfJM",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1004158520091%3A1285119011"
+   },
+   {
+    "position": 17,
+    "name": "Narrow",
+    "rh": "p_n_pt_nav_size_kids_shoe_width:1285067011"
+   },
+   {
+    "position": 18,
+    "name": "Medium",
+    "rh": "p_n_pt_nav_size_kids_shoe_width:1285066011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_kids_shoe_width%3A1285066011&dc&qid=1795736525&rnid=1285063011&ref=sr_nr_p_n_pt_nav_size_kids_shoe_width_2&ds=v1%3AEeJ8FgOzG3Ww%2BmbwbiHOkn9XsenGyxRsBC5f3tv1YWE",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_kids_shoe_width%3A1285066011"
+   },
+   {
+    "position": 19,
+    "name": "Wide",
+    "rh": "p_n_pt_nav_size_kids_shoe_width:1285064011"
+   },
+   {
+    "position": 20,
+    "name": "X-Wide",
+    "rh": "p_n_pt_nav_size_kids_shoe_width:1285065011"
+   },
+   {
+    "position": 21,
+    "name": "4",
+    "rh": "p_n_pt_nav_size_men_shoe:1285090011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285090011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_1&ds=v1%3AuKefvlQUSwuAUPSGistqC90igjFrl7DQAjuf6pLT07w",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285090011"
+   },
+   {
+    "position": 22,
+    "name": "6.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285095011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285095011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_2&ds=v1%3AUaztLliyQjhbe3OjbFFBJBCoo2%2FoCeAQ64Qa7WzjVrg",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285095011"
+   },
+   {
+    "position": 23,
+    "name": "7",
+    "rh": "p_n_pt_nav_size_men_shoe:1285096011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285096011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_3&ds=v1%3AvRgQvljUednzcqjuRKj3CWfdzhB7P0P60fjqr%2BPN8xc",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285096011"
+   },
+   {
+    "position": 24,
+    "name": "7.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285097011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285097011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_4&ds=v1%3AxogK34oMSOBSDlFemjka7ocxBNOBsS7MxfFh4gg8cR8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285097011"
+   },
+   {
+    "position": 25,
+    "name": "8",
+    "rh": "p_n_pt_nav_size_men_shoe:1285098011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285098011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_5&ds=v1%3A7voyrFzmXU9p0r269ZpeJPzZaQ6JnVvF1vf2NC0OSEo",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285098011"
+   },
+   {
+    "position": 26,
+    "name": "8.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285099011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285099011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_6&ds=v1%3AUYefqPYshvwPlXtFTompNHAxfKOXZdbqg12Ohh6IbY8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285099011"
+   },
+   {
+    "position": 27,
+    "name": "9",
+    "rh": "p_n_pt_nav_size_men_shoe:1285100011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285100011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_7&ds=v1%3AstN9o0MBa79Svm1xse%2FeKOyYA59KA7KRVz6alH8J350",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285100011"
+   },
+   {
+    "position": 28,
+    "name": "9.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285101011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285101011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_8&ds=v1%3A%2BS1d1i508B6IU54fY1HT1ndBYt%2F9%2FY2v8cuR24HE0L8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285101011"
+   },
+   {
+    "position": 29,
+    "name": "10",
+    "rh": "p_n_pt_nav_size_men_shoe:1285069011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285069011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_9&ds=v1%3AGAg1w2MRIoAbd%2B8ftEbP19gkSJ%2BChHKNHqRrjPOCPQg",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285069011"
+   },
+   {
+    "position": 30,
+    "name": "10.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285070011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285070011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_10&ds=v1%3Ab4G5biHZ1aJmGXW30G5DpQgqVFnRqYZ6FYJrrbkQEQw",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285070011"
+   },
+   {
+    "position": 31,
+    "name": "11",
+    "rh": "p_n_pt_nav_size_men_shoe:1285071011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285071011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_11&ds=v1%3Au1emjBqxunW5bs1NWSzC00kL1bcID1UvfWsN436K1gM",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285071011"
+   },
+   {
+    "position": 32,
+    "name": "11.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285072011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285072011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_12&ds=v1%3AAYbrTmN16ZPmYtqjavpzVJByxqgTrd3yC8T5OWyGy04",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285072011"
+   },
+   {
+    "position": 33,
+    "name": "12.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285074011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285074011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_13&ds=v1%3AX%2BVtyQCdBUQb3hcAFJHgEl%2BiCqfR%2Fz7WoSMLos7%2F1TM",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285074011"
+   },
+   {
+    "position": 34,
+    "name": "13",
+    "rh": "p_n_pt_nav_size_men_shoe:1285075011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285075011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_14&ds=v1%3AhnoZN13yQ%2BCKgNkTRXuyVhZz7gwjmF8qL4AcCTlunnM",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285075011"
+   }
+  ],
+  "children_s_shoe_width": [
+   {
+    "position": 1,
+    "name": "Narrow",
+    "rh": "p_n_pt_nav_size_kids_shoe_width:1285067011"
+   },
+   {
+    "position": 2,
+    "name": "Medium",
+    "rh": "p_n_pt_nav_size_kids_shoe_width:1285066011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_kids_shoe_width%3A1285066011&dc&qid=1795736525&rnid=1285063011&ref=sr_nr_p_n_pt_nav_size_kids_shoe_width_2&ds=v1%3AEeJ8FgOzG3Ww%2BmbwbiHOkn9XsenGyxRsBC5f3tv1YWE",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_kids_shoe_width%3A1285066011"
+   },
+   {
+    "position": 3,
+    "name": "Wide",
+    "rh": "p_n_pt_nav_size_kids_shoe_width:1285064011"
+   },
+   {
+    "position": 4,
+    "name": "X-Wide",
+    "rh": "p_n_pt_nav_size_kids_shoe_width:1285065011"
+   },
+   {
+    "position": 5,
+    "name": "4",
+    "rh": "p_n_pt_nav_size_men_shoe:1285090011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285090011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_1&ds=v1%3AuKefvlQUSwuAUPSGistqC90igjFrl7DQAjuf6pLT07w",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285090011"
+   },
+   {
+    "position": 6,
+    "name": "6.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285095011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285095011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_2&ds=v1%3AUaztLliyQjhbe3OjbFFBJBCoo2%2FoCeAQ64Qa7WzjVrg",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285095011"
+   },
+   {
+    "position": 7,
+    "name": "7",
+    "rh": "p_n_pt_nav_size_men_shoe:1285096011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285096011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_3&ds=v1%3AvRgQvljUednzcqjuRKj3CWfdzhB7P0P60fjqr%2BPN8xc",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285096011"
+   },
+   {
+    "position": 8,
+    "name": "7.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285097011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285097011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_4&ds=v1%3AxogK34oMSOBSDlFemjka7ocxBNOBsS7MxfFh4gg8cR8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285097011"
+   },
+   {
+    "position": 9,
+    "name": "8",
+    "rh": "p_n_pt_nav_size_men_shoe:1285098011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285098011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_5&ds=v1%3A7voyrFzmXU9p0r269ZpeJPzZaQ6JnVvF1vf2NC0OSEo",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285098011"
+   },
+   {
+    "position": 10,
+    "name": "8.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285099011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285099011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_6&ds=v1%3AUYefqPYshvwPlXtFTompNHAxfKOXZdbqg12Ohh6IbY8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285099011"
+   },
+   {
+    "position": 11,
+    "name": "9",
+    "rh": "p_n_pt_nav_size_men_shoe:1285100011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285100011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_7&ds=v1%3AstN9o0MBa79Svm1xse%2FeKOyYA59KA7KRVz6alH8J350",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285100011"
+   },
+   {
+    "position": 12,
+    "name": "9.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285101011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285101011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_8&ds=v1%3A%2BS1d1i508B6IU54fY1HT1ndBYt%2F9%2FY2v8cuR24HE0L8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285101011"
+   },
+   {
+    "position": 13,
+    "name": "10",
+    "rh": "p_n_pt_nav_size_men_shoe:1285069011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285069011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_9&ds=v1%3AGAg1w2MRIoAbd%2B8ftEbP19gkSJ%2BChHKNHqRrjPOCPQg",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285069011"
+   },
+   {
+    "position": 14,
+    "name": "10.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285070011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285070011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_10&ds=v1%3Ab4G5biHZ1aJmGXW30G5DpQgqVFnRqYZ6FYJrrbkQEQw",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285070011"
+   },
+   {
+    "position": 15,
+    "name": "11",
+    "rh": "p_n_pt_nav_size_men_shoe:1285071011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285071011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_11&ds=v1%3Au1emjBqxunW5bs1NWSzC00kL1bcID1UvfWsN436K1gM",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285071011"
+   },
+   {
+    "position": 16,
+    "name": "11.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285072011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285072011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_12&ds=v1%3AAYbrTmN16ZPmYtqjavpzVJByxqgTrd3yC8T5OWyGy04",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285072011"
+   },
+   {
+    "position": 17,
+    "name": "12.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285074011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285074011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_13&ds=v1%3AX%2BVtyQCdBUQb3hcAFJHgEl%2BiCqfR%2Fz7WoSMLos7%2F1TM",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285074011"
+   },
+   {
+    "position": 18,
+    "name": "13",
+    "rh": "p_n_pt_nav_size_men_shoe:1285075011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285075011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_14&ds=v1%3AhnoZN13yQ%2BCKgNkTRXuyVhZz7gwjmF8qL4AcCTlunnM",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285075011"
+   }
+  ],
+  "men_s_shoe_size": [
+   {
+    "position": 1,
+    "name": "4",
+    "rh": "p_n_pt_nav_size_men_shoe:1285090011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285090011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_1&ds=v1%3AuKefvlQUSwuAUPSGistqC90igjFrl7DQAjuf6pLT07w",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285090011"
+   },
+   {
+    "position": 2,
+    "name": "6.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285095011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285095011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_2&ds=v1%3AUaztLliyQjhbe3OjbFFBJBCoo2%2FoCeAQ64Qa7WzjVrg",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285095011"
+   },
+   {
+    "position": 3,
+    "name": "7",
+    "rh": "p_n_pt_nav_size_men_shoe:1285096011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285096011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_3&ds=v1%3AvRgQvljUednzcqjuRKj3CWfdzhB7P0P60fjqr%2BPN8xc",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285096011"
+   },
+   {
+    "position": 4,
+    "name": "7.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285097011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285097011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_4&ds=v1%3AxogK34oMSOBSDlFemjka7ocxBNOBsS7MxfFh4gg8cR8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285097011"
+   },
+   {
+    "position": 5,
+    "name": "8",
+    "rh": "p_n_pt_nav_size_men_shoe:1285098011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285098011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_5&ds=v1%3A7voyrFzmXU9p0r269ZpeJPzZaQ6JnVvF1vf2NC0OSEo",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285098011"
+   },
+   {
+    "position": 6,
+    "name": "8.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285099011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285099011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_6&ds=v1%3AUYefqPYshvwPlXtFTompNHAxfKOXZdbqg12Ohh6IbY8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285099011"
+   },
+   {
+    "position": 7,
+    "name": "9",
+    "rh": "p_n_pt_nav_size_men_shoe:1285100011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285100011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_7&ds=v1%3AstN9o0MBa79Svm1xse%2FeKOyYA59KA7KRVz6alH8J350",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285100011"
+   },
+   {
+    "position": 8,
+    "name": "9.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285101011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285101011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_8&ds=v1%3A%2BS1d1i508B6IU54fY1HT1ndBYt%2F9%2FY2v8cuR24HE0L8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285101011"
+   },
+   {
+    "position": 9,
+    "name": "10",
+    "rh": "p_n_pt_nav_size_men_shoe:1285069011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285069011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_9&ds=v1%3AGAg1w2MRIoAbd%2B8ftEbP19gkSJ%2BChHKNHqRrjPOCPQg",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285069011"
+   },
+   {
+    "position": 10,
+    "name": "10.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285070011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285070011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_10&ds=v1%3Ab4G5biHZ1aJmGXW30G5DpQgqVFnRqYZ6FYJrrbkQEQw",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285070011"
+   },
+   {
+    "position": 11,
+    "name": "11",
+    "rh": "p_n_pt_nav_size_men_shoe:1285071011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285071011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_11&ds=v1%3Au1emjBqxunW5bs1NWSzC00kL1bcID1UvfWsN436K1gM",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285071011"
+   },
+   {
+    "position": 12,
+    "name": "11.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285072011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285072011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_12&ds=v1%3AAYbrTmN16ZPmYtqjavpzVJByxqgTrd3yC8T5OWyGy04",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285072011"
+   },
+   {
+    "position": 13,
+    "name": "12.5",
+    "rh": "p_n_pt_nav_size_men_shoe:1285074011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285074011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_13&ds=v1%3AX%2BVtyQCdBUQb3hcAFJHgEl%2BiCqfR%2Fz7WoSMLos7%2F1TM",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285074011"
+   },
+   {
+    "position": 14,
+    "name": "13",
+    "rh": "p_n_pt_nav_size_men_shoe:1285075011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285075011&dc&qid=1795736525&rnid=1285068011&ref=sr_nr_p_n_pt_nav_size_men_shoe_14&ds=v1%3AhnoZN13yQ%2BCKgNkTRXuyVhZz7gwjmF8qL4AcCTlunnM",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_pt_nav_size_men_shoe%3A1285075011"
+   }
+  ],
+  "shoe_type": [
+   {
+    "position": 1,
+    "name": "Athletic Shoe",
+    "rh": "p_n_feature_thirty_browse-bin:122399094011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_feature_thirty_browse-bin%3A122399094011&dc&qid=1795736525&rnid=122398932011&ref=sr_nr_p_n_feature_thirty_browse-bin_1&ds=v1%3AspZIYnXDTcgZByy2g2yt5KYmdDjAUBW48EDMOCQ3IhE",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_feature_thirty_browse-bin%3A122399094011"
+   }
+  ],
+  "shoe_toe_style": [
+   {
+    "position": 1,
+    "name": "Closed Toe",
+    "rh": "p_n_g-1003126687111:23713152011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003126687111%3A23713152011&dc&qid=1795736525&rnid=23713151011&ref=sr_nr_p_n_g-1003126687111_1&ds=v1%3AC%2Fueyld1Z0yZlHWI%2BMSE2s4boHphHd%2B5L1If7dP1RU0",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003126687111%3A23713152011"
+   },
+   {
+    "position": 2,
+    "name": "Round Toe",
+    "rh": "p_n_g-1003126687111:23713160011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003126687111%3A23713160011&dc&qid=1795736525&rnid=23713151011&ref=sr_nr_p_n_g-1003126687111_2&ds=v1%3AzhMVdhaoGdkazHGnW3oxnPhh94dUYyosPzCmh3utQUc",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003126687111%3A23713160011"
+   }
+  ],
+  "surface_recommendation": [
+   {
+    "position": 1,
+    "name": "Firm Ground",
+    "rh": "p_n_g-101017934180111:221157082011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017934180111%3A221157082011&dc&qid=1795736525&rnid=221157081011&ref=sr_nr_p_n_g-101017934180111_1&ds=v1%3ASqWc187ojp4kuebagUg4LqG%2FFQhYzdTyRFN3vAEFkU8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017934180111%3A221157082011"
+   },
+   {
+    "position": 2,
+    "name": "Turf",
+    "rh": "p_n_g-101017934180111:221157087011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017934180111%3A221157087011&dc&qid=1795736525&rnid=221157081011&ref=sr_nr_p_n_g-101017934180111_2&ds=v1%3AMz39iU%2Fst6yX%2FTRecUoYLzSQVe2hxQLkq2R3n9SigDs",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017934180111%3A221157087011"
+   }
+  ],
+  "lining_description": [
+   {
+    "position": 1,
+    "name": "Cotton",
+    "rh": "p_n_g-101017758228111:217820219011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017758228111%3A217820219011&dc&qid=1795736525&rnid=217820210011&ref=sr_nr_p_n_g-101017758228111_1&ds=v1%3At1zjelTVSQ%2B2p263nKtAV3qTu6FltnmZJtBFoezSF%2Fs",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017758228111%3A217820219011"
+   },
+   {
+    "position": 2,
+    "name": "Natural Rubber",
+    "rh": "p_n_g-101017758228111:217820226011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017758228111%3A217820226011&dc&qid=1795736525&rnid=217820210011&ref=sr_nr_p_n_g-101017758228111_2&ds=v1%3AbI163%2FyHUj%2BbQWO%2BQHcSjwcuooxUzhrQ7REvVyROoyE",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017758228111%3A217820226011"
+   },
+   {
+    "position": 3,
+    "name": "Nylon",
+    "rh": "p_n_g-101017758228111:217820217011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017758228111%3A217820217011&dc&qid=1795736525&rnid=217820210011&ref=sr_nr_p_n_g-101017758228111_3&ds=v1%3Aa3xe%2BqUm31EbjNQsBllBdC60pkyBofmSiaT043MpyTs",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017758228111%3A217820217011"
+   },
+   {
+    "position": 4,
+    "name": "Synthetic Rubber",
+    "rh": "p_n_g-101017758228111:217820212011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017758228111%3A217820212011&dc&qid=1795736525&rnid=217820210011&ref=sr_nr_p_n_g-101017758228111_4&ds=v1%3AuV9vzLr8R%2FB%2F2g%2FvN5FSlObV1DM5ecGDllDQeiGOmBY",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017758228111%3A217820212011"
+   },
+   {
+    "position": 5,
+    "name": "Unlined",
+    "rh": "p_n_g-101017758228111:217820224011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017758228111%3A217820224011&dc&qid=1795736525&rnid=217820210011&ref=sr_nr_p_n_g-101017758228111_5&ds=v1%3AsaRzBc3RqvNuv62oTd0ca1ovrLw5lXRSXBtKNuoAKiU",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017758228111%3A217820224011"
+   }
+  ],
+  "color": [
+   {
+    "position": 1,
+    "name": "Multi",
+    "image": "https://m.media-amazon.com/images/G/01/nav2/images/gui/clothingcolorsprite._CB437558320_.png",
+    "rh": "p_n_size_two_browse-vebin:5391092011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391092011&dc&qid=1795736525&rnid=5391076011&ref=sr_nr_p_n_size_two_browse-vebin_1&ds=v1%3ATH3nOcUBO94L2Rvr%2Bss%2F%2F7tllXYd16euIHc6vWOBaj8",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391092011"
+   },
+   {
+    "position": 2,
+    "name": "White",
+    "image": "https://m.media-amazon.com/images/G/01/nav2/images/gui/clothingcolorsprite._CB437558320_.png",
+    "rh": "p_n_size_two_browse-vebin:5391079011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391079011&dc&qid=1795736525&rnid=5391076011&ref=sr_nr_p_n_size_two_browse-vebin_2&ds=v1%3Asfx94DjNkQoHQfCA0zk0LJGa6jGnPmCF7zXV7V6W%2FoE",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391079011"
+   },
+   {
+    "position": 3,
+    "name": "Black",
+    "image": "https://m.media-amazon.com/images/G/01/nav2/images/gui/clothingcolorsprite._CB437558320_.png",
+    "rh": "p_n_size_two_browse-vebin:5391077011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391077011&dc&qid=1795736525&rnid=5391076011&ref=sr_nr_p_n_size_two_browse-vebin_3&ds=v1%3AIA1ALn41SWzjflhqUxSVDI78jXio%2BtKq13qfBpH5olk",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391077011"
+   },
+   {
+    "position": 4,
+    "name": "Pink",
+    "image": "https://m.media-amazon.com/images/G/01/nav2/images/gui/clothingcolorsprite._CB437558320_.png",
+    "rh": "p_n_size_two_browse-vebin:5391083011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391083011&dc&qid=1795736525&rnid=5391076011&ref=sr_nr_p_n_size_two_browse-vebin_4&ds=v1%3ALi3VIJ6NsIHwToOD7fAW%2Fe2NrAZtkfe%2BT6FCzyaGlbI",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391083011"
+   },
+   {
+    "position": 5,
+    "name": "Orange",
+    "image": "https://m.media-amazon.com/images/G/01/nav2/images/gui/clothingcolorsprite._CB437558320_.png",
+    "rh": "p_n_size_two_browse-vebin:5391084011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391084011&dc&qid=1795736525&rnid=5391076011&ref=sr_nr_p_n_size_two_browse-vebin_5&ds=v1%3Act8K7kxk8yZNWEN1pyNUIwA2FC4qj5dr3t5ARXU2WzA",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391084011"
+   },
+   {
+    "position": 6,
+    "name": "Yellow",
+    "image": "https://m.media-amazon.com/images/G/01/nav2/images/gui/clothingcolorsprite._CB437558320_.png",
+    "rh": "p_n_size_two_browse-vebin:5391085011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391085011&dc&qid=1795736525&rnid=5391076011&ref=sr_nr_p_n_size_two_browse-vebin_6&ds=v1%3A%2FPklmxPa%2BFtK1OCKJUbVv%2FrxUybdBqYYT5cPPVSXCB4",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391085011"
+   },
+   {
+    "position": 7,
+    "name": "Green",
+    "image": "https://m.media-amazon.com/images/G/01/nav2/images/gui/clothingcolorsprite._CB437558320_.png",
+    "rh": "p_n_size_two_browse-vebin:5391087011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391087011&dc&qid=1795736525&rnid=5391076011&ref=sr_nr_p_n_size_two_browse-vebin_7&ds=v1%3AZ96f5NxPpx4rElga%2Fjv5b8kHCt7Y6xLrysKwsdRhCpE",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391087011"
+   },
+   {
+    "position": 8,
+    "name": "Blue",
+    "image": "https://m.media-amazon.com/images/G/01/nav2/images/gui/clothingcolorsprite._CB437558320_.png",
+    "rh": "p_n_size_two_browse-vebin:5391088011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391088011&dc&qid=1795736525&rnid=5391076011&ref=sr_nr_p_n_size_two_browse-vebin_8&ds=v1%3Aid86gjS0qL51CBU50eQcsx6xTKeehuJohjaDo00BCcQ",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391088011"
+   },
+   {
+    "position": 9,
+    "name": "Purple",
+    "image": "https://m.media-amazon.com/images/G/01/nav2/images/gui/clothingcolorsprite._CB437558320_.png",
+    "rh": "p_n_size_two_browse-vebin:5391089011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391089011&dc&qid=1795736525&rnid=5391076011&ref=sr_nr_p_n_size_two_browse-vebin_9&ds=v1%3AADxDCDYJLYBhTTVCf3%2FJO6cO%2BRKLE6Ynv6cp1zVfU6Q",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391089011"
+   },
+   {
+    "position": 10,
+    "name": "Silver",
+    "image": "https://m.media-amazon.com/images/G/01/nav2/images/gui/clothingcolorsprite._CB437558320_.png",
+    "rh": "p_n_size_two_browse-vebin:5391091011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391091011&dc&qid=1795736525&rnid=5391076011&ref=sr_nr_p_n_size_two_browse-vebin_10&ds=v1%3Ag61m6PYkcdgqFDl3i2lBrF2bkq4BjECGoHjErHRP3Kk",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_size_two_browse-vebin%3A5391091011"
+   }
+  ],
+  "shoe_outer_material": [
+   {
+    "position": 1,
+    "name": "Rubber",
+    "rh": "p_n_feature_twenty-three_browse-bin:210968947011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_feature_twenty-three_browse-bin%3A210968947011&dc&qid=1795736525&rnid=30317160011&ref=sr_nr_p_n_feature_twenty-three_browse-bin_1&ds=v1%3ALg6DfBh%2FtWIwjWiSL0pgpMGqoqKi72aVRDr6IgXxsfo",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_feature_twenty-three_browse-bin%3A210968947011"
+   },
+   {
+    "position": 2,
+    "name": "Mesh",
+    "rh": "p_n_feature_twenty-three_browse-bin:30317165011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_feature_twenty-three_browse-bin%3A30317165011&dc&qid=1795736525&rnid=30317160011&ref=sr_nr_p_n_feature_twenty-three_browse-bin_2&ds=v1%3AdkOzKspW5IW8cMX85Il0s1lcMxqegSl7EDB9z4uYIeU",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_feature_twenty-three_browse-bin%3A30317165011"
+   },
+   {
+    "position": 3,
+    "name": "Leather",
+    "rh": "p_n_feature_twenty-three_browse-bin:30317179011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_feature_twenty-three_browse-bin%3A30317179011&dc&qid=1795736525&rnid=30317160011&ref=sr_nr_p_n_feature_twenty-three_browse-bin_3&ds=v1%3Af%2Bwtj1YTPeuNSyZbf1rPyyUglhEwpXUETAOKEuVA67U",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_feature_twenty-three_browse-bin%3A30317179011"
+   },
+   {
+    "position": 4,
+    "name": "Plastic",
+    "rh": "p_n_feature_twenty-three_browse-bin:210968941011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_feature_twenty-three_browse-bin%3A210968941011&dc&qid=1795736525&rnid=30317160011&ref=sr_nr_p_n_feature_twenty-three_browse-bin_4&ds=v1%3A3A%2BC13MpbaFP6ZUQ8LCYOdTL7XQNXdaXVPXOlAJYm%2BM",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_feature_twenty-three_browse-bin%3A210968941011"
+   },
+   {
+    "position": 5,
+    "name": "Polyurethane (PU)",
+    "rh": "p_n_feature_twenty-three_browse-bin:211728571011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_feature_twenty-three_browse-bin%3A211728571011&dc&qid=1795736525&rnid=30317160011&ref=sr_nr_p_n_feature_twenty-three_browse-bin_5&ds=v1%3Acy4kjWR1E2nHgFEx8eevv31U1BHuoaxXqySXr0FPJLg",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_feature_twenty-three_browse-bin%3A211728571011"
+   },
+   {
+    "position": 6,
+    "name": "Thermoplastic Polyurethane (TPU)",
+    "rh": "p_n_feature_twenty-three_browse-bin:122265019011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_feature_twenty-three_browse-bin%3A122265019011&dc&qid=1795736525&rnid=30317160011&ref=sr_nr_p_n_feature_twenty-three_browse-bin_6&ds=v1%3ARyWaMg52AZaSli4llqAKZlWi6%2BU963FlGGS%2F%2FuT2cC4",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_feature_twenty-three_browse-bin%3A122265019011"
+   }
+  ],
+  "purpose": [
+   {
+    "position": 1,
+    "name": "Soccer",
+    "rh": "p_n_g-101016756037111:207864159011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101016756037111%3A207864159011&dc&qid=1795736525&rnid=207864154011&ref=sr_nr_p_n_g-101016756037111_1&ds=v1%3Aka2hDrDuEvUV7ll2%2FmMz2eYi6csQOalzpUQe%2FiQ9rLY",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101016756037111%3A207864159011"
+   }
+  ],
+  "shoes_special_features": [
+   {
+    "position": 1,
+    "name": "Lightweight",
+    "rh": "p_n_g-1003396948111:24045095011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003396948111%3A24045095011&dc&qid=1795736525&rnid=24044715011&ref=sr_nr_p_n_g-1003396948111_1&ds=v1%3AeLsqPxayeQASGG4RD18nRyk2Vh7jGbWDr4yzNqabXnw",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003396948111%3A24045095011"
+   },
+   {
+    "position": 2,
+    "name": "All Weather Grip",
+    "rh": "p_n_g-1003396948111:24045103011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003396948111%3A24045103011&dc&qid=1795736525&rnid=24044715011&ref=sr_nr_p_n_g-1003396948111_2&ds=v1%3AUvvObYidN1Y5Qhdza1OO6E%2FMWBoMwra9D6dCkUSPN8E",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003396948111%3A24045103011"
+   },
+   {
+    "position": 3,
+    "name": "Breathable",
+    "rh": "p_n_g-1003396948111:24045099011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003396948111%3A24045099011&dc&qid=1795736525&rnid=24044715011&ref=sr_nr_p_n_g-1003396948111_3&ds=v1%3ALea9LWnUIVtN0JRujk650c%2FOBkhxE7h3wJASb4rXN5g",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003396948111%3A24045099011"
+   },
+   {
+    "position": 4,
+    "name": "Slip Resistant",
+    "rh": "p_n_g-1003396948111:24045093011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003396948111%3A24045093011&dc&qid=1795736525&rnid=24044715011&ref=sr_nr_p_n_g-1003396948111_4&ds=v1%3A1GqOXtUqOUxuw5TCjlYwMExrOPlQsTf7odUm9tgocHY",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-1003396948111%3A24045093011"
+   }
+  ],
+  "arch_type": [
+   {
+    "position": 1,
+    "name": "Medium Arch",
+    "rh": "p_n_g-101017868425111:220241091011",
+    "link": "https://www.amazon.com/s?k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017868425111%3A220241091011&dc&qid=1795736525&rnid=220241089011&ref=sr_nr_p_n_g-101017868425111_1&ds=v1%3A1aXL6g8U%2BDG7oM6zTOZc7StyGgUw4NSkitRdC47z%2FmI",
+    "serpapi_link": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&rh=p_n_g-101017868425111%3A220241091011"
+   }
+  ]
+ },
+ "serpapi_pagination": {
+  "current": 1,
+  "next": "https://serpapi.com/search.json?amazon_domain=amazon.com&device=desktop&engine=amazon&k=adidas+F50+Pro+FG+Soccer+Cleats&page=2"
+ }
+}

@@ -22,11 +22,20 @@ def parse_amazon_results(data: dict) -> list[Listing]:
             price = parse_money(item.get("price") if isinstance(item.get("price"), str) else None)
         if not price or not item.get("title"):
             continue
+        # Amazon titles often leave out the brand ("Unisex-Adult F50 Pro Firm
+        # Ground"), which is in a separate field. Add it so matching works.
+        title = item["title"]
+        brand = (item.get("brand") or "").strip()
+        if brand and brand.lower() not in title.lower():
+            title = f"{brand} {title}"
+        delivery = item.get("delivery") or []
+        first_delivery = delivery[0] if isinstance(delivery, list) and delivery else str(delivery)
         listings.append(
             Listing(
-                title=item["title"],
+                title=title,
                 store="Amazon",
                 price=float(price),
+                shipping=0.0 if "free" in first_delivery.lower() else None,
                 link=item.get("link_clean") or item.get("link") or "",
                 image_url=item.get("thumbnail"),
                 rating=item.get("rating"),

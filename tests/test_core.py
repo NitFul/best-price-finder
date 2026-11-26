@@ -300,3 +300,16 @@ def test_amazon_listing_competes_in_ranking():
     table = CashbackTable([{"store": "Amazon", "aliases": "", "rakuten_percent": "0", "notes": ""}])
     opts = build_options(Q, demo_results() + amazon, table).options
     assert opts[0].listing.store == "Amazon"  # cheapest after cashback
+
+
+def test_real_amazon_results_brand_added_and_ranked():
+    data = json.loads((Path(__file__).parent / "data" / "amazon_f50.json").read_text())
+    listings = parse_amazon_results(data)
+    assert listings and all(l.store == "Amazon" for l in listings)
+    first = next(l for l in listings if "Unisex-Adult F50 Pro" in l.title)
+    assert first.title.startswith("adidas ")      # brand added from the brand field
+    assert first.shipping == 0.0                  # "FREE delivery"
+    assert "/ref=" not in first.link              # clean product link
+    opts = build_options(Q, listings, CashbackTable([])).options
+    assert opts and opts[0].listing.store == "Amazon"
+    assert "women" not in opts[0].listing.title.lower()
