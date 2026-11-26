@@ -2,12 +2,14 @@
 
 import streamlit as st
 
+from pricefinder.amazon import search_amazon
 from pricefinder.cashback import CashbackTable, load_rows, rakuten_check_url, save_rows
 from pricefinder.config import get_bool, get_int, get_setting
 from pricefinder.limits import DailyLimiter
 from pricefinder.rakuten import new_store_row, update_row
 from pricefinder.ranking import build_options
 from pricefinder.search import (
+    ProductLink,
     SearchError,
     demo_results,
     find_product_link,
@@ -25,12 +27,29 @@ ALLOW_RATE_EDITING = get_bool("ALLOW_RATE_EDITING", False)
 DAILY_SEARCH_LIMIT = get_int("DAILY_SEARCH_LIMIT", 60)
 SESSION_SEARCH_LIMIT = get_int("SESSION_SEARCH_LIMIT", 10)
 MAX_QUERY_LENGTH = 120
+# Amazon prices (optional). SerpApi's free plan is 250 searches/month, so
+# keep the daily cap around 8.
+SERPAPI_KEY = get_setting("SERPAPI_KEY")
+AMAZON_DAILY_LIMIT = get_int("AMAZON_DAILY_LIMIT", 8)
 
 
 @st.cache_resource
 def daily_limiter() -> DailyLimiter:
     # One shared counter for every visitor of the site.
     return DailyLimiter(DAILY_SEARCH_LIMIT)
+
+
+@st.cache_resource
+def amazon_limiter() -> DailyLimiter:
+    return DailyLimiter(AMAZON_DAILY_LIMIT)
+
+
+@st.cache_data(ttl=3600, show_spinner=False, max_entries=500)
+def cached_amazon(query: str):
+    # Amazon listings with prices, cached 1 hour (each new search = 1 SerpApi search).
+    if not amazon_limiter().try_use():
+        raise SearchError("Today's Amazon price limit was reached; showing a link only.")
+    return search_amazon(query, SERPAPI_KEY)
 
 
 @st.cache_data(ttl=3600, show_spinner=False, max_entries=500)
@@ -62,10 +81,15 @@ TOP_N_STORES = 3
 
 
 @st.cache_data(ttl=3600, show_spinner=False, max_entries=500)
-def cached_key_store_checks(query: str) -> list[StoreCheck]:
-    """Amazon, Costco and the brand's site for this search (3 credits, cached 1 hour)."""
+def cached_key_store_checks(query: str, skip_amazon: bool = False) -> list[StoreCheck]:
+    """Amazon, Costco and the brand's site for this search (3 credits, cached 1 hour).
+
+    skip_amazon: Amazon results already came from SerpApi, so don't search for it.
+    """
     checks = []
     for name, domain in FIXED_STORES:
+        if skip_amazon and name == "Amazon":
+            continue
         if not daily_limiter().try_use():
             raise SearchError("The site reached today's search limit.")
         checks.append(check_store(query, name, domain, API_KEY))
@@ -203,8 +227,22 @@ with tab_search:
         except SearchError as e:
             st.error(str(e))
             st.stop()
+
+        # Amazon prices (Amazon rarely appears in Google Shopping).
+        amazon_ok, amazon_note = False, ""
+        if not demo and SERPAPI_KEY and check_key_stores:
+            try:
+                with st.spinner("Getting Amazon prices..."):
+                    listings = listings + cached_amazon(q)
+                amazon_ok = True
+            except SearchError as e:
+                amazon_note = str(e)
+
         # Keep results so they stay on screen when a button below is clicked.
-        st.session_state["results"] = {"query": q, "listings": listings, "demo": demo}
+        st.session_state["results"] = {
+            "query": q, "listings": listings, "demo": demo,
+            "amazon_ok": amazon_ok, "amazon_note": amazon_note,
+        }
         st.session_state["direct_links"] = {}
 
     results = st.session_state.get("results")
@@ -221,13 +259,24 @@ with tab_search:
 
         table, ranked = rank()
         key_checks = []
+        amazon_ok = results.get("amazon_ok", False)
+        if results.get("amazon_note"):
+            st.caption(f"Amazon prices: {results['amazon_note']}")
         if not results["demo"] and API_KEY:
             if check_key_stores:
                 try:
                     with st.spinner("Checking Amazon, Costco and the brand's website..."):
-                        key_checks = cached_key_store_checks(q)
+                        key_checks = list(cached_key_store_checks(q, skip_amazon=amazon_ok))
                 except SearchError as e:
                     st.warning(f"Couldn't check Amazon/Costco/brand site: {e}")
+                if amazon_ok:
+                    # Amazon card from the priced Amazon results (best match, cheapest).
+                    amazon = [o for o in ranked.options if o.listing.store == "Amazon"]
+                    best = min(amazon, key=lambda o: o.listing.price) if amazon else None
+                    key_checks.insert(0, StoreCheck(
+                        "Amazon", "amazon.com",
+                        ProductLink(best.listing.link, True) if best and best.listing.link else None,
+                    ))
             # Make sure the top stores and key stores have a Rakuten rate (even
             # if it's 0), then re-rank in case a new rate changes the order.
             top = [o.listing.store for o in ranked.options[:TOP_N_STORES]]
@@ -271,7 +320,10 @@ with tab_search:
                         st.metric("Price", f"${cheapest.listing.price:,.2f}")
                         show_rakuten(table.info(check.name), cheapest.listing.price, check.name)
                     else:
-                        st.caption("Price not listed by Google. Open the store to check.")
+                        if check.name == "Amazon" and amazon_ok:
+                            st.caption("No matching product found on Amazon.")
+                        else:
+                            st.caption("Price not listed by Google. Open the store to check.")
                         show_rakuten(table.info(check.name), None, check.name)
                     if check.link and check.link.is_product_page:
                         st.link_button(f"View on {check.name}", check.link.url, type="primary")

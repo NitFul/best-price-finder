@@ -269,3 +269,34 @@ def test_brand_site_ignores_generic_word_matches():
     ]
     assert find_brand_site(Q, organic).domain == "adidas.com"
     assert find_brand_site(Q, organic[:1]) is None
+
+
+# ---- Amazon prices via SerpApi (sample shaped like SerpApi's documented response) ----
+from pricefinder.amazon import parse_amazon_results
+
+
+def test_parse_amazon_results():
+    data = {"organic_results": [
+        {"asin": "B0AD", "title": "adidas F50 Pro FG Soccer Cleats", "sponsored": True,
+         "price": "$150.00", "extracted_price": 150.0, "link": "https://www.amazon.com/sspa/click?x"},
+        {"asin": "B0FLJL1CWM", "title": "adidas Mens F50 Pro Firm Ground Soccer Cleats",
+         "price": "$129.99", "extracted_price": 129.99, "rating": 4.6, "reviews": 210,
+         "link": "https://www.amazon.com/adidas-Mens/dp/B0FLJL1CWM/ref=sr_1_1",
+         "link_clean": "https://www.amazon.com/dp/B0FLJL1CWM/"},
+        {"asin": "B0NOPRICE", "title": "adidas F50 Pro (currently unavailable)"},
+    ]}
+    listings = parse_amazon_results(data)
+    assert len(listings) == 1  # sponsored and no-price items skipped
+    a = listings[0]
+    assert a.store == "Amazon" and a.price == 129.99
+    assert a.link == "https://www.amazon.com/dp/B0FLJL1CWM/"
+    assert a.rating_count == 210
+
+
+def test_amazon_listing_competes_in_ranking():
+    amazon = parse_amazon_results({"organic_results": [
+        {"title": "adidas Mens F50 Pro Firm Ground Soccer Cleats", "extracted_price": 129.99,
+         "link_clean": "https://www.amazon.com/dp/B0FLJL1CWM/"}]})
+    table = CashbackTable([{"store": "Amazon", "aliases": "", "rakuten_percent": "0", "notes": ""}])
+    opts = build_options(Q, demo_results() + amazon, table).options
+    assert opts[0].listing.store == "Amazon"  # cheapest after cashback

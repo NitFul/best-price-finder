@@ -22,6 +22,14 @@ Open `.env` and paste your free key from https://serper.dev after `SERPER_API_KE
 Your browser opens at http://localhost:8501. Without a key, the app runs in
 **demo mode** with made-up prices.
 
+## Amazon prices (optional)
+
+Amazon rarely appears in Google Shopping. To include Amazon listings with
+real prices, get a free key at https://serpapi.com (250 searches/month) and
+add `SERPAPI_KEY=...` to `.env`. Without it, the app still shows a link to
+the Amazon product page. `AMAZON_DAILY_LIMIT` (default 8) keeps you within
+the free plan.
+
 ## Cashback rates
 
 Rates live in `cashback_rates.csv`. To refresh them from Rakuten (read from
@@ -53,6 +61,8 @@ within an hour is cached and doesn't use a credit.
 3. Under **Advanced settings**, choose Python 3.12 and paste into **Secrets**:
    ```toml
    SERPER_API_KEY = "your-key"
+   SERPAPI_KEY = "your-serpapi-key"   # optional, for Amazon prices
+   AMAZON_DAILY_LIMIT = "8"
    DAILY_SEARCH_LIMIT = "60"
    SESSION_SEARCH_LIMIT = "10"
    ```
