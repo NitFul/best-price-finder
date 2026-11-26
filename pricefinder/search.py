@@ -9,7 +9,7 @@ from urllib.parse import parse_qsl, quote_plus, urlencode, urlparse, urlunparse
 import requests
 
 from .cashback import normalize
-from .match import match_score
+from .match import extra_words, match_score
 from .models import Listing
 
 SERPER_SHOPPING_URL = "https://google.serper.dev/shopping"
@@ -85,7 +85,12 @@ def search_shopping(query: str, api_key: str, country: str = "us", num: int = 40
 SERPER_SEARCH_URL = "https://google.serper.dev/search"
 
 # URL patterns that usually mean a single product page, or a list of products.
-PRODUCT_PATH = re.compile(r"/(p|dp|ip|itm|product|products|prd|pd)/|/product[-_]", re.I)
+PRODUCT_PATH = re.compile(
+    r"/(p|dp|ip|itm|product|products|prd|pd|clp)/|/gp/product/|/product[-_]"
+    r"|/[a-z0-9-]*\d[a-z0-9-]*\.html$",  # e.g. adidas: /f50-pro-.../JR8953.html
+    re.I,
+)
+MIN_PRODUCT_MATCH = 0.6  # below this, a "product page" is probably a different product
 CATEGORY_PATH = re.compile(r"/(c|f|collections|category|categories|search|s|browse|shop)/?($|[?/])", re.I)
 
 
@@ -125,9 +130,16 @@ def pick_product_link(title: str, store: str, organic: list[dict]) -> ProductLin
         if not url or not store_matches_url(store, url):
             continue
         path = urlparse(url).path
-        is_product = bool(PRODUCT_PATH.search(path)) and not CATEGORY_PATH.search(path)
         text = f"{r.get('title', '')} {path.replace('-', ' ').replace('/', ' ')}"
-        score = match_score(title, text) + (0.5 if is_product else 0)
+        match = match_score(title, text)
+        if match == 0:
+            continue  # accessory, used, or a different model (e.g. "Mini")
+        is_product = (
+            bool(PRODUCT_PATH.search(path)) and not CATEGORY_PATH.search(path)
+            and match >= MIN_PRODUCT_MATCH
+        )
+        # Small penalty per extra model word, so exact matches win ties.
+        score = match + (0.5 if is_product else 0) - 0.02 * extra_words(title, r.get("title", ""))
         if score > best_score:
             best, best_score = ProductLink(clean_url(url), is_product), score
     return best

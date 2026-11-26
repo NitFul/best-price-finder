@@ -25,10 +25,13 @@ GENDER_WORDS = {
 # Generic words count less than model words: missing "soccer" matters less
 # than missing "Pro" (which would mean a different model).
 GENERIC_WORDS = {
-    "soccer", "football", "cleat", "shoe", "boot", "sneaker", "running", "kid",
-    "youth", "unisex", "the", "and", "for", "with", "new", "apple", "phone",
-    "smartphone", "unlocked",
+    "soccer", "football", "cleat", "shoe", "boot", "sneaker", "running",
+    "unisex", "the", "and", "for", "with", "new", "apple", "phone",
+    "smartphone", "unlocked", "firm", "ground", "black", "white", "size",
 }
+
+# Kids' versions are a different product unless the search asks for them.
+KIDS_WORDS = {"youth", "kid", "kids", "junior", "toddler", "infant", "baby", "jr"}
 GENERIC_WEIGHT = 0.3
 
 
@@ -63,6 +66,20 @@ def has_unwanted_word(query_words: set[str], title_words: list[str]) -> bool:
     return False
 
 
+def extra_words(query: str, title: str) -> int:
+    """How many model-like words the title has that the search didn't ask for.
+
+    Used to break ties: for "F50 Pro", "F50 Pro" beats "F50 Hyperfast Pro".
+    """
+    q = {singular(w) for w in tokens(query)}
+    joined_q = "".join(tokens(query))
+    return sum(
+        1 for w in {singular(x) for x in tokens(title)}
+        if w not in q and w not in joined_q and w not in GENERIC_WORDS
+        and w not in GENDER_WORDS and not w.isdigit() and len(w) > 2
+    )
+
+
 def match_score(query: str, title: str) -> float:
     """Weighted share of the search words found in the title (0.0 to 1.0).
 
@@ -80,6 +97,8 @@ def match_score(query: str, title: str) -> float:
         return 0.0
     if (VARIANT_WORDS & t) - q:
         return 0.0
+    if (KIDS_WORDS & t) and not (KIDS_WORDS & q):
+        return 0.0
     if is_accessory_for(q, title_words):
         return 0.0
     q_gender = {GENDER_WORDS[w] for w in q if w in GENDER_WORDS}
@@ -94,8 +113,16 @@ def match_score(query: str, title: str) -> float:
     def weight(w: str) -> float:
         return GENERIC_WEIGHT if w in GENERIC_WORDS else 1.0
 
-    # Also match words written together or apart: "northface" vs "North Face".
+    # Also match words written together or apart ("northface" vs "North Face")
+    # and abbreviations ("FG" vs "Firm Ground").
     joined_title = "".join(title_words)
+    initials = "".join(w[0] for w in title_words)
+
+    def found_in_title(w: str) -> bool:
+        if w in t or w.replace("-", "") in joined_title:
+            return True
+        return 2 <= len(w) <= 4 and w.isalpha() and w in initials
+
     total = sum(weight(w) for w in scored)
-    found = sum(weight(w) for w in scored if w in t or w.replace("-", "") in joined_title)
+    found = sum(weight(w) for w in scored if found_in_title(w))
     return found / total

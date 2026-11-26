@@ -13,7 +13,9 @@ from pricefinder.search import (
     find_product_link,
     google_search_url,
     search_shopping,
+    store_matches_url,
 )
+from pricefinder.stores import FIXED_STORES, StoreCheck, check_brand, check_store
 
 st.set_page_config(page_title="Best Price Finder", page_icon="🏷️", layout="centered")
 
@@ -57,6 +59,49 @@ def cached_new_store_rate(store: str) -> dict:
 
 
 TOP_N_STORES = 3
+
+
+@st.cache_data(ttl=3600, show_spinner=False, max_entries=500)
+def cached_key_store_checks(query: str) -> list[StoreCheck]:
+    """Amazon, Costco and the brand's site for this search (3 credits, cached 1 hour)."""
+    checks = []
+    for name, domain in FIXED_STORES:
+        if not daily_limiter().try_use():
+            raise SearchError("The site reached today's search limit.")
+        checks.append(check_store(query, name, domain, API_KEY))
+    if daily_limiter().try_use():
+        brand = check_brand(query, API_KEY)
+        # Skip the brand if it's one of the fixed stores (e.g. searching "Amazon Kindle").
+        if brand and brand.domain not in {d for _, d in FIXED_STORES}:
+            # Only a category page found? Search the brand's own site once more.
+            if not (brand.link and brand.link.is_product_page) and daily_limiter().try_use():
+                retry = check_store(query, brand.name, brand.domain, API_KEY)
+                if retry.link and (retry.link.is_product_page or not brand.link):
+                    brand.link = retry.link
+            checks.append(brand)
+    return checks
+
+
+def show_rakuten(rate_info: dict | None, price: float | None, store: str) -> None:
+    """One line about the store's Rakuten cash back."""
+    checked = (
+        f" (checked {rate_info['last_checked']})"
+        if rate_info and rate_info.get("last_checked") else ""
+    )
+    pct = rate_info["percent"] if rate_info else None
+    if pct:
+        up_to = "up to " if (rate_info.get("notes") or "").lower().startswith("up to") else ""
+        amount = f" ({up_to}about ${price * pct / 100:,.2f})" if price else ""
+        st.success(f"Activate Rakuten first: {up_to}{pct:g}% cash back{amount}{checked}")
+    elif rate_info and pct == 0:
+        why = rate_info.get("notes") or "no cash back at this store right now"
+        st.caption(f"Rakuten: 0% – {why}{checked}.")
+    elif rate_info and rate_info.get("notes"):
+        st.caption(f"Rakuten: {rate_info['notes']}{checked}.")
+    else:
+        st.markdown(
+            f"No Rakuten rate saved for this store. [Check Rakuten]({rakuten_check_url(store)})"
+        )
 
 
 def rates_table() -> CashbackTable:
@@ -125,6 +170,11 @@ with st.sidebar:
         "Hide suspiciously cheap prices", value=True,
         help="Hides listings far below the typical price (often accessories or fake offers).",
     )
+    check_key_stores = st.checkbox(
+        "Also check Amazon, Costco & brand site", value=True,
+        help="Finds the product page at these stores, which Google Shopping often "
+             "leaves out. Uses 3 extra searches (remembered for an hour).",
+    )
 
 st.title("🏷️ Best Price Finder")
 tab_search, tab_rates = st.tabs(["Search", "Cashback rates"])
@@ -170,11 +220,18 @@ with tab_search:
             )
 
         table, ranked = rank()
-        # Make sure the top stores have a Rakuten rate (even if it's 0), then
-        # re-rank in case a new rate changes the order.
+        key_checks = []
         if not results["demo"] and API_KEY:
+            if check_key_stores:
+                try:
+                    with st.spinner("Checking Amazon, Costco and the brand's website..."):
+                        key_checks = cached_key_store_checks(q)
+                except SearchError as e:
+                    st.warning(f"Couldn't check Amazon/Costco/brand site: {e}")
+            # Make sure the top stores and key stores have a Rakuten rate (even
+            # if it's 0), then re-rank in case a new rate changes the order.
             top = [o.listing.store for o in ranked.options[:TOP_N_STORES]]
-            if add_missing_store_rates(top):
+            if add_missing_store_rates(top + [c.name for c in key_checks]):
                 table, ranked = rank()
         options = ranked.options
         st.session_state["top_stores"] = {
@@ -197,6 +254,33 @@ with tab_search:
                 + (f"  \nHidden: {hidden_note}." if hidden_note else "")
             )
 
+        # --- Always check Amazon, Costco and the brand's own website ---
+        if key_checks:
+            st.markdown("**Also check these stores**")
+            cols = st.columns(len(key_checks))
+            for col, check in zip(cols, key_checks):
+                with col, st.container(border=True):
+                    st.markdown(f"**{'🏷️ Brand site: ' if check.is_brand else ''}{check.name}**")
+                    # Price only if Google Shopping listed this store too.
+                    same_store = [
+                        o for o in options
+                        if store_matches_url(o.listing.store, "https://" + check.domain)
+                    ]
+                    if same_store:
+                        cheapest = min(same_store, key=lambda o: o.listing.price)
+                        st.metric("Price", f"${cheapest.listing.price:,.2f}")
+                        show_rakuten(table.info(check.name), cheapest.listing.price, check.name)
+                    else:
+                        st.caption("Price not listed by Google. Open the store to check.")
+                        show_rakuten(table.info(check.name), None, check.name)
+                    if check.link and check.link.is_product_page:
+                        st.link_button(f"View on {check.name}", check.link.url, type="primary")
+                    elif check.link:
+                        st.link_button(f"Related page on {check.name}", check.link.url)
+                        st.caption("Exact product not found here.")
+                    else:
+                        st.caption(f"Not found at {check.name}.")
+
         direct_links = st.session_state.setdefault("direct_links", {})
         for i, o in enumerate(options, 1):
             L = o.listing
@@ -206,27 +290,7 @@ with tab_search:
                 with left:
                     st.markdown(f"**Option {i}: {L.store}**")
                     st.write(L.title)
-                    rate_info = table.info(L.store)
-                    checked = (
-                        f" (checked {rate_info['last_checked']})"
-                        if rate_info and rate_info.get("last_checked") else ""
-                    )
-                    if o.cashback_percent:
-                        up_to = "up to " if (rate_info.get("notes") or "").lower().startswith("up to") else ""
-                        st.success(
-                            f"Activate Rakuten first: {up_to}{o.cashback_percent:g}% cash back "
-                            f"({up_to}about ${o.cashback_amount:,.2f}){checked}"
-                        )
-                    elif rate_info and rate_info["percent"] == 0:
-                        why = rate_info.get("notes") or "no cash back at this store right now"
-                        st.caption(f"Rakuten: 0% – {why}{checked}.")
-                    elif rate_info and rate_info.get("notes"):
-                        st.caption(f"Rakuten: {rate_info['notes']}{checked}.")
-                    else:
-                        st.markdown(
-                            f"No Rakuten rate saved for this store. "
-                            f"[Check Rakuten]({rakuten_check_url(L.store)})"
-                        )
+                    show_rakuten(table.info(L.store), L.price, L.store)
 
                     # Links to where the price came from.
                     b1, b2 = st.columns(2)

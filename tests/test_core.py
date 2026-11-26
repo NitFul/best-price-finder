@@ -215,3 +215,57 @@ def test_northface_search_returns_many_stores():
     assert len(ranked.options) >= 10
     assert "The North Face" in stores
     assert not any("mini" in o.listing.title.lower() for o in ranked.options)
+
+
+# ---- Amazon / Costco / brand site (real web results saved from Serper) ----
+from pricefinder.stores import find_brand_site
+
+STORES = json.loads((Path(__file__).parent / "data" / "store_checks.json").read_text())
+
+
+def test_abbreviation_matches_initials():
+    assert match_score(Q, "adidas F50 PRO Firm Ground Soccer Cleats") == 1.0
+
+
+def test_brand_site_detected_with_product_page():
+    adidas = find_brand_site(Q, STORES[Q + " official site"])
+    assert adidas.domain == "adidas.com" and adidas.is_brand
+    assert adidas.link.is_product_page and adidas.link.url.endswith("JR8953.html")
+    nf = find_brand_site(NF_Q, STORES[NF_Q + " official site"])
+    assert nf.domain == "thenorthface.com"
+    assert "borealis-backpack" in nf.link.url and nf.link.is_product_page
+
+
+def test_amazon_product_page_skips_other_models():
+    found = pick_product_link(NF_Q, "amazon", STORES["site:amazon.com " + NF_Q])
+    assert found.is_product_page and "/clp/" in found.url  # not the "Mini" listing
+
+
+def test_costco_category_page_is_not_a_product():
+    found = pick_product_link(NF_Q, "costco", STORES["site:costco.com " + NF_Q])
+    assert found is None or not found.is_product_page
+
+
+def test_kids_versions_hidden_unless_searched():
+    assert match_score(Q, "adidas F50 Pro Firm Ground Youth Soccer Cleats") == 0.0
+    assert match_score("adidas F50 Pro FG youth cleats", "adidas F50 Pro FG Youth Soccer Cleats") == 1.0
+
+
+def test_exact_model_beats_longer_model_name():
+    organic = [
+        {"link": "https://www.adidas.com/us/f50-hyperfast-pro-firm-ground-soccer-cleats/KJ3438.html",
+         "title": "White F50 Hyperfast Pro Firm Ground Soccer Cleats"},
+        {"link": "https://www.adidas.com/us/f50-pro-firm-ground-soccer-cleats/JR8953.html",
+         "title": "adidas F50 PRO Firm Ground Soccer Cleats - Black"},
+    ]
+    assert pick_product_link(Q, "adidas", organic).url.endswith("JR8953.html")
+
+
+def test_brand_site_ignores_generic_word_matches():
+    organic = [
+        {"link": "https://soccerandrugby.com/soccer-shoes/adidas-f50-pro-fg-jh7683.htm", "title": "adidas F50 Pro FG"},
+        {"link": "https://www.adidas.com/us/f50-pro-firm-ground-soccer-cleats/JR8953.html",
+         "title": "adidas F50 PRO Firm Ground Soccer Cleats"},
+    ]
+    assert find_brand_site(Q, organic).domain == "adidas.com"
+    assert find_brand_site(Q, organic[:1]) is None
