@@ -343,3 +343,25 @@ def test_parse_costco_items():
     assert a.note == "Costco member price"
     assert b.price == 23.99 and "out of stock" in b.note
     assert b.title.startswith("Kirkland Signature")
+
+
+def test_real_costco_results_match_airpods():
+    items = json.loads((Path(__file__).parent / "data" / "costco_airpods.json").read_text())
+    listings = parse_costco_items(items)
+    assert listings and all(l.store == "Costco" for l in listings)
+    opts = build_options("Apple AirPods Pro 3", listings, CashbackTable([])).options
+    assert opts and "AirPods Pro 3" in opts[0].listing.title
+    assert opts[0].listing.link.startswith("https://www.costco.com/")
+    assert not any("Belkin" in o.listing.title or "AirPods 4" in o.listing.title for o in opts)
+
+
+def test_overpriced_bundles_dont_hide_real_deals():
+    q = "Apple AirPods Pro 3"
+    prices = [("Amazon", 149.0), ("Costco", 149.99), ("Best Buy", 179.99), ("FlexShopper", 279.99),
+              ("iPromo", 335.0), ("Geek Tech", 345.31), ("VXB.com", 368.95), ("GildedBox", 425.0),
+              ("AS2 Electronics", 431.68), ("Bait Shop", 12.0)]
+    listings = [Listing(f"Apple AirPods Pro 3", s, p, "x") for s, p in prices]
+    ranked = build_options(q, listings, CashbackTable([]))
+    stores = [o.listing.store for o in ranked.options]
+    assert stores[:2] == ["Amazon", "Costco"]
+    assert "Bait Shop" not in stores and ranked.hidden["suspiciously cheap prices"] == 1

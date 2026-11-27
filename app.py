@@ -9,7 +9,9 @@ from pricefinder.cashback import CashbackTable, load_rows, rakuten_check_url, sa
 from pricefinder.config import get_bool, get_int, get_setting
 from pricefinder.costco import (
     DONE_STATUSES,
+    MAX_CHARGE_PER_RUN_USD,
     check_apify_token,
+    monthly_usage,
     fetch_costco_listings,
     run_status,
     start_costco_search,
@@ -42,7 +44,7 @@ SERPAPI_KEY = get_setting("SERPAPI_KEY")
 AMAZON_DAILY_LIMIT = get_int("AMAZON_DAILY_LIMIT", 8)
 # Costco prices (optional) via an Apify scraper; ~$0.02 per search.
 APIFY_TOKEN = get_setting("APIFY_TOKEN")
-COSTCO_DAILY_LIMIT = get_int("COSTCO_DAILY_LIMIT", 10)
+COSTCO_DAILY_LIMIT = get_int("COSTCO_DAILY_LIMIT", 2)  # ~$0.10 each; $5 free/month
 COSTCO_CACHE_SECONDS = 3600
 
 
@@ -64,6 +66,11 @@ def start_costco_job(query: str, force: bool = False) -> None:
     job = jobs.get(query)
     fresh = job and time.time() - job["started"] < COSTCO_CACHE_SECONDS and job["status"] != "ERROR"
     if fresh and not force:
+        return
+    usage = monthly_usage(APIFY_TOKEN)
+    if usage and usage[1] - usage[0] < MAX_CHARGE_PER_RUN_USD:
+        jobs[query] = {"status": "ERROR", "started": time.time(), "listings": [],
+                       "error": "This month's free Apify credit is used up."}
         return
     if not costco_limiter().try_use():
         jobs[query] = {"status": "ERROR", "started": time.time(), "listings": [],
@@ -100,7 +107,7 @@ def costco_progress(query: str) -> None:
     if job["status"] in DONE_STATUSES or job["status"] == "ERROR":
         st.rerun(scope="app")
     st.caption(f"⏳ Getting Costco price... {int(time.time() - job['started'])}s "
-               "(usually 1–2 minutes). This page updates by itself.")
+               "(usually under a minute). This page updates by itself.")
 
 
 @st.cache_data(ttl=600, show_spinner=False)

@@ -7,8 +7,8 @@ owner's request. Runs take about 1-2 minutes, so they are started in the
 background and checked until done.
 
 Needs APIFY_TOKEN (https://console.apify.com/settings/integrations).
-Cost: about $0.90 per 1,000 results (~$0.02 per search), within Apify's
-free monthly credit.
+Cost: measured about $0.10 per search (mostly a fixed start fee per run), so
+Apify's free $5/month credit covers roughly 50 searches.
 """
 
 import requests
@@ -18,7 +18,8 @@ from .search import SearchError
 
 API = "https://api.apify.com/v2"
 ACTOR = "sian.agency~costco-data-scraper"
-MAX_CHARGE_PER_RUN_USD = 0.10  # safety cap per search
+MAX_CHARGE_PER_RUN_USD = 0.15  # safety cap per search (a typical run is ~$0.10)
+COST_PER_RUN_USD = 0.10
 RUN_TIMEOUT_SECONDS = 240
 DONE_STATUSES = {"SUCCEEDED", "FAILED", "ABORTED", "TIMED-OUT"}
 
@@ -104,6 +105,17 @@ def fetch_costco_listings(dataset_id: str, token: str) -> list[Listing]:
     return parse_costco_items(items if isinstance(items, list) else [])
 
 
+def monthly_usage(token: str) -> tuple[float, float] | None:
+    """(used, limit) in USD for this month, or None if unknown."""
+    try:
+        limits = _get("/users/me/limits", token)["data"]
+        used = limits["current"]["monthlyUsageUsd"]
+        cap = limits["limits"]["maxMonthlyUsageUsd"]
+        return float(used), float(cap)
+    except (SearchError, KeyError, TypeError, ValueError):
+        return None
+
+
 def check_apify_token(token: str) -> tuple[bool, str]:
     """Validate the token and show this month's usage. Free; uses no credit."""
     if not token:
@@ -113,12 +125,9 @@ def check_apify_token(token: str) -> tuple[bool, str]:
     except SearchError as e:
         return False, str(e)
     msg = f"signed in as {user.get('username', '?')}"
-    try:
-        limits = _get("/users/me/limits", token)["data"]
-        used = limits.get("current", {}).get("monthlyUsageUsd")
-        cap = limits.get("limits", {}).get("maxMonthlyUsageUsd")
-        if used is not None and cap:
-            msg += f", ${used:.2f} of ${cap:.2f} used this month"
-    except (SearchError, KeyError, TypeError):
-        pass
+    usage = monthly_usage(token)
+    if usage:
+        used, cap = usage
+        left = max(int((cap - used) / COST_PER_RUN_USD), 0)
+        msg += f", ${used:.2f} of ${cap:.2f} used this month (~{left} searches left)"
     return True, msg

@@ -34,10 +34,10 @@ the free plan.
 
 Costco isn't in Google Shopping and has no public API. With `APIFY_TOKEN`
 set, the app runs the Apify actor `sian.agency/costco-data-scraper` in the
-background (about 1-2 minutes; the page updates when it's done). This
-scrapes costco.com, which Costco's terms don't allow. It costs about $0.02
-per search, within Apify's free monthly credit, and is capped by
-`COSTCO_DAILY_LIMIT` (default 10) and $0.10 per run. Without a token, the
+background (usually under a minute; the page updates when it's done). This
+scrapes costco.com, which Costco's terms don't allow. It costs about $0.10
+per search (Apify's free $5/month covers ~50), and is capped by
+`COSTCO_DAILY_LIMIT` (default 2), $0.15 per run, and the monthly free credit. Without a token, the
 app shows a link to the Costco product page.
 
 ## Cashback rates

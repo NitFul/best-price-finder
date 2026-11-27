@@ -3,7 +3,7 @@
 import re
 from collections import Counter
 from dataclasses import dataclass, field
-from statistics import median
+from statistics import quantiles
 
 from .cashback import CashbackTable
 from .match import match_score, tokens
@@ -19,9 +19,19 @@ CARRIERS = re.compile(
     re.I,
 )
 
-# A listing below this share of the typical price is likely an accessory,
-# a part, or a fake "bait" price.
-SUSPICIOUS_PRICE_RATIO = 0.4
+# A listing below this share of the typical *low* price (the cheaper quarter
+# of listings) is likely an accessory, a part, or a fake "bait" price. Using
+# the cheaper quarter, not the middle, keeps overpriced bundles and resellers
+# from making real deals look suspicious.
+SUSPICIOUS_PRICE_RATIO = 0.5
+
+# Major retailers are never treated as suspicious. Marketplace sellers on
+# them ("Walmart - SomeSeller", "eBay - x") are still checked.
+TRUSTED_STORES = {"amazon", "amazon.com", "costco", "walmart", "best buy", "bestbuy", "target"}
+
+
+def is_trusted(store: str) -> bool:
+    return store.strip().lower() in TRUSTED_STORES
 
 
 @dataclass
@@ -59,10 +69,11 @@ def build_options(
             kept.append((listing, score))
 
     if hide_suspicious_prices and len(kept) >= 4:
-        floor = median(l.price for l, _ in kept) * SUSPICIOUS_PRICE_RATIO
-        too_cheap = [(l, s) for l, s in kept if l.price < floor]
+        lower_quarter = quantiles([l.price for l, _ in kept], n=4)[0]
+        floor = lower_quarter * SUSPICIOUS_PRICE_RATIO
+        too_cheap = [(l, s) for l, s in kept if l.price < floor and not is_trusted(l.store)]
         hidden["suspiciously cheap prices"] += len(too_cheap)
-        kept = [(l, s) for l, s in kept if l.price >= floor]
+        kept = [(l, s) for l, s in kept if l.price >= floor or is_trusted(l.store)]
 
     options = []
     for listing, score in kept:
