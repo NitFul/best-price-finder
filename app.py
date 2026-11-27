@@ -4,7 +4,7 @@ import time
 
 import streamlit as st
 
-from pricefinder.amazon import search_amazon
+from pricefinder.amazon import check_serpapi_key, search_amazon
 from pricefinder.cashback import CashbackTable, load_rows, rakuten_check_url, save_rows
 from pricefinder.config import get_bool, get_int, get_setting
 from pricefinder.limits import DailyLimiter
@@ -62,6 +62,12 @@ def cached_search(query: str, refresh: int = 0):
     if not daily_limiter().try_use():
         raise SearchError("The site reached today's search limit. Please try again tomorrow.")
     return time.time(), search_shopping(query, API_KEY)
+
+
+@st.cache_data(ttl=600, show_spinner=False)
+def serpapi_status(key: str) -> tuple[bool, str]:
+    # Checked at most every 10 minutes; doesn't use any searches.
+    return check_serpapi_key(key)
 
 
 def request_refresh() -> None:
@@ -207,6 +213,19 @@ with st.sidebar:
         help="Finds the product page at these stores, which Google Shopping often "
              "leaves out. Uses 3 extra searches (remembered for an hour).",
     )
+
+    # Which data sources are working (lets you validate keys on the website too).
+    with st.expander("Status"):
+        st.markdown(("✅" if API_KEY else "❌") + " Store prices (Serper): "
+                    + ("key set" if API_KEY else "SERPER_API_KEY missing"))
+        if SERPAPI_KEY:
+            ok, msg = serpapi_status(SERPAPI_KEY)
+            st.markdown(("✅" if ok else "❌") + f" Amazon prices (SerpApi): {msg}")
+            if ok:
+                st.caption(f"Amazon searches left today on this site: {amazon_limiter().remaining} "
+                           f"of {AMAZON_DAILY_LIMIT}")
+        else:
+            st.markdown("➖ Amazon prices (SerpApi): off — SERPAPI_KEY not set (link only)")
 
 st.title("🏷️ Best Price Finder")
 tab_search, tab_rates = st.tabs(["Search", "Cashback rates"])

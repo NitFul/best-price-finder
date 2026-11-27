@@ -12,6 +12,29 @@ from .search import SearchError, parse_money
 SERPAPI_URL = "https://serpapi.com/search.json"
 
 
+def check_serpapi_key(api_key: str) -> tuple[bool, str]:
+    """Validate the key with SerpApi's account endpoint (free, uses no searches).
+
+    Returns (ok, message), e.g. (True, "Free Plan: 245 of 250 searches left").
+    """
+    if not api_key:
+        return False, "SERPAPI_KEY is not set"
+    try:
+        resp = requests.get("https://serpapi.com/account.json", params={"api_key": api_key}, timeout=15)
+        data = resp.json()
+    except (requests.RequestException, ValueError) as e:
+        return False, f"Couldn't reach SerpApi: {e}"
+    if resp.status_code != 200 or data.get("error"):
+        return False, data.get("error") or f"SerpApi error {resp.status_code}"
+    left = data.get("total_searches_left", data.get("plan_searches_left"))
+    per_month = data.get("searches_per_month")
+    plan = data.get("plan_name") or "SerpApi"
+    msg = f"{plan}: {left} of {per_month} searches left this month"
+    if data.get("plan_renewal_date"):
+        msg += f" (renews {data['plan_renewal_date']})"
+    return (left or 0) > 0, msg if left else msg + " - none left, Amazon prices paused"
+
+
 def parse_amazon_results(data: dict) -> list[Listing]:
     listings = []
     for item in data.get("organic_results", []):
