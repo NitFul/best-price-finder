@@ -8,7 +8,7 @@ from pricefinder.amazon import check_serpapi_key, search_amazon
 from pricefinder.cashback import CashbackTable, load_rows, rakuten_check_url, save_rows
 from pricefinder.config import get_bool, get_int, get_setting
 from pricefinder.limits import DailyLimiter
-from pricefinder.rakuten import new_store_row, update_row
+from pricefinder.rakuten import new_store_row
 from pricefinder.ranking import build_options
 from pricefinder.search import (
     ProductLink,
@@ -466,71 +466,11 @@ with tab_rates:
             top_rows, width="stretch", hide_index=True,
             column_config={**columns, "rank": st.column_config.NumberColumn("#", width="small"),
                            "rakuten_percent": st.column_config.TextColumn("Rakuten %")},
+            column_order=["rank", "store", "rakuten_percent", "notes", "last_checked", "source"],
         )
+        st.caption("Rakuten rates change often, so confirm on Rakuten before you buy.")
     else:
         st.caption("Search for an item to see the Rakuten rates of its top 3 stores here.")
-
-    st.subheader("All saved rates")
-    if ALLOW_RATE_EDITING:
-        rows = load_rows()
-
-        # --- Automatic update from Rakuten (via Google search results) ---
-        st.markdown("**Update from Rakuten**")
-        st.write(
-            "Finds each store's current Rakuten cash back rate from Google search results "
-            "for Rakuten's store pages. **Each store uses 1 search credit.**"
-        )
-        all_stores = [r["store"] for r in rows]
-        selected = st.multiselect("Stores to update", all_stores, default=all_stores)
-        if st.button(
-            f"Update {len(selected)} store(s) from Rakuten", type="primary",
-            disabled=not (API_KEY and selected),
-        ):
-            progress = st.progress(0.0, text="Checking Rakuten rates...")
-            report = []
-            for n, row in enumerate(r for r in rows if r["store"] in selected):
-                try:
-                    result = update_row(row, API_KEY)
-                except SearchError as e:
-                    result = f"error: {e}"
-                report.append({"store": row["store"], "result": result})
-                progress.progress((n + 1) / len(selected), text=f"Checked {row['store']}")
-            save_rows(rows)
-            st.session_state["rate_report"] = report
-            # New key so the table below reloads the saved values.
-            st.session_state["rates_version"] = st.session_state.get("rates_version", 0) + 1
-            st.rerun()
-        if report := st.session_state.get("rate_report"):
-            with st.expander(f"Last update: {len(report)} store(s) checked", expanded=True):
-                st.dataframe(report, width="stretch", hide_index=True)
-            st.caption(
-                "To update the public website, commit and push cashback_rates.csv to GitHub."
-            )
-
-        # --- Manual editing ---
-        st.markdown("**Edit rates**")
-        st.write(
-            "Fix or add rates by hand. **Aliases** are other names a store shows up as "
-            "in search results, separated by `|`. Leave Rakuten % empty if unknown, "
-            "or enter 0 for no cash back."
-        )
-        edited = st.data_editor(
-            rows, num_rows="dynamic", width="stretch", column_config=columns,
-            key=f"rates_editor_{st.session_state.get('rates_version', 0)}",
-        )
-        if st.button("Save rates"):
-            save_rows(edited)
-            st.success("Saved to cashback_rates.csv.")
-    else:
-        st.write(
-            "Rakuten cash back rates used for ranking, with the date each was last "
-            "checked. Rates change often, so confirm on Rakuten before you buy."
-        )
-        st.dataframe(
-            load_rows(), width="stretch", hide_index=True,
-            column_config=columns,
-            column_order=["store", "rakuten_percent", "notes", "last_checked", "source"],
-        )
 
 st.divider()
 st.caption(

@@ -35,11 +35,11 @@ the free plan.
 Rates live in `cashback_rates.csv`. To refresh them from Rakuten (read from
 Google search results for Rakuten's store pages, 1 search credit per store):
 
-- In the app: **Cashback rates** tab, then **Update from Rakuten**, or
+- Automatically: the top 3 stores of each search are looked up if not saved yet, or
 - From the terminal: `.\.venv\Scripts\python update_rates.py` (or list store names
   to update only those).
 
-You can also fix rates by hand on the same tab. Then commit and push
+You can also edit the file by hand. Then commit and push
 `cashback_rates.csv` to update the public site.
 
 ## Free limits
