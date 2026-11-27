@@ -55,8 +55,15 @@ def is_accessory_for(query_words: set[str], title_words: list[str]) -> bool:
     return bool(key_words) and not (key_words & before)
 
 
+UNWANTED_PHRASES = ("open box", "pre owned", "like new", "for parts", "certified refurbished")
+
+
 def has_unwanted_word(query_words: set[str], title_words: list[str]) -> bool:
     """True for 'iPhone 18 Pro Case', but not 'Backpack with Laptop Sleeve'."""
+    title_text = " ".join(title_words)
+    query_text = " ".join(sorted(query_words))
+    if any(p in title_text and p not in query_text for p in UNWANTED_PHRASES):
+        return True
     after_with = False
     for w in title_words:
         if w == "with":

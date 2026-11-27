@@ -1,5 +1,7 @@
 """Best Price Finder - run with:  streamlit run app.py"""
 
+import time
+
 import streamlit as st
 
 from pricefinder.amazon import search_amazon
@@ -45,7 +47,7 @@ def amazon_limiter() -> DailyLimiter:
 
 
 @st.cache_data(ttl=3600, show_spinner=False, max_entries=500)
-def cached_amazon(query: str):
+def cached_amazon(query: str, refresh: int = 0):
     # Amazon listings with prices, cached 1 hour (each new search = 1 SerpApi search).
     if not amazon_limiter().try_use():
         raise SearchError("Today's Amazon price limit was reached; showing a link only.")
@@ -53,12 +55,18 @@ def cached_amazon(query: str):
 
 
 @st.cache_data(ttl=3600, show_spinner=False, max_entries=500)
-def cached_search(query: str):
+def cached_search(query: str, refresh: int = 0):
     # Only runs on a cache miss, so repeat searches within an hour are free
-    # and don't count toward the daily limit.
+    # and don't count toward the daily limit. A new `refresh` number forces a
+    # fresh search. Returns (time fetched, listings).
     if not daily_limiter().try_use():
         raise SearchError("The site reached today's search limit. Please try again tomorrow.")
-    return search_shopping(query, API_KEY)
+    return time.time(), search_shopping(query, API_KEY)
+
+
+def request_refresh() -> None:
+    st.session_state["refresh_n"] = st.session_state.get("refresh_n", 0) + 1
+    st.session_state["do_refresh"] = True
 
 
 @st.cache_data(ttl=86400, show_spinner=False, max_entries=1000)
@@ -211,8 +219,14 @@ with tab_search:
         )
         submitted = st.form_submit_button("Find best price", type="primary")
 
-    if submitted and query.strip():
-        q = " ".join(query.split())[:MAX_QUERY_LENGTH]
+    refreshing = st.session_state.pop("do_refresh", False) and st.session_state.get("results")
+    if (submitted and query.strip()) or refreshing:
+        if submitted and query.strip():
+            q = " ".join(query.split())[:MAX_QUERY_LENGTH]
+        else:
+            q = st.session_state["results"]["query"]
+        refresh_n = st.session_state.get("refresh_n", 0)
+        fetched_at = time.time()
         try:
             if demo:
                 listings = demo_results()
@@ -223,7 +237,7 @@ with tab_search:
                 st.stop()
             else:
                 with st.spinner("Searching stores..."):
-                    listings = cached_search(q)
+                    fetched_at, listings = cached_search(q, refresh_n)
         except SearchError as e:
             st.error(str(e))
             st.stop()
@@ -233,7 +247,7 @@ with tab_search:
         if not demo and SERPAPI_KEY and check_key_stores:
             try:
                 with st.spinner("Getting Amazon prices..."):
-                    listings = listings + cached_amazon(q)
+                    listings = listings + cached_amazon(q, refresh_n)
                 amazon_ok = True
             except SearchError as e:
                 amazon_note = str(e)
@@ -241,7 +255,7 @@ with tab_search:
         # Keep results so they stay on screen when a button below is clicked.
         st.session_state["results"] = {
             "query": q, "listings": listings, "demo": demo,
-            "amazon_ok": amazon_ok, "amazon_note": amazon_note,
+            "amazon_ok": amazon_ok, "amazon_note": amazon_note, "fetched_at": fetched_at,
         }
         st.session_state["direct_links"] = {}
 
@@ -250,6 +264,16 @@ with tab_search:
         q, listings = results["query"], results["listings"]
         if results["demo"]:
             st.info("Demo mode: these listings and prices are made up.")
+        else:
+            # Google's listings change over time, so say how old these are.
+            minutes = int((time.time() - results.get("fetched_at", time.time())) / 60)
+            age = "just now" if minutes < 1 else f"{minutes} min ago"
+            c1, c2 = st.columns([3, 1])
+            c1.caption(
+                f"Prices fetched {age}. Store listings change during the day, so a search "
+                "made at a different time (or on another device) can show different stores."
+            )
+            c2.button("🔄 Refresh", on_click=request_refresh, help="Get fresh prices (uses searches).")
 
         def rank():
             t = rates_table()

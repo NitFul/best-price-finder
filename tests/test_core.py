@@ -313,3 +313,10 @@ def test_real_amazon_results_brand_added_and_ranked():
     opts = build_options(Q, listings, CashbackTable([])).options
     assert opts and opts[0].listing.store == "Amazon"
     assert "women" not in opts[0].listing.title.lower()
+
+
+def test_open_box_and_like_new_hidden():
+    q = "iphone 18 pro"
+    assert match_score(q, "Open Box Apple iPhone 18 Pro (A3713) Unlocked - 5G") == 0.0
+    assert match_score(q, "Apple iPhone 18 Pro - Like New") == 0.0
+    assert match_score(q, "Apple iPhone 18 Pro 256GB") == 1.0
