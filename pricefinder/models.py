@@ -14,6 +14,7 @@ class Listing:
     rating: float | None = None
     rating_count: int | None = None
     monthly: bool = False  # True = price is a monthly payment ("$66.66/mo"), not the full price
+    note: str = ""  # shown with the listing, e.g. "Costco member price"
 
 
 @dataclass

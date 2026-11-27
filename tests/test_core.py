@@ -320,3 +320,26 @@ def test_open_box_and_like_new_hidden():
     assert match_score(q, "Open Box Apple iPhone 18 Pro (A3713) Unlocked - 5G") == 0.0
     assert match_score(q, "Apple iPhone 18 Pro - Like New") == 0.0
     assert match_score(q, "Apple iPhone 18 Pro 256GB") == 1.0
+
+
+# ---- Costco via Apify (sample shaped like the actor's documented output) ----
+from pricefinder.costco import parse_costco_items
+
+
+def test_parse_costco_items():
+    items = [
+        {"_operation": "search", "status": "success", "itemNumber": "1",
+         "itemName": "AirPods Pro 3", "brand": ["Apple"], "salePrice": 199.99, "listPrice": 249.99,
+         "memberOnly": True, "inStock": True, "productUrl": "https://www.costco.com/p/-/airpods/1"},
+        {"status": "success", "itemName": "Kirkland Paper Towels", "brand": ["Kirkland Signature"],
+         "salePrice": None, "listPrice": 23.99, "inStock": False, "productUrl": "https://www.costco.com/p/2"},
+        {"status": "error", "itemName": "Broken", "salePrice": 1},
+        {"status": "success", "itemName": "No price item"},
+    ]
+    listings = parse_costco_items(items)
+    assert len(listings) == 2
+    a, b = listings
+    assert a.store == "Costco" and a.title == "Apple AirPods Pro 3" and a.price == 199.99
+    assert a.note == "Costco member price"
+    assert b.price == 23.99 and "out of stock" in b.note
+    assert b.title.startswith("Kirkland Signature")

@@ -7,6 +7,13 @@ import streamlit as st
 from pricefinder.amazon import check_serpapi_key, search_amazon
 from pricefinder.cashback import CashbackTable, load_rows, rakuten_check_url, save_rows
 from pricefinder.config import get_bool, get_int, get_setting
+from pricefinder.costco import (
+    DONE_STATUSES,
+    check_apify_token,
+    fetch_costco_listings,
+    run_status,
+    start_costco_search,
+)
 from pricefinder.limits import DailyLimiter
 from pricefinder.rakuten import new_store_row
 from pricefinder.ranking import build_options
@@ -33,6 +40,72 @@ MAX_QUERY_LENGTH = 120
 # keep the daily cap around 8.
 SERPAPI_KEY = get_setting("SERPAPI_KEY")
 AMAZON_DAILY_LIMIT = get_int("AMAZON_DAILY_LIMIT", 8)
+# Costco prices (optional) via an Apify scraper; ~$0.02 per search.
+APIFY_TOKEN = get_setting("APIFY_TOKEN")
+COSTCO_DAILY_LIMIT = get_int("COSTCO_DAILY_LIMIT", 10)
+COSTCO_CACHE_SECONDS = 3600
+
+
+@st.cache_resource
+def costco_limiter() -> DailyLimiter:
+    return DailyLimiter(COSTCO_DAILY_LIMIT)
+
+
+@st.cache_resource
+def costco_jobs() -> dict:
+    # query -> Costco run info, shared by all visitors so a repeated search
+    # within an hour reuses the same result instead of starting a new run.
+    return {}
+
+
+def start_costco_job(query: str, force: bool = False) -> None:
+    """Start a background Costco search for this query, unless a recent one exists."""
+    jobs = costco_jobs()
+    job = jobs.get(query)
+    fresh = job and time.time() - job["started"] < COSTCO_CACHE_SECONDS and job["status"] != "ERROR"
+    if fresh and not force:
+        return
+    if not costco_limiter().try_use():
+        jobs[query] = {"status": "ERROR", "started": time.time(), "listings": [],
+                       "error": "Today's Costco price limit was reached."}
+        return
+    try:
+        run = start_costco_search(query, APIFY_TOKEN)
+        jobs[query] = {**run, "started": time.time(), "listings": [], "error": ""}
+    except SearchError as e:
+        jobs[query] = {"status": "ERROR", "started": time.time(), "listings": [], "error": str(e)}
+
+
+def update_costco_job(job: dict) -> None:
+    """Check a running Costco search; when done, load its listings."""
+    if job["status"] in DONE_STATUSES or job["status"] == "ERROR":
+        return
+    try:
+        job["status"] = run_status(job["run_id"], APIFY_TOKEN)
+        if job["status"] == "SUCCEEDED":
+            job["listings"] = fetch_costco_listings(job["dataset_id"], APIFY_TOKEN)
+        elif job["status"] in DONE_STATUSES:
+            job["error"] = f"Costco search {job['status'].lower()}"
+    except SearchError as e:
+        job["status"], job["error"] = "ERROR", str(e)
+
+
+@st.fragment(run_every=8)
+def costco_progress(query: str) -> None:
+    """Checks the Costco search every few seconds; refreshes the page when done."""
+    job = costco_jobs().get(query)
+    if not job or job["status"] in DONE_STATUSES or job["status"] == "ERROR":
+        return
+    update_costco_job(job)
+    if job["status"] in DONE_STATUSES or job["status"] == "ERROR":
+        st.rerun(scope="app")
+    st.caption(f"⏳ Getting Costco price... {int(time.time() - job['started'])}s "
+               "(usually 1–2 minutes). This page updates by itself.")
+
+
+@st.cache_data(ttl=600, show_spinner=False)
+def apify_status(token: str) -> tuple[bool, str]:
+    return check_apify_token(token)
 
 
 @st.cache_resource
@@ -226,6 +299,14 @@ with st.sidebar:
                            f"of {AMAZON_DAILY_LIMIT}")
         else:
             st.markdown("➖ Amazon prices (SerpApi): off — SERPAPI_KEY not set (link only)")
+        if APIFY_TOKEN:
+            ok, msg = apify_status(APIFY_TOKEN)
+            st.markdown(("✅" if ok else "❌") + f" Costco prices (Apify): {msg}")
+            if ok:
+                st.caption(f"Costco searches left today on this site: {costco_limiter().remaining} "
+                           f"of {COSTCO_DAILY_LIMIT}")
+        else:
+            st.markdown("➖ Costco prices (Apify): off — APIFY_TOKEN not set (link only)")
 
 st.title("🏷️ Best Price Finder")
 tab_search, tab_rates = st.tabs(["Search", "Cashback rates"])
@@ -271,10 +352,16 @@ with tab_search:
             except SearchError as e:
                 amazon_note = str(e)
 
+        # Costco prices: start a background run (takes 1-2 minutes).
+        costco_on = bool(not demo and APIFY_TOKEN and check_key_stores)
+        if costco_on:
+            start_costco_job(q, force=bool(refreshing))
+
         # Keep results so they stay on screen when a button below is clicked.
         st.session_state["results"] = {
             "query": q, "listings": listings, "demo": demo,
             "amazon_ok": amazon_ok, "amazon_note": amazon_note, "fetched_at": fetched_at,
+            "costco": costco_on,
         }
         st.session_state["direct_links"] = {}
 
@@ -293,6 +380,11 @@ with tab_search:
                 "made at a different time (or on another device) can show different stores."
             )
             c2.button("🔄 Refresh", on_click=request_refresh, help="Get fresh prices (uses searches).")
+
+        # Costco prices arrive later (background run); add them once ready.
+        costco_job = costco_jobs().get(q) if results.get("costco") else None
+        if costco_job and costco_job["status"] == "SUCCEEDED":
+            listings = listings + costco_job["listings"]
 
         def rank():
             t = rates_table()
@@ -358,13 +450,25 @@ with tab_search:
                         o for o in options
                         if store_matches_url(o.listing.store, "https://" + check.domain)
                     ]
+                    is_costco = check.name == "Costco" and costco_job is not None
                     if same_store:
                         cheapest = min(same_store, key=lambda o: o.listing.price)
                         st.metric("Price", f"${cheapest.listing.price:,.2f}")
+                        if cheapest.listing.note:
+                            st.caption(cheapest.listing.note)
                         show_rakuten(table.info(check.name), cheapest.listing.price, check.name)
+                        if cheapest.listing.link:  # link to the exact priced product
+                            check = StoreCheck(check.name, check.domain,
+                                               ProductLink(cheapest.listing.link, True), check.is_brand)
                     else:
                         if check.name == "Amazon" and amazon_ok:
                             st.caption("No matching product found on Amazon.")
+                        elif is_costco and costco_job["status"] not in DONE_STATUSES | {"ERROR"}:
+                            costco_progress(q)
+                        elif is_costco and costco_job["status"] == "SUCCEEDED":
+                            st.caption("No matching product found at Costco.")
+                        elif is_costco:
+                            st.caption(f"Costco price unavailable: {costco_job['error']}")
                         else:
                             st.caption("Price not listed by Google. Open the store to check.")
                         show_rakuten(table.info(check.name), None, check.name)
@@ -385,6 +489,8 @@ with tab_search:
                 with left:
                     st.markdown(f"**Option {i}: {L.store}**")
                     st.write(L.title)
+                    if L.note:
+                        st.caption(f"ℹ️ {L.note}")
                     show_rakuten(table.info(L.store), L.price, L.store)
 
                     # Links to where the price came from.
